@@ -1,0 +1,1597 @@
+===============================================================================
+ОПИСАНИЯ ДЛЯ GOOGLE PLAY STORE / APP STORE
+===============================================================================
+
+[ТЕХНИЧЕСКАЯ ИНФОРМАЦИЯ]
+Этот файл содержит описания приложения для публикации в магазинах приложений.
+Структура файла:
+- Каждый язык имеет свой раздел с заголовком "===== НАЗВАНИЕ ЯЗЫКА ====="
+- В каждом разделе есть:
+  * КРАТКОЕ ОПИСАНИЕ (до 80 символов) - используется как короткое описание в магазинах
+  * ПОЛНОЕ ОПИСАНИЕ - используется как полное описание приложения
+- Всего поддерживается 27 языков
+- Порядок языков: русский, английский, белорусский, затем остальные по алфавиту
+
+[ИНСТРУКЦИЯ ПО ИСПОЛЬЗОВАНИЮ]
+1. Скопируйте нужный раздел языка
+2. КРАТКОЕ ОПИСАНИЕ вставьте в поле "Short Description" (Google Play) или "Subtitle" (App Store)
+3. ПОЛНОЕ ОПИСАНИЕ вставьте в поле "Full Description" (Google Play) или "Description" (App Store)
+4. Убедитесь, что длина краткого описания не превышает 80 символов
+
+[СТРУКТУРА КАЖДОГО РАЗДЕЛА ЯЗЫКА]
+Каждый раздел языка содержит:
+--- КРАТКОЕ ОПИСАНИЕ (до 80 символов) ---
+  ↓ Это короткое описание, которое видно в списке приложений
+  ↓ Используется как заголовок/подзаголовок
+  ↓ МАКСИМУМ 80 СИМВОЛОВ (включая пробелы и эмодзи)
+
+--- ПОЛНОЕ ОПИСАНИЕ ---
+  ↓ Это полное описание приложения
+  ↓ Видно на странице приложения в магазине
+  ↓ Содержит:
+     • Заголовок с эмодзи
+     • Введение
+     • Раздел "КАК ИГРАТЬ" (🎯)
+     • Раздел "ОСОБЕННОСТИ" (⚽)
+     • Раздел "НАСТРОЙКА ИГРЫ" (🎨)
+     • Раздел "МЕХАНИКА ИГРЫ" (🎭)
+     • Раздел "ИДЕАЛЬНО ДЛЯ" (🏆)
+     • Раздел "ОБНОВЛЕНИЯ" (🌟)
+     • Раздел "ТРЕБОВАНИЯ" (📱)
+     • Призыв к действию в конце
+
+===============================================================================
+
+===============================================================================
+РУССКИЙ ЯЗЫК (ru)
+[Используется для: Google Play - Россия, Беларусь, Казахстан и др. русскоязычные страны]
+===============================================================================
+
+--- КРАТКОЕ ОПИСАНИЕ (до 80 символов) ---
+Футбольная игра «Шпион» для компании. Угадай, кто шпион!
+
+--- ПОЛНОЕ ОПИСАНИЕ ---
+🎮 ФУТБОЛЬНЫЙ ШПИОН — Увлекательная партийная игра для компании!
+
+Погрузитесь в атмосферу футбольного закулисья, где каждый раунд — это напряжение, подозрения и детективная работа. Откройте для себя идеальную игру для вечеринок, семейных посиделок и дружеских встреч! Это лучшая игра шпион для компании, детективная игра про футбол, логическая игра угадай кто шпион, настольная игра для вечеринок и игра для друзей.
+
+🎯 КАК ИГРАТЬ:
+В игре участвуют несколько игроков. Один из них получает роль шпиона, который не знает секретного слова (имени футболиста или тренера). Остальные игроки знают это слово и должны вычислить шпиона, задавая вопросы и обсуждая друг друга. Шпион же пытается угадать секретное слово, не выдав себя.
+
+⚽ ОСОБЕННОСТИ:
+• Более 400 известных футболистов из разных лиг — игра с футболистами, футбольная викторина, игра про футбол
+• Более 20 топ-тренеров мирового футбола — игра с тренерами, футбольные тренеры
+• Поддержка 27 языков: русский, английский, белорусский, французский, немецкий, китайский, испанский, португальский, хинди, арабский, азербайджанский, бенгальский, урду, индонезийский, японский, суахили, корейский, казахский, киргизский, итальянский, турецкий, вьетнамский, нидерландский, польский, украинский, армянский, тайский
+• Возможность создавать свои наборы для игры — кастомные наборы, персонализация игры
+• Редактирование базовых наборов — добавьте или уберите любых игроков
+• Гибкие настройки игры: количество игроков, шпионов и время раунда — настройка игры, гибкие правила
+• Удобный таймер для отслеживания времени — таймер для игры, контроль времени
+• Красивый и интуитивный интерфейс — современный дизайн, удобный интерфейс
+
+🎨 НАСТРОЙКА ИГРЫ:
+• Выберите количество игроков (от 3 и более)
+• Настройте количество шпионов
+• Установите время раунда или играйте без ограничений
+• Выберите набор: игроки, тренеры или оба варианта
+• Создайте свой собственный набор для уникальной игры
+
+🎭 МЕХАНИКА ИГРЫ:
+В начале каждого раунда каждый игрок видит на своем экране карточку с именем футболиста или тренера. Все игроки видят одно и то же имя... кроме шпиона! Шпион видит слово "ШПИОН" вместо имени.
+
+Теперь начинается обсуждение. Игроки задают друг другу вопросы о секретном слове, пытаясь понять, кто из них шпион. Шпион, в свою очередь, должен внимательно слушать ответы и пытаться угадать секретное слово, при этом не выдав себя.
+
+По истечении времени или после общего обсуждения игроки голосуют за того, кого считают шпионом. Если шпион угадал слово или остался незамеченным — он побеждает! Если шпиона разоблачили, побеждают обычные игроки.
+
+🏆 ИДЕАЛЬНО ДЛЯ:
+• Вечеринок и дружеских встреч — игра для вечеринки, вечеринка с друзьями, игра на вечеринку
+• Семейных игровых вечеров — семейная игра, игра для семьи, игра с детьми
+• Оживления любой компании — игра для компании, игра в компании, развлечение для компании
+• Развития логического мышления и актерских навыков — логическая игра, игра на логику, актерская игра, игра на актерство
+
+🌟 ОБНОВЛЕНИЯ И УЛУЧШЕНИЯ:
+Мы постоянно работаем над улучшением игры и добавляем новых футболистов. Все обновления контента загружаются автоматически!
+
+📱 ТРЕБОВАНИЯ:
+• Работает на всех современных Android и iOS устройствах
+• Не требует подключения к интернету для игры (кроме загрузки обновлений контента)
+• Поддержка 27 языков
+
+Присоединяйтесь к тысячам игроков, которые уже открыли для себя увлекательный мир футбольного шпионажа! Скачивайте прямо сейчас и весело проведите время с друзьями! Играйте в лучшую игру шпион про футбол, детективную игру для компании, логическую игру угадай кто. Это бесплатная игра для вечеринок, игра для друзей и игра для семьи. ⚽🎮
+
+===============================================================================
+ENGLISH (en)
+[Используется для: Google Play - США, Великобритания, Канада, Австралия и др. англоязычные страны]
+===============================================================================
+
+--- SHORT DESCRIPTION (up to 80 characters) ---
+Football Spy party game! Guess who the spy is! ⚽
+
+--- FULL DESCRIPTION ---
+🎮 FOOTBALL SPY — Exciting Party Game for Friends!
+
+Dive into the world of football intrigue where every round is full of tension, suspicion, and detective work. Discover the perfect game for parties, family gatherings, and friendly meetings! This is the best spy game for groups, detective game about football, logic game guess who the spy is, party game and friends game.
+
+🎯 HOW TO PLAY:
+Several players participate in the game. One of them receives the role of a spy who doesn't know the secret word (a footballer's or coach's name). The other players know this word and must find the spy by asking questions and discussing each other. The spy, in turn, tries to guess the secret word without revealing themselves.
+
+⚽ FEATURES:
+• Over 400 famous footballers from different leagues — football game with players, football quiz, football trivia game
+• Over 20 top coaches from world football — game with coaches, football coaches
+• Support for 27 languages: Russian, English, Belarusian, French, German, Chinese, Spanish, Portuguese, Hindi, Arabic, Azerbaijani, Bengali, Urdu, Indonesian, Japanese, Swahili, Korean, Kazakh, Kyrgyz, Italian, Turkish, Vietnamese, Dutch, Polish, Ukrainian, Armenian, Thai
+• Create your own custom sets for playing — custom sets, game personalization
+• Edit base sets — add or remove any players
+• Flexible game settings: number of players, spies, and round time — game settings, flexible rules
+• Convenient timer to track time — game timer, time control
+• Beautiful and intuitive interface — modern design, user-friendly interface
+
+🎨 GAME SETUP:
+• Choose the number of players (3 or more)
+• Set the number of spies
+• Set round time or play without time limits
+• Choose a set: players, coaches, or both
+• Create your own custom set for a unique game
+
+🎭 GAME MECHANICS:
+At the start of each round, each player sees a card on their screen with a footballer's or coach's name. All players see the same name... except the spy! The spy sees the word "SPY" instead of the name.
+
+Now the discussion begins. Players ask each other questions about the secret word, trying to figure out who among them is the spy. The spy, in turn, must listen carefully to the answers and try to guess the secret word while not revealing themselves.
+
+After time runs out or after general discussion, players vote for who they think is the spy. If the spy guessed the word or remained unnoticed — they win! If the spy was exposed, the regular players win.
+
+🏆 PERFECT FOR:
+• Parties and friendly gatherings — party game, party with friends, party entertainment
+• Family game nights — family game, game for family, game with kids
+• Livening up any company — group game, game for group, group entertainment
+• Developing logical thinking and acting skills — logic game, logic puzzle, acting game, role-playing game
+
+🌟 UPDATES AND IMPROVEMENTS:
+We constantly work on improving the game and adding new footballers. All content updates are downloaded automatically!
+
+📱 REQUIREMENTS:
+• Works on all modern Android and iOS devices
+• No internet connection required to play (except for downloading content updates)
+• Support for 27 languages
+
+Join thousands of players who have already discovered the exciting world of football espionage! Download now and have a great time with friends! Play the best spy game about football, detective game for groups, logic game guess who. This is a free party game, friends game and family game. ⚽🎮
+
+===============================================================================
+БЕЛАРУСКАЯ МОВА (be)
+[Используется для: Google Play - Беларусь (белорусская локализация)]
+===============================================================================
+
+--- КАРОТКАЕ АПІСАННЕ (да 80 сімвалаў) ---
+Футбольная гульня «Шпіён» для кампаніі. Адгадай, хто шпіён!
+
+--- ПОЎНАЕ АПІСАННЕ ---
+🎮 ФУТБОЛЬНЫ ШПІЁН — Захоплівая партыйная гульня для кампаніі!
+
+Апусьціцеся ў атмасфэру футбольнага закулісся, дзе кожны раўнд — гэта напружанне, падазрэнні і дэтэктыўная праца. Адкрыйце для сябе ідэальную гульню для вечарынак, сямейных пасяджэнняў і сяброўскіх сустрэч! Гэта лепшая гульня шпіён для кампаніі, дэтэктыўная гульня пра футбол, лагічная гульня адгадай хто шпіён, партыйная гульня і гульня для сяброў.
+
+🎯 ЯК ГУЛЯЦЬ:
+У гульні ўдзельнічае некалькі гульцоў. Адзін з іх атрымлівае ролю шпіёна, які не ведае сакрэтнага слова (імя футбаліста ці трэнера). Іншыя гульцы ведаюць гэта слова і павінны вылічыць шпіёна, задаючы пытанні і абмяркоўваючы адзін аднаго. Шпіён жа спрабуе адгадаць сакрэтнае слова, не выдаўшы сябе.
+
+⚽ АСОБЛІВАСЦІ:
+• Больш за 400 вядомых футбалістаў з розных ліг — гульня з футбалістамі, футбольная віктарына, гульня пра футбол
+• Больш за 20 тап-трэнераў сусветнага футбола — гульня з трэнерамі, футбольныя трэнеры
+• Падтрымка 23 моў: беларуская, руская, англійская, французская, нямецкая, кітайская, іспанская, партугальская, хіндзі, арабская, бенгальская, урду, інданезійская, японская, суахілі, карэйская, італьянская, турэцкая, в'етнамская, нідэрландская, польская, украінская, тайская
+• Магчымасць ствараць свае наборы для гульні — кастомныя наборы, персаналізацыя гульні
+• Рэдагаванне базавых набораў — дадайце або выдаліце любых гульцоў
+• Гнуткія налады гульні: колькасць гульцоў, шпіёнаў і час раўнда — налады гульні, гнуткія правілы
+• Зручны таймер для адсочвання часу — таймер для гульні, кантроль часу
+• Прыгожы і інтуітыўны інтэрфейс — сучасны дызайн, зручны інтэрфейс
+
+🎨 НАЛАДЫ ГУЛЬНІ:
+• Выберыце колькасць гульцоў (ад 3 і больш)
+• Наладзьце колькасць шпіёнаў
+• Усталюйце час раўнда або гуляйце без абмежаванняў
+• Выберыце набор: гульцы, трэнеры або абодва варыянты
+• Стварыце свой уласны набор для унікальнай гульні
+
+🎭 МЕХАНІКА ГУЛЬНІ:
+У пачатку кожнага раўнда кожны гулец бачыць на сваім экране картку з імем футбаліста ці трэнера. Усе гульцы бачаць адно і тое ж імя... акрамя шпіёна! Шпіён бачыць слова "ШПІЁН" замест імя.
+
+Цяпер пачынаецца абмеркаванне. Гульцы задаюць адзін аднаму пытанні пра сакрэтнае слова, спрабуючы зразумець, хто з іх шпіён. Шпіён, у сваю чаргу, павінен уважліва слухаць адказы і спрабаваць адгадаць сакрэтнае слова, пры гэтым не выдаўшы сябе.
+
+Па заканчэнні часу або пасля агульнага абмеркавання гульцы галасуюць за таго, каго лічаць шпіёнам. Калі шпіён адгадаў слова або застаўся незаўважаным — ён перамагае! Калі шпіёна выкрылі, перамагаюць звычайныя гульцы.
+
+🏆 ІДЭАЛЬНА ДЛЯ:
+• Вечарынак і сяброўскіх сустрэч — гульня для вечарынкі, вечарынка з сябрамі, гульня на вечарынку
+• Сямейных гульнявых вечароў — сямейная гульня, гульня для сям'і, гульня з дзецьмі
+• Ажыўлення любой кампаніі — гульня для кампаніі, гульня ў кампаніі, забаўленне для кампаніі
+• Развіцця лагічнага мыслення і акцёрскіх навыкаў — лагічная гульня, гульня на логіку, акцёрская гульня, гульня на акцёрства
+
+🌟 АБНОЎЛЕННІ І ПАЛЕПШАННІ:
+Мы пастаянна працуем над паляпшэннем гульні і дадаём новых футбалістаў. Усе абнаўленні кантэнту загружаюцца аўтаматычна!
+
+📱 ПАВІННАСЦІ:
+• Працуе на ўсіх сучасных Android і iOS прыладах
+• Не патрабуе падключэння да інтэрнэту для гульні (акрамя загрузкі абнаўленняў кантэнту)
+• Падтрымка 23 моў
+
+Далучайцеся да тысячаў гульцоў, якія ўжо адкрылі для сябе захоплівальны свет футбольнага шпіянажу! Спампоўвайце прама зараз і весела правядзіце час з сябрамі! Гуляйце ў лепшую гульню шпіён пра футбол, дэтэктыўную гульню для кампаніі, лагічную гульню адгадай хто. Гэта бясплатная гульня для вечарынак, гульня для сяброў і гульня для сям'і. ⚽🎮
+
+===============================================================================
+FRANÇAIS (fr)
+[Используется для: Google Play - Франция, Бельгия, Швейцария, Канада (французская часть) и др. франкоязычные страны]
+===============================================================================
+
+--- DESCRIPTION COURTE (jusqu'à 80 caractères) ---
+Jeu de fête Espion du Football ! Devinez qui est l'espion ! ⚽
+
+--- DESCRIPTION COMPLÈTE ---
+🎮 ESPION DU FOOTBALL — Jeu de fête passionnant pour les amis !
+
+Plongez dans le monde de l'intrigue footballistique où chaque round est plein de tension, de suspicion et de travail de détective. Découvrez le jeu parfait pour les fêtes, les réunions familiales et les rencontres amicales ! C'est le meilleur jeu d'espion pour groupes, jeu de détective sur le football, jeu de logique devinez qui est l'espion, jeu de fête et jeu entre amis.
+
+🎯 COMMENT JOUER :
+Plusieurs joueurs participent au jeu. L'un d'eux reçoit le rôle d'espion qui ne connaît pas le mot secret (nom d'un footballeur ou d'un entraîneur). Les autres joueurs connaissent ce mot et doivent trouver l'espion en posant des questions et en discutant. L'espion, quant à lui, essaie de deviner le mot secret sans se révéler.
+
+⚽ CARACTÉRISTIQUES :
+• Plus de 400 footballeurs célèbres de différentes ligues — jeu avec footballeurs, quiz football, jeu sur le football
+• Plus de 20 meilleurs entraîneurs du football mondial — jeu avec entraîneurs, entraîneurs de football
+• Support de 27 langues
+• Créez vos propres ensembles personnalisés pour jouer — ensembles personnalisés, personnalisation du jeu
+• Modifiez les ensembles de base — ajoutez ou supprimez n'importe quels joueurs
+• Paramètres de jeu flexibles : nombre de joueurs, espions et temps de round — paramètres de jeu, règles flexibles
+• Minuterie pratique pour suivre le temps — minuteur de jeu, contrôle du temps
+• Interface belle et intuitive — design moderne, interface conviviale
+
+🎨 CONFIGURATION DU JEU :
+• Choisissez le nombre de joueurs (3 ou plus)
+• Définissez le nombre d'espions
+• Définissez le temps de round ou jouez sans limite de temps
+• Choisissez un ensemble : joueurs, entraîneurs ou les deux
+• Créez votre propre ensemble personnalisé pour un jeu unique
+
+🎭 MÉCANIQUE DU JEU :
+Au début de chaque round, chaque joueur voit une carte sur son écran avec le nom d'un footballeur ou d'un entraîneur. Tous les joueurs voient le même nom... sauf l'espion ! L'espion voit le mot "ESPION" au lieu du nom.
+
+Maintenant, la discussion commence. Les joueurs se posent des questions sur le mot secret, essayant de découvrir qui parmi eux est l'espion. L'espion, quant à lui, doit écouter attentivement les réponses et essayer de deviner le mot secret sans se révéler.
+
+Après l'expiration du temps ou après une discussion générale, les joueurs votent pour celui qu'ils pensent être l'espion. Si l'espion a deviné le mot ou est resté inaperçu — il gagne ! Si l'espion a été exposé, les joueurs réguliers gagnent.
+
+🏆 PARFAIT POUR :
+• Fêtes et rassemblements amicaux — jeu de fête, fête entre amis, divertissement de fête
+• Soirées de jeux en famille — jeu familial, jeu pour famille, jeu avec enfants
+• Animer n'importe quelle compagnie — jeu de groupe, jeu pour groupe, divertissement de groupe
+• Développer la pensée logique et les compétences d'acteur — jeu de logique, puzzle logique, jeu d'acteur, jeu de rôle
+
+🌟 MISES À JOUR ET AMÉLIORATIONS :
+Nous travaillons constamment à améliorer le jeu et à ajouter de nouveaux footballeurs. Toutes les mises à jour de contenu sont téléchargées automatiquement !
+
+📱 EXIGENCES :
+• Fonctionne sur tous les appareils Android et iOS modernes
+• Aucune connexion Internet requise pour jouer (sauf pour télécharger les mises à jour de contenu)
+• Support de 27 langues
+
+Rejoignez des milliers de joueurs qui ont déjà découvert le monde passionnant de l'espionnage footballistique ! Téléchargez maintenant et passez un bon moment avec vos amis ! Jouez au meilleur jeu d'espion sur le football, jeu de détective pour groupes, jeu de logique devinez qui. C'est un jeu de fête gratuit, jeu entre amis et jeu familial. ⚽🎮
+
+===============================================================================
+DEUTSCH (de)
+[Используется для: Google Play - Германия, Австрия, Швейцария (немецкая часть) и др. немецкоязычные страны]
+===============================================================================
+
+--- KURZE BESCHREIBUNG (bis zu 80 Zeichen) ---
+Fußball-Spion Partyspiel! Errate, wer der Spion ist! ⚽
+
+--- VOLLSTÄNDIGE BESCHREIBUNG ---
+🎮 FUSSBALL-SPION — Aufregendes Partyspiel für Freunde!
+
+Tauchen Sie ein in die Welt der Fußballintrigen, wo jede Runde voller Spannung, Verdacht und Detektivarbeit ist. Entdecken Sie das perfekte Spiel für Partys, Familientreffen und freundschaftliche Zusammenkünfte! Dies ist das beste Spionagespiel für Gruppen, Detektivspiel über Fußball, Logikspiel erraten Sie wer der Spion ist, Partyspiel und Freundesspiel.
+
+🎯 WIE MAN SPIELT:
+Mehrere Spieler nehmen am Spiel teil. Einer von ihnen erhält die Rolle eines Spions, der das geheime Wort (Name eines Fußballspielers oder Trainers) nicht kennt. Die anderen Spieler kennen dieses Wort und müssen den Spion finden, indem sie Fragen stellen und sich gegenseitig diskutieren. Der Spion versucht wiederum, das geheime Wort zu erraten, ohne sich zu verraten.
+
+⚽ FUNKTIONEN:
+• Über 400 berühmte Fußballspieler aus verschiedenen Ligen — Spiel mit Fußballspielern, Fußball-Quiz, Fußballspiel
+• Über 20 Top-Trainer des Weltfußballs — Spiel mit Trainern, Fußballtrainer
+• Unterstützung für 27 Sprachen
+• Erstellen Sie Ihre eigenen benutzerdefinierten Sets zum Spielen — benutzerdefinierte Sets, Spielpersonalisierung
+• Bearbeiten Sie Basissets — fügen Sie Spieler hinzu oder entfernen Sie sie
+• Flexible Spieleinstellungen: Anzahl der Spieler, Spione und Rundzeit — Spieleinstellungen, flexible Regeln
+• Praktischer Timer zur Zeiterfassung — Spieltimer, Zeitkontrolle
+• Schöne und intuitive Benutzeroberfläche — modernes Design, benutzerfreundliche Oberfläche
+
+🎨 SPIELKONFIGURATION:
+• Wählen Sie die Anzahl der Spieler (3 oder mehr)
+• Legen Sie die Anzahl der Spione fest
+• Legen Sie die Rundzeit fest oder spielen Sie ohne Zeitlimit
+• Wählen Sie ein Set: Spieler, Trainer oder beides
+• Erstellen Sie Ihr eigenes benutzerdefiniertes Set für ein einzigartiges Spiel
+
+🎭 SPIELMECHANIK:
+Zu Beginn jeder Runde sieht jeder Spieler eine Karte auf seinem Bildschirm mit dem Namen eines Fußballspielers oder Trainers. Alle Spieler sehen denselben Namen... außer dem Spion! Der Spion sieht das Wort "SPION" anstelle des Namens.
+
+Jetzt beginnt die Diskussion. Die Spieler stellen sich Fragen über das geheime Wort und versuchen herauszufinden, wer unter ihnen der Spion ist. Der Spion muss wiederum die Antworten genau anhören und versuchen, das geheime Wort zu erraten, ohne sich zu verraten.
+
+Nach Ablauf der Zeit oder nach einer allgemeinen Diskussion stimmen die Spieler für denjenigen ab, den sie für den Spion halten. Wenn der Spion das Wort erraten hat oder unbemerkt geblieben ist — gewinnt er! Wenn der Spion entlarvt wurde, gewinnen die normalen Spieler.
+
+🏆 PERFEKT FÜR:
+• Partys und freundschaftliche Zusammenkünfte — Partyspiel, Party mit Freunden, Partyunterhaltung
+• Familienspielabende — Familienspiel, Spiel für Familie, Spiel mit Kindern
+• Belebung jeder Gesellschaft — Gruppenspiel, Spiel für Gruppe, Gruppenunterhaltung
+• Entwicklung des logischen Denkens und der Schauspielfähigkeiten — Logikspiel, Logikrätsel, Schauspielspiel, Rollenspiel
+
+🌟 UPDATES UND VERBESSERUNGEN:
+Wir arbeiten ständig an der Verbesserung des Spiels und fügen neue Fußballspieler hinzu. Alle Inhaltsupdates werden automatisch heruntergeladen!
+
+📱 ANFORDERUNGEN:
+• Funktioniert auf allen modernen Android- und iOS-Geräten
+• Keine Internetverbindung zum Spielen erforderlich (außer zum Herunterladen von Inhaltsupdates)
+• Unterstützung für 27 Sprachen
+
+Schließen Sie sich Tausenden von Spielern an, die bereits die aufregende Welt des Fußballspionages entdeckt haben! Laden Sie jetzt herunter und haben Sie eine großartige Zeit mit Freunden! Spielen Sie das beste Spionagespiel über Fußball, Detektivspiel für Gruppen, Logikspiel erraten Sie wer. Dies ist ein kostenloses Partyspiel, Freundesspiel und Familienspiel. ⚽🎮
+
+===============================================================================
+中文 (简体) (zh)
+[Используется для: Google Play - Китай, Тайвань, Сингапур и др. китайскоязычные страны]
+===============================================================================
+
+--- 简短描述 (最多80个字符) ---
+足球间谍派对游戏！猜猜谁是间谍！⚽
+
+--- 完整描述 ---
+🎮 足球间谍 — 激动人心的朋友派对游戏！
+
+沉浸在足球阴谋的世界中，每一轮都充满紧张、怀疑和侦探工作。发现完美的派对、家庭聚会和友好聚会的游戏！这是最好的间谍游戏，足球侦探游戏，逻辑游戏猜谁是间谍，派对游戏和朋友游戏。
+
+🎯 如何游戏：
+多名玩家参与游戏。其中一人扮演间谍，不知道秘密词（足球运动员或教练的名字）。其他玩家知道这个词，必须通过提问和互相讨论来找出间谍。间谍则试图猜测秘密词，而不暴露自己。
+
+⚽ 特色：
+• 来自不同联赛的400多名著名足球运动员 — 足球运动员游戏，足球问答，足球游戏
+• 20多名世界顶级教练 — 教练游戏，足球教练
+• 支持23种语言
+• 创建您自己的自定义游戏集 — 自定义集，游戏个性化
+• 编辑基础集 — 添加或删除任何玩家
+• 灵活的游戏设置：玩家数量、间谍数量和回合时间 — 游戏设置，灵活规则
+• 方便的计时器跟踪时间 — 游戏计时器，时间控制
+• 美观直观的界面 — 现代设计，用户友好界面
+
+🎨 游戏设置：
+• 选择玩家数量（3人或更多）
+• 设置间谍数量
+• 设置回合时间或无限时游戏
+• 选择一个集：玩家、教练或两者
+• 创建您自己的自定义集以进行独特游戏
+
+🎭 游戏机制：
+每轮开始时，每个玩家在屏幕上看到一张带有足球运动员或教练名字的卡片。所有玩家看到相同的名字...除了间谍！间谍看到"间谍"这个词而不是名字。
+
+现在讨论开始。玩家互相询问关于秘密词的问题，试图找出他们中的间谍。间谍则必须仔细听取答案并试图猜测秘密词，同时不暴露自己。
+
+时间结束后或经过一般讨论后，玩家投票选出他们认为的间谍。如果间谍猜对了词或未被发现 — 他们获胜！如果间谍被暴露，普通玩家获胜。
+
+🏆 完美适合：
+• 派对和友好聚会 — 派对游戏，朋友派对，派对娱乐
+• 家庭游戏之夜 — 家庭游戏，家庭游戏，儿童游戏
+• 活跃任何聚会 — 团体游戏，团体游戏，团体娱乐
+• 发展逻辑思维和表演技巧 — 逻辑游戏，逻辑谜题，表演游戏，角色扮演游戏
+
+🌟 更新和改进：
+我们不断改进游戏并添加新的足球运动员。所有内容更新都会自动下载！
+
+📱 要求：
+• 适用于所有现代Android和iOS设备
+• 游戏无需互联网连接（下载内容更新除外）
+• 支持23种语言
+
+加入已经发现激动人心的足球间谍世界的数千名玩家！立即下载，与朋友共度美好时光！玩最好的足球间谍游戏，团体侦探游戏，逻辑游戏猜谁。这是免费派对游戏，朋友游戏和家庭游戏。⚽🎮
+
+===============================================================================
+ESPAÑOL (es)
+[Используется для: Google Play - Испания, Мексика, Аргентина, Колумбия и др. испаноязычные страны]
+===============================================================================
+
+--- DESCRIPCIÓN CORTA (hasta 80 caracteres) ---
+¡Juego de fiesta Espía del Fútbol! ¡Adivina quién es el espía! ⚽
+
+--- DESCRIPCIÓN COMPLETA ---
+🎮 ESPÍA DEL FÚTBOL — ¡Juego de fiesta emocionante para amigos!
+
+¡Sumérgete en el mundo de la intriga futbolística donde cada ronda está llena de tensión, sospecha y trabajo detectivesco! ¡Descubre el juego perfecto para fiestas, reuniones familiares y encuentros amistosos! Este es el mejor juego de espías para grupos, juego de detectives sobre fútbol, juego de lógica adivina quién es el espía, juego de fiesta y juego para amigos.
+
+🎯 CÓMO JUGAR:
+Varios jugadores participan en el juego. Uno de ellos recibe el papel de espía que no conoce la palabra secreta (nombre de un futbolista o entrenador). Los otros jugadores conocen esta palabra y deben encontrar al espía haciendo preguntas y discutiendo entre ellos. El espía, a su vez, intenta adivinar la palabra secreta sin revelarse.
+
+⚽ CARACTERÍSTICAS:
+• Más de 400 futbolistas famosos de diferentes ligas — juego con futbolistas, quiz de fútbol, juego de fútbol
+• Más de 20 mejores entrenadores del fútbol mundial — juego con entrenadores, entrenadores de fútbol
+• Soporte para 27 idiomas
+• Crea tus propios conjuntos personalizados para jugar — conjuntos personalizados, personalización del juego
+• Edita conjuntos base — agrega o elimina cualquier jugador
+• Configuración de juego flexible: número de jugadores, espías y tiempo de ronda — configuración del juego, reglas flexibles
+• Temporizador conveniente para rastrear el tiempo — temporizador del juego, control del tiempo
+• Interfaz hermosa e intuitiva — diseño moderno, interfaz fácil de usar
+
+🎨 CONFIGURACIÓN DEL JUEGO:
+• Elige el número de jugadores (3 o más)
+• Establece el número de espías
+• Establece el tiempo de ronda o juega sin límite de tiempo
+• Elige un conjunto: jugadores, entrenadores o ambos
+• Crea tu propio conjunto personalizado para un juego único
+
+🎭 MECÁNICA DEL JUEGO:
+Al inicio de cada ronda, cada jugador ve una tarjeta en su pantalla con el nombre de un futbolista o entrenador. Todos los jugadores ven el mismo nombre... ¡excepto el espía! El espía ve la palabra "ESPÍA" en lugar del nombre.
+
+Ahora comienza la discusión. Los jugadores se hacen preguntas sobre la palabra secreta, tratando de descubrir quién entre ellos es el espía. El espía, a su vez, debe escuchar atentamente las respuestas e intentar adivinar la palabra secreta sin revelarse.
+
+Después de que se acabe el tiempo o después de una discusión general, los jugadores votan por quién creen que es el espía. Si el espía adivinó la palabra o permaneció desapercibido — ¡gana! Si el espía fue expuesto, los jugadores regulares ganan.
+
+🏆 PERFECTO PARA:
+• Fiestas y reuniones amistosas — juego de fiesta, fiesta con amigos, entretenimiento de fiesta
+• Noches de juegos familiares — juego familiar, juego para familia, juego con niños
+• Animar cualquier compañía — juego de grupo, juego para grupo, entretenimiento de grupo
+• Desarrollar el pensamiento lógico y las habilidades de actuación — juego de lógica, rompecabezas lógico, juego de actuación, juego de roles
+
+🌟 ACTUALIZACIONES Y MEJORAS:
+¡Trabajamos constantemente en mejorar el juego y agregar nuevos futbolistas! ¡Todas las actualizaciones de contenido se descargan automáticamente!
+
+📱 REQUISITOS:
+• Funciona en todos los dispositivos Android e iOS modernos
+• No se requiere conexión a Internet para jugar (excepto para descargar actualizaciones de contenido)
+• Soporte para 27 idiomas
+
+¡Únete a miles de jugadores que ya han descubierto el emocionante mundo del espionaje futbolístico! ¡Descarga ahora y pasa un gran momento con amigos! Juega al mejor juego de espías sobre fútbol, juego de detectives para grupos, juego de lógica adivina quién. Este es un juego de fiesta gratis, juego para amigos y juego familiar. ⚽🎮
+
+===============================================================================
+PORTUGUÊS (pt)
+[Используется для: Google Play - Бразилия, Португалия и др. португалоязычные страны]
+===============================================================================
+
+--- DESCRIÇÃO CURTA (até 80 caracteres) ---
+Jogo de festa Espião do Futebol! Adivinhe quem é o espião! ⚽
+
+--- DESCRIÇÃO COMPLETA ---
+🎮 ESPIÃO DO FUTEBOL — Jogo de festa emocionante para amigos!
+
+Mergulhe no mundo da intriga do futebol, onde cada rodada está cheia de tensão, suspeita e trabalho de detetive. Descubra o jogo perfeito para festas, reuniões familiares e encontros amigáveis! Este é o melhor jogo de espião para grupos, jogo de detetive sobre futebol, jogo de lógica adivinhe quem é o espião, jogo de festa e jogo para amigos.
+
+🎯 COMO JOGAR:
+Vários jogadores participam do jogo. Um deles recebe o papel de espião que não conhece a palavra secreta (nome de um jogador de futebol ou treinador). Os outros jogadores conhecem esta palavra e devem encontrar o espião fazendo perguntas e discutindo uns com os outros. O espião, por sua vez, tenta adivinhar a palavra secreta sem se revelar.
+
+⚽ RECURSOS:
+• Mais de 400 jogadores de futebol famosos de diferentes ligas — jogo com jogadores, quiz de futebol, jogo de futebol
+• Mais de 20 melhores treinadores do futebol mundial — jogo com treinadores, treinadores de futebol
+• Suporte para 27 idiomas
+• Crie seus próprios conjuntos personalizados para jogar — conjuntos personalizados, personalização do jogo
+• Edite conjuntos base — adicione ou remova qualquer jogador
+• Configurações de jogo flexíveis: número de jogadores, espiões e tempo da rodada — configurações do jogo, regras flexíveis
+• Cronômetro conveniente para rastrear o tempo — cronômetro do jogo, controle do tempo
+• Interface bonita e intuitiva — design moderno, interface amigável
+
+🎨 CONFIGURAÇÃO DO JOGO:
+• Escolha o número de jogadores (3 ou mais)
+• Defina o número de espiões
+• Defina o tempo da rodada ou jogue sem limite de tempo
+• Escolha um conjunto: jogadores, treinadores ou ambos
+• Crie seu próprio conjunto personalizado para um jogo único
+
+🎭 MECÂNICA DO JOGO:
+No início de cada rodada, cada jogador vê um cartão em sua tela com o nome de um jogador de futebol ou treinador. Todos os jogadores veem o mesmo nome... exceto o espião! O espião vê a palavra "ESPIAO" em vez do nome.
+
+Agora a discussão começa. Os jogadores fazem perguntas uns aos outros sobre a palavra secreta, tentando descobrir quem entre eles é o espião. O espião, por sua vez, deve ouvir cuidadosamente as respostas e tentar adivinhar a palavra secreta sem se revelar.
+
+Depois que o tempo acabar ou após uma discussão geral, os jogadores votam em quem acham que é o espião. Se o espião adivinhou a palavra ou permaneceu despercebido — ele vence! Se o espião foi exposto, os jogadores regulares vencem.
+
+🏆 PERFEITO PARA:
+• Festas e reuniões amigáveis — jogo de festa, festa com amigos, entretenimento de festa
+• Noites de jogos em família — jogo familiar, jogo para família, jogo com crianças
+• Animar qualquer companhia — jogo de grupo, jogo para grupo, entretenimento de grupo
+• Desenvolver pensamento lógico e habilidades de atuação — jogo de lógica, quebra-cabeça lógico, jogo de atuação, jogo de papéis
+
+🌟 ATUALIZAÇÕES E MELHORIAS:
+Trabalhamos constantemente para melhorar o jogo e adicionar novos jogadores de futebol. Todas as atualizações de conteúdo são baixadas automaticamente!
+
+📱 REQUISITOS:
+• Funciona em todos os dispositivos Android e iOS modernos
+• Não requer conexão com a Internet para jogar (exceto para baixar atualizações de conteúdo)
+• Suporte para 27 idiomas
+
+Junte-se a milhares de jogadores que já descobriram o emocionante mundo do espionagem do futebol! Baixe agora e divirta-se com os amigos! Jogue o melhor jogo de espião sobre futebol, jogo de detetive para grupos, jogo de lógica adivinhe quem. Este é um jogo de festa grátis, jogo para amigos e jogo familiar. ⚽🎮
+
+===============================================================================
+हिंदी (hi)
+[Используется для: Google Play - Индия (хинди-говорящие регионы)]
+===============================================================================
+
+--- संक्षिप्त विवरण (80 वर्ण तक) ---
+फुटबॉल स्पाई पार्टी गेम! अनुमान लगाएं कि जासूस कौन है! ⚽
+
+--- पूर्ण विवरण ---
+🎮 फुटबॉल स्पाई — दोस्तों के लिए रोमांचक पार्टी गेम!
+
+फुटबॉल साजिश की दुनिया में गोता लगाएं जहां हर राउंड तनाव, संदेह और जासूसी कार्य से भरा है। पार्टियों, पारिवारिक समारोहों और मैत्रीपूर्ण मिलन के लिए सही गेम खोजें! यह समूहों के लिए सबसे अच्छा जासूस गेम, फुटबॉल के बारे में जासूसी गेम, तर्क गेम अनुमान लगाएं कि जासूस कौन है, पार्टी गेम और दोस्तों का गेम है।
+
+🎯 कैसे खेलें:
+खेल में कई खिलाड़ी भाग लेते हैं। उनमें से एक को जासूस की भूमिका मिलती है जो गुप्त शब्द (फुटबॉलर या कोच का नाम) नहीं जानता। अन्य खिलाड़ी इस शब्द को जानते हैं और प्रश्न पूछकर और एक-दूसरे पर चर्चा करके जासूस को खोजना चाहिए। जासूस, बदले में, खुद को प्रकट किए बिना गुप्त शब्द का अनुमान लगाने की कोशिश करता है।
+
+⚽ विशेषताएं:
+• विभिन्न लीगों के 400 से अधिक प्रसिद्ध फुटबॉलर — फुटबॉलरों के साथ गेम, फुटबॉल क्विज, फुटबॉल गेम
+• विश्व फुटबॉल के 20 से अधिक शीर्ष कोच — कोचों के साथ गेम, फुटबॉल कोच
+• 23 भाषाओं का समर्थन
+• खेलने के लिए अपने स्वयं के कस्टम सेट बनाएं — कस्टम सेट, गेम व्यक्तिगतकरण
+• बेस सेट संपादित करें — किसी भी खिलाड़ी को जोड़ें या हटाएं
+• लचीली गेम सेटिंग्स: खिलाड़ियों की संख्या, जासूस और राउंड समय — गेम सेटिंग्स, लचीले नियम
+• समय ट्रैक करने के लिए सुविधाजनक टाइमर — गेम टाइमर, समय नियंत्रण
+• सुंदर और सहज इंटरफेस — आधुनिक डिज़ाइन, उपयोगकर्ता-अनुकूल इंटरफेस
+
+🎨 गेम सेटअप:
+• खिलाड़ियों की संख्या चुनें (3 या अधिक)
+• जासूसों की संख्या निर्धारित करें
+• राउंड समय निर्धारित करें या समय सीमा के बिना खेलें
+• एक सेट चुनें: खिलाड़ी, कोच या दोनों
+• अद्वितीय गेम के लिए अपना स्वयं का कस्टम सेट बनाएं
+
+🎭 गेम मैकेनिक्स:
+प्रत्येक राउंड की शुरुआत में, प्रत्येक खिलाड़ी अपनी स्क्रीन पर एक फुटबॉलर या कोच के नाम के साथ एक कार्ड देखता है। सभी खिलाड़ी एक ही नाम देखते हैं... जासूस को छोड़कर! जासूस नाम के बजाय "स्पाई" शब्द देखता है।
+
+अब चर्चा शुरू होती है। खिलाड़ी गुप्त शब्द के बारे में एक-दूसरे से प्रश्न पूछते हैं, यह पता लगाने की कोशिश करते हैं कि उनमें से कौन जासूस है। जासूस, बदले में, उत्तरों को ध्यान से सुनना चाहिए और खुद को प्रकट किए बिना गुप्त शब्द का अनुमान लगाने की कोशिश करनी चाहिए।
+
+समय समाप्त होने के बाद या सामान्य चर्चा के बाद, खिलाड़ी उस व्यक्ति के लिए मतदान करते हैं जिसे वे जासूस मानते हैं। यदि जासूस ने शब्द का अनुमान लगाया या अनदेखा रहा — वह जीतता है! यदि जासूस को उजागर किया गया, तो नियमित खिलाड़ी जीतते हैं।
+
+🏆 के लिए आदर्श:
+• पार्टियां और मैत्रीपूर्ण समारोह — पार्टी गेम, दोस्तों के साथ पार्टी, पार्टी मनोरंजन
+• पारिवारिक गेम रातें — पारिवारिक गेम, परिवार के लिए गेम, बच्चों के साथ गेम
+• किसी भी कंपनी को जीवंत बनाना — समूह गेम, समूह के लिए गेम, समूह मनोरंजन
+• तार्किक सोच और अभिनय कौशल विकसित करना — तर्क गेम, तर्क पहेली, अभिनय गेम, भूमिका-निभाने वाला गेम
+
+🌟 अपडेट और सुधार:
+हम लगातार गेम में सुधार करने और नए फुटबॉलर जोड़ने पर काम कर रहे हैं। सभी सामग्री अपडेट स्वचालित रूप से डाउनलोड होते हैं!
+
+📱 आवश्यकताएं:
+• सभी आधुनिक Android और iOS उपकरणों पर काम करता है
+• खेलने के लिए इंटरनेट कनेक्शन की आवश्यकता नहीं (सामग्री अपडेट डाउनलोड करने के अलावा)
+• 23 भाषाओं का समर्थन
+
+हजारों खिलाड़ियों में शामिल हों जिन्होंने पहले से ही फुटबॉल जासूसी की रोमांचक दुनिया की खोज की है! अभी डाउनलोड करें और दोस्तों के साथ शानदार समय बिताएं! फुटबॉल के बारे में सबसे अच्छा जासूस गेम, समूहों के लिए जासूसी गेम, तर्क गेम अनुमान लगाएं कौन खेलें। यह एक मुफ्त पार्टी गेम, दोस्तों का गेम और पारिवारिक गेम है। ⚽🎮
+
+===============================================================================
+العربية (ar)
+[Используется для: Google Play - Саудовская Аравия, ОАЭ, Египет и др. арабоязычные страны]
+===============================================================================
+
+--- الوصف القصير (حتى 80 حرفًا) ---
+لعبة حفلة جاسوس كرة القدم! خمن من هو الجاسوس! ⚽
+
+--- الوصف الكامل ---
+🎮 جاسوس كرة القدم — لعبة حفلة مثيرة للأصدقاء!
+
+انغمس في عالم مؤامرات كرة القدم حيث كل جولة مليئة بالتوتر والاشتباه وعمل التحقيق. اكتشف اللعبة المثالية للحفلات والتجمعات العائلية واللقاءات الودية! هذه أفضل لعبة تجسس للمجموعات، لعبة تحقيق عن كرة القدم، لعبة منطق خمن من هو الجاسوس، لعبة حفلة ولعبة للأصدقاء.
+
+🎯 كيف تلعب:
+يشارك عدة لاعبين في اللعبة. يحصل أحدهم على دور الجاسوس الذي لا يعرف الكلمة السرية (اسم لاعب كرة قدم أو مدرب). يعرف اللاعبون الآخرون هذه الكلمة ويجب عليهم العثور على الجاسوس من خلال طرح الأسئلة والمناقشة مع بعضهم البعض. يحاول الجاسوس بدوره تخمين الكلمة السرية دون الكشف عن نفسه.
+
+⚽ الميزات:
+• أكثر من 400 لاعب كرة قدم مشهور من دوريات مختلفة — لعبة مع لاعبي كرة القدم، اختبار كرة القدم، لعبة كرة القدم
+• أكثر من 20 مدربًا من الطراز العالمي في كرة القدم — لعبة مع المدربين، مدربو كرة القدم
+• دعم 27 لغة
+• أنشئ مجموعاتك المخصصة للعب — مجموعات مخصصة، تخصيص اللعبة
+• تحرير المجموعات الأساسية — أضف أو احذف أي لاعبين
+• إعدادات لعبة مرنة: عدد اللاعبين والجواسيس ووقت الجولة — إعدادات اللعبة، قواعد مرنة
+• مؤقت مناسب لتتبع الوقت — مؤقت اللعبة، التحكم في الوقت
+• واجهة جميلة وبديهية — تصميم حديث، واجهة سهلة الاستخدام
+
+🎨 إعداد اللعبة:
+• اختر عدد اللاعبين (3 أو أكثر)
+• حدد عدد الجواسيس
+• حدد وقت الجولة أو العب بدون حدود زمنية
+• اختر مجموعة: لاعبون أو مدربون أو كليهما
+• أنشئ مجموعتك المخصصة الخاصة للعبة فريدة
+
+🎭 ميكانيكا اللعبة:
+في بداية كل جولة، يرى كل لاعب بطاقة على شاشته باسم لاعب كرة قدم أو مدرب. يرى جميع اللاعبين نفس الاسم... باستثناء الجاسوس! يرى الجاسوس كلمة "جاسوس" بدلاً من الاسم.
+
+الآن تبدأ المناقشة. يسأل اللاعبون بعضهم البعض أسئلة حول الكلمة السرية، محاولين اكتشاف من بينهم الجاسوس. يجب على الجاسوس بدوره أن يستمع بعناية للإجابات ويحاول تخمين الكلمة السرية دون الكشف عن نفسه.
+
+بعد انتهاء الوقت أو بعد المناقشة العامة، يصوت اللاعبون لمن يعتقدون أنه الجاسوس. إذا خمن الجاسوس الكلمة أو بقي غير ملحوظ — يفوز! إذا تم كشف الجاسوس، يفوز اللاعبون العاديون.
+
+🏆 مثالي لـ:
+• الحفلات والتجمعات الودية — لعبة حفلة، حفلة مع الأصدقاء، ترفيه الحفلة
+• أمسيات الألعاب العائلية — لعبة عائلية، لعبة للعائلة، لعبة مع الأطفال
+• إحياء أي شركة — لعبة جماعية، لعبة للمجموعة، ترفيه جماعي
+• تطوير التفكير المنطقي ومهارات التمثيل — لعبة منطق، لغز منطقي، لعبة تمثيل، لعبة أدوار
+
+🌟 التحديثات والتحسينات:
+نعمل باستمرار على تحسين اللعبة وإضافة لاعبين كرة قدم جدد. يتم تنزيل جميع تحديثات المحتوى تلقائيًا!
+
+📱 المتطلبات:
+• يعمل على جميع أجهزة Android و iOS الحديثة
+• لا يتطلب اتصالاً بالإنترنت للعب (باستثناء تنزيل تحديثات المحتوى)
+• دعم 27 لغة
+
+انضم إلى آلاف اللاعبين الذين اكتشفوا بالفعل عالم التجسس المثير لكرة القدم! حمّل الآن واستمتع بوقت رائع مع الأصدقاء! العب أفضل لعبة تجسس عن كرة القدم، لعبة تحقيق للمجموعات، لعبة منطق خمن من. هذه لعبة حفلة مجانية، لعبة للأصدقاء ولعبة عائلية. ⚽🎮
+
+===============================================================================
+AZƏRBAYCAN DİLİ (az)
+[Используется для: Google Play - Азербайджан]
+===============================================================================
+
+--- QISA TƏSVİR (80 simvola qədər) ---
+Futbol Casusu partiya oyunu! Casusun kim olduğunu təxmin edin! ⚽
+
+--- TAM TƏSVİR ---
+🎮 FUTBOL CASUSU — Dostlar üçün həyəcanverici partiya oyunu!
+
+Hər raundun gərginlik, şübhə və detektiv işi ilə dolu olduğu futbol intriqalarının dünyasına daldırın. Partilər, ailə toplantıları və dostluq görüşləri üçün mükəmməl oyunu kəşf edin! Bu qruplar üçün ən yaxşı casus oyunu, futbol haqqında detektiv oyunu, məntiq oyunu kimin casus olduğunu təxmin edin, partiya oyunu və dost oyunu.
+
+🎯 NECƏ OYNAMAQ:
+Oyuna bir neçə oyunçu qatılır. Onlardan biri gizli sözü (futbolçu və ya məşqçinin adı) bilməyən casus rolunu alır. Digər oyunçular bu sözü bilir və suallar verərək və bir-biri ilə müzakirə edərək casusu tapmalıdırlar. Casus isə özünü açıqlamadan gizli sözü təxmin etməyə çalışır.
+
+⚽ XÜSUSİYYƏTLƏR:
+• Müxtəlif liqalardan 400-dən çox məşhur futbolçu — futbolçularla oyun, futbol viktorinası, futbol oyunu
+• Dünya futbolunun 20-dən çox ən yaxşı məşqçisi — məşqçilərlə oyun, futbol məşqçiləri
+• 27 dil dəstəyi
+• Oynamaq üçün öz xüsusi dəstlərinizi yaradın — xüsusi dəstlər, oyun fərdiləşdirməsi
+• Əsas dəstləri redaktə edin — istənilən oyunçunu əlavə edin və ya silin
+• Çevik oyun parametrləri: oyunçu sayı, casuslar və raund vaxtı — oyun parametrləri, çevik qaydalar
+• Vaxtı izləmək üçün rahat taymer — oyun taymeri, vaxt nəzarəti
+• Gözəl və intuitiv interfeys — müasir dizayn, istifadəçi dostu interfeys
+
+🎨 OYUN KONFİQURASIYASI:
+• Oyunçu sayını seçin (3 və ya daha çox)
+• Casus sayını təyin edin
+• Raund vaxtını təyin edin və ya vaxt məhdudiyyəti olmadan oynayın
+• Dəst seçin: oyunçular, məşqçilər və ya hər ikisi
+• Unikal oyun üçün öz xüsusi dəstinizi yaradın
+
+🎭 OYUN MEXANİKASI:
+Hər raundun başlanğıcında hər oyunçu ekranında futbolçu və ya məşqçinin adı ilə kart görür. Bütün oyunçular eyni adı görür... casus istisna olmaqla! Casus ad əvəzinə "CASUS" sözünü görür.
+
+İndi müzakirə başlayır. Oyunçular gizli söz haqqında bir-birinə suallar verir, aralarından hansının casus olduğunu anlamağa çalışırlar. Casus isə cavabları diqqətlə dinləməli və özünü açıqlamadan gizli sözü təxmin etməyə çalışmalıdır.
+
+Vaxt bitdikdən və ya ümumi müzakirədən sonra oyunçular casus olduğunu düşündükləri şəxsə səs verirlər. Əgər casus sözü təxmin etdisə və ya diqqətdən yayındısa — qazanır! Əgər casus açıqlandısa, adi oyunçular qazanır.
+
+🏆 ÜÇÜN MÜKƏMMƏL:
+• Partilər və dostluq toplantıları — partiya oyunu, dostlarla partiya, partiya əyləncəsi
+• Ailə oyun gecələri — ailə oyunu, ailə üçün oyun, uşaqlarla oyun
+• Hər hansı bir şirkəti canlandırmaq — qrup oyunu, qrup üçün oyun, qrup əyləncəsi
+• Məntiqi düşüncə və aktyorluq bacarıqlarını inkişaf etdirmək — məntiq oyunu, məntiq tapmacası, aktyorluq oyunu, rol oyunu
+
+🌟 YENİLƏMƏLƏR VƏ TƏKMİLLƏŞDİRMƏLƏR:
+Biz daim oyunu təkmilləşdirmək və yeni futbolçular əlavə etmək üçün işləyirik. Bütün məzmun yeniləmələri avtomatik yüklənir!
+
+📱 TƏLƏBLƏR:
+• Bütün müasir Android və iOS cihazlarda işləyir
+• Oynamaq üçün internet bağlantısı tələb olunmur (məzmun yeniləmələrini yükləmək istisna olmaqla)
+• 27 dil dəstəyi
+
+Futbol casusluğunun həyəcanverici dünyasını kəşf edən minlərlə oyunçuya qoşulun! İndi yükləyin və dostlarınızla əla vaxt keçirin! Futbol haqqında ən yaxşı casus oyunu, qruplar üçün detektiv oyunu, məntiq oyunu kimin casus olduğunu təxmin edin oynayın. Bu pulsuz partiya oyunu, dost oyunu və ailə oyunudur. ⚽🎮
+
+===============================================================================
+বাংলা (bn)
+[Используется для: Google Play - Бангладеш, Индия (бенгальскоязычные регионы)]
+===============================================================================
+
+--- সংক্ষিপ্ত বিবরণ (৮০ অক্ষরের মধ্যে) ---
+ফুটবল স্পাই পার্টি গেম! অনুমান করুন কে স্পাই! ⚽
+
+--- সম্পূর্ণ বিবরণ ---
+🎮 ফুটবল স্পাই — বন্ধুদের জন্য উত্তেজনাপূর্ণ পার্টি গেম!
+
+ফুটবল চক্রান্তের জগতে ডুব দিন যেখানে প্রতিটি রাউন্ড উত্তেজনা, সন্দেহ এবং গোয়েন্দা কাজে পূর্ণ। পার্টি, পারিবারিক সমাবেশ এবং বন্ধুত্বপূর্ণ মিলনের জন্য নিখুঁত গেম আবিষ্কার করুন! এটি গ্রুপের জন্য সেরা স্পাই গেম, ফুটবল সম্পর্কে গোয়েন্দা গেম, যুক্তি গেম অনুমান করুন কে স্পাই, পার্টি গেম এবং বন্ধুদের গেম।
+
+🎯 কীভাবে খেলবেন:
+খেলায় কয়েকজন খেলোয়াড় অংশগ্রহণ করে। তাদের মধ্যে একজন স্পাইয়ের ভূমিকা পায় যে গোপন শব্দটি (একজন ফুটবলার বা কোচের নাম) জানে না। অন্যান্য খেলোয়াড়রা এই শব্দটি জানে এবং প্রশ্ন জিজ্ঞাসা করে এবং একে অপরের সাথে আলোচনা করে স্পাই খুঁজে বের করতে হবে। স্পাই, তার পালায়, নিজেকে প্রকাশ না করে গোপন শব্দটি অনুমান করার চেষ্টা করে।
+
+⚽ বৈশিষ্ট্য:
+• বিভিন্ন লিগ থেকে ৪০০+ বিখ্যাত ফুটবলার — ফুটবলারদের সাথে গেম, ফুটবল কুইজ, ফুটবল গেম
+• বিশ্ব ফুটবলের ২০+ শীর্ষ কোচ — কোচদের সাথে গেম, ফুটবল কোচ
+• ২৩টি ভাষার সমর্থন
+• খেলার জন্য আপনার নিজস্ব কাস্টম সেট তৈরি করুন — কাস্টম সেট, গেম ব্যক্তিগতকরণ
+• বেস সেট সম্পাদনা করুন — যেকোনো খেলোয়াড় যোগ করুন বা সরান
+• নমনীয় গেম সেটিংস: খেলোয়াড় সংখ্যা, স্পাই এবং রাউন্ড সময় — গেম সেটিংস, নমনীয় নিয়ম
+• সময় ট্র্যাক করার জন্য সুবিধাজনক টাইমার — গেম টাইমার, সময় নিয়ন্ত্রণ
+• সুন্দর এবং স্বজ্ঞাত ইন্টারফেস — আধুনিক ডিজাইন, ব্যবহারকারী-বান্ধব ইন্টারফেস
+
+🎨 গেম সেটআপ:
+• খেলোয়াড় সংখ্যা চয়ন করুন (৩ বা তার বেশি)
+• স্পাই সংখ্যা সেট করুন
+• রাউন্ড সময় সেট করুন বা সময় সীমা ছাড়াই খেলুন
+• একটি সেট চয়ন করুন: খেলোয়াড়, কোচ বা উভয়
+• অনন্য গেমের জন্য আপনার নিজস্ব কাস্টম সেট তৈরি করুন
+
+🎭 গেম মেকানিক্স:
+প্রতিটি রাউন্ডের শুরুতে, প্রতিটি খেলোয়াড় তাদের স্ক্রিনে একটি ফুটবলার বা কোচের নাম সহ একটি কার্ড দেখে। সব খেলোয়াড় একই নাম দেখে... স্পাই ছাড়া! স্পাই নামের পরিবর্তে "স্পাই" শব্দটি দেখে।
+
+এখন আলোচনা শুরু হয়। খেলোয়াড়রা গোপন শব্দ সম্পর্কে একে অপরকে প্রশ্ন জিজ্ঞাসা করে, তাদের মধ্যে কে স্পাই তা বের করার চেষ্টা করে। স্পাই, তার পালায়, উত্তরগুলি মনোযোগ সহকারে শুনতে হবে এবং নিজেকে প্রকাশ না করে গোপন শব্দটি অনুমান করার চেষ্টা করতে হবে।
+
+সময় শেষ হওয়ার পরে বা সাধারণ আলোচনার পরে, খেলোয়াড়রা যাকে স্পাই মনে করে তার জন্য ভোট দেয়। যদি স্পাই শব্দটি অনুমান করে বা অলক্ষিত থাকে — সে জিতে! যদি স্পাই প্রকাশিত হয়, সাধারণ খেলোয়াড়রা জিতে।
+
+🏆 এর জন্য নিখুঁত:
+• পার্টি এবং বন্ধুত্বপূর্ণ সমাবেশ — পার্টি গেম, বন্ধুদের সাথে পার্টি, পার্টি বিনোদন
+• পারিবারিক গেম রাত — পারিবারিক গেম, পরিবারের জন্য গেম, বাচ্চাদের সাথে গেম
+• যেকোনো কোম্পানিকে প্রাণবন্ত করা — গ্রুপ গেম, গ্রুপের জন্য গেম, গ্রুপ বিনোদন
+• যৌক্তিক চিন্তাভাবনা এবং অভিনয় দক্ষতা বিকাশ — যুক্তি গেম, যুক্তি ধাঁধা, অভিনয় গেম, ভূমিকা-খেলার গেম
+
+🌟 আপডেট এবং উন্নতি:
+আমরা ক্রমাগত গেম উন্নত করতে এবং নতুন ফুটবলার যোগ করতে কাজ করছি। সমস্ত কন্টেন্ট আপডেট স্বয়ংক্রিয়ভাবে ডাউনলোড হয়!
+
+📱 প্রয়োজনীয়তা:
+• সমস্ত আধুনিক Android এবং iOS ডিভাইসে কাজ করে
+• খেলার জন্য ইন্টারনেট সংযোগের প্রয়োজন নেই (কন্টেন্ট আপডেট ডাউনলোড করা ছাড়া)
+• ২৩টি ভাষার সমর্থন
+
+হাজার হাজার খেলোয়াড়ের সাথে যোগ দিন যারা ইতিমধ্যে ফুটবল গোয়েন্দাবৃত্তির উত্তেজনাপূর্ণ জগত আবিষ্কার করেছে! এখনই ডাউনলোড করুন এবং বন্ধুদের সাথে দুর্দান্ত সময় কাটান! ফুটবল সম্পর্কে সেরা স্পাই গেম, গ্রুপের জন্য গোয়েন্দা গেম, যুক্তি গেম অনুমান করুন কে খেলুন। এটি একটি বিনামূল্যে পার্টি গেম, বন্ধুদের গেম এবং পারিবারিক গেম। ⚽🎮
+
+===============================================================================
+اردو (ur)
+[Используется для: Google Play - Пакистан, Индия (урду-говорящие регионы)]
+===============================================================================
+
+--- مختصر وضاحت (80 حروف تک) ---
+فٹ بال جاسوس پارٹی گیم! اندازہ لگائیں کون جاسوس ہے! ⚽
+
+--- مکمل وضاحت ---
+🎮 فٹ بال جاسوس — دوستوں کے لیے پرجوش پارٹی گیم!
+
+فٹ بال سازش کی دنیا میں غوطہ لیں جہاں ہر راؤنڈ تناؤ، شک اور جاسوسی کام سے بھرا ہوا ہے۔ پارٹیوں، خاندانی اجتماعات اور دوستانہ ملاقاتوں کے لیے بہترین گیم دریافت کریں! یہ گروپوں کے لیے بہترین جاسوس گیم، فٹ بال کے بارے میں جاسوسی گیم، منطق گیم اندازہ لگائیں کون جاسوس ہے، پارٹی گیم اور دوستوں کی گیم ہے۔
+
+🎯 کیسے کھیلیں:
+کھیل میں کئی کھلاڑی حصہ لیتے ہیں۔ ان میں سے ایک کو جاسوس کا کردار ملتا ہے جو خفیہ لفظ (فٹ بالر یا کوچ کا نام) نہیں جانتا۔ دوسرے کھلاڑی یہ لفظ جانتے ہیں اور سوالات پوچھ کر اور ایک دوسرے پر بحث کر کے جاسوس کو تلاش کرنا چاہیے۔ جاسوس، اپنی باری میں، خود کو ظاہر کیے بغیر خفیہ لفظ کا اندازہ لگانے کی کوشش کرتا ہے۔
+
+⚽ خصوصیات:
+• مختلف لیگز سے 400+ مشہور فٹ بالر — فٹ بالرز کے ساتھ گیم، فٹ بال کوئز، فٹ بال گیم
+• عالمی فٹ بال کے 20+ ٹاپ کوچ — کوچز کے ساتھ گیم، فٹ بال کوچ
+• 23 زبانوں کی حمایت
+• کھیلنے کے لیے اپنے اپنی مرضی کے سیٹ بنائیں — کسٹم سیٹ، گیم ذاتی نوعیت
+• بیس سیٹ میں ترمیم کریں — کسی بھی کھلاڑی کو شامل یا ہٹائیں
+• لچکدار گیم کی ترتیبات: کھلاڑیوں کی تعداد، جاسوس اور راؤنڈ کا وقت — گیم کی ترتیبات، لچکدار قواعد
+• وقت کو ٹریک کرنے کے لیے آسان ٹائمر — گیم ٹائمر، وقت کنٹرول
+• خوبصورت اور بدیہی انٹرفیس — جدید ڈیزائن، صارف دوست انٹرفیس
+
+🎨 گیم سیٹ اپ:
+• کھلاڑیوں کی تعداد منتخب کریں (3 یا زیادہ)
+• جاسوسوں کی تعداد سیٹ کریں
+• راؤنڈ کا وقت سیٹ کریں یا وقت کی حد کے بغیر کھیلیں
+• ایک سیٹ منتخب کریں: کھلاڑی، کوچ یا دونوں
+• منفرد گیم کے لیے اپنا اپنی مرضی کا سیٹ بنائیں
+
+🎭 گیم میکینکس:
+ہر راؤنڈ کی شروعات میں، ہر کھلاڑی اپنی اسکرین پر ایک فٹ بالر یا کوچ کے نام کے ساتھ ایک کارڈ دیکھتا ہے۔ تمام کھلاڑی ایک ہی نام دیکھتے ہیں... جاسوس کے سوا! جاسوس نام کے بجائے "جاسوس" لفظ دیکھتا ہے۔
+
+اب بحث شروع ہوتی ہے۔ کھلاڑی خفیہ لفظ کے بارے میں ایک دوسرے سے سوالات پوچھتے ہیں، یہ جاننے کی کوشش کرتے ہیں کہ ان میں سے کون جاسوس ہے۔ جاسوس، اپنی باری میں، جوابات کو غور سے سننا چاہیے اور خود کو ظاہر کیے بغیر خفیہ لفظ کا اندازہ لگانے کی کوشش کرنی چاہیے۔
+
+وقت ختم ہونے کے بعد یا عام بحث کے بعد، کھلاڑی اس شخص کے لیے ووٹ دیتے ہیں جسے وہ جاسوس سمجھتے ہیں۔ اگر جاسوس نے لفظ کا اندازہ لگایا یا غیر محسوس رہا — وہ جیت گیا! اگر جاسوس کو بے نقاب کیا گیا، تو عام کھلاڑی جیت گئے۔
+
+🏆 کے لیے بہترین:
+• پارٹیاں اور دوستانہ اجتماعات — پارٹی گیم، دوستوں کے ساتھ پارٹی، پارٹی تفریح
+• خاندانی گیم کی راتیں — خاندانی گیم، خاندان کے لیے گیم، بچوں کے ساتھ گیم
+• کسی بھی کمپنی کو زندہ کرنا — گروپ گیم، گروپ کے لیے گیم، گروپ تفریح
+• منطقی سوچ اور اداکاری کی مہارتیں تیار کرنا — منطق گیم، منطق پہیلی، اداکاری گیم، کردار ادا کرنے والی گیم
+
+🌟 اپڈیٹس اور بہتری:
+ہم مسلسل گیم کو بہتر بنانے اور نئے فٹ بالر شامل کرنے پر کام کر رہے ہیں۔ تمام مواد کی اپڈیٹس خودکار طور پر ڈاؤن لوڈ ہوتی ہیں!
+
+📱 ضروریات:
+• تمام جدید Android اور iOS آلات پر کام کرتا ہے
+• کھیلنے کے لیے انٹرنیٹ کنکشن کی ضرورت نہیں (مواد کی اپڈیٹس ڈاؤن لوڈ کرنے کے علاوہ)
+• 23 زبانوں کی حمایت
+
+ہزاروں کھلاڑیوں میں شامل ہوں جنہوں نے پہلے سے ہی فٹ بال جاسوسی کی پرجوش دنیا دریافت کی ہے! ابھی ڈاؤن لوڈ کریں اور دوستوں کے ساتھ بہترین وقت گزاریں! فٹ بال کے بارے میں بہترین جاسوس گیم، گروپوں کے لیے جاسوسی گیم، منطق گیم اندازہ لگائیں کون کھیلیں۔ یہ ایک مفت پارٹی گیم، دوستوں کی گیم اور خاندانی گیم ہے۔ ⚽🎮
+
+===============================================================================
+BAHASA INDONESIA (id)
+[Используется для: Google Play - Индонезия, Малайзия]
+===============================================================================
+
+--- DESKRIPSI SINGKAT (hingga 80 karakter) ---
+Game pesta Spion Sepak Bola! Tebak siapa mata-matanya! ⚽
+
+--- DESKRIPSI LENGKAP ---
+🎮 SPION SEPAK BOLA — Game Pesta Menarik untuk Teman!
+
+Menyelam ke dunia intrik sepak bola di mana setiap ronde penuh dengan ketegangan, kecurigaan, dan pekerjaan detektif. Temukan game sempurna untuk pesta, pertemuan keluarga, dan pertemuan ramah! Ini adalah game mata-mata terbaik untuk grup, game detektif tentang sepak bola, game logika tebak siapa mata-matanya, game pesta dan game teman.
+
+🎯 CARA BERMAIN:
+Beberapa pemain berpartisipasi dalam game. Salah satu dari mereka menerima peran mata-mata yang tidak mengetahui kata rahasia (nama pemain sepak bola atau pelatih). Pemain lain mengetahui kata ini dan harus menemukan mata-mata dengan mengajukan pertanyaan dan mendiskusikan satu sama lain. Mata-mata, pada gilirannya, mencoba menebak kata rahasia tanpa mengungkapkan diri.
+
+⚽ FITUR:
+• Lebih dari 400 pemain sepak bola terkenal dari berbagai liga — game dengan pemain sepak bola, kuis sepak bola, game sepak bola
+• Lebih dari 20 pelatih top sepak bola dunia — game dengan pelatih, pelatih sepak bola
+• Dukungan untuk 27 bahasa
+• Buat set kustom Anda sendiri untuk bermain — set kustom, personalisasi game
+• Edit set dasar — tambahkan atau hapus pemain apa pun
+• Pengaturan game yang fleksibel: jumlah pemain, mata-mata, dan waktu ronde — pengaturan game, aturan fleksibel
+• Timer yang nyaman untuk melacak waktu — timer game, kontrol waktu
+• Antarmuka yang indah dan intuitif — desain modern, antarmuka ramah pengguna
+
+🎨 PENGATURAN GAME:
+• Pilih jumlah pemain (3 atau lebih)
+• Tetapkan jumlah mata-mata
+• Tetapkan waktu ronde atau mainkan tanpa batas waktu
+• Pilih set: pemain, pelatih, atau keduanya
+• Buat set kustom Anda sendiri untuk game yang unik
+
+🎭 MEKANIKA GAME:
+Di awal setiap ronde, setiap pemain melihat kartu di layar mereka dengan nama pemain sepak bola atau pelatih. Semua pemain melihat nama yang sama... kecuali mata-mata! Mata-mata melihat kata "MATA-MATA" alih-alih nama.
+
+Sekarang diskusi dimulai. Pemain saling mengajukan pertanyaan tentang kata rahasia, mencoba mencari tahu siapa di antara mereka yang mata-mata. Mata-mata, pada gilirannya, harus mendengarkan jawaban dengan hati-hati dan mencoba menebak kata rahasia sambil tidak mengungkapkan diri.
+
+Setelah waktu habis atau setelah diskusi umum, pemain memilih siapa yang mereka pikir adalah mata-mata. Jika mata-mata menebak kata atau tetap tidak diperhatikan — mereka menang! Jika mata-mata terungkap, pemain biasa menang.
+
+🏆 SEMPURNA UNTUK:
+• Pesta dan pertemuan ramah — game pesta, pesta dengan teman, hiburan pesta
+• Malam game keluarga — game keluarga, game untuk keluarga, game dengan anak-anak
+• Menghidupkan perusahaan apa pun — game grup, game untuk grup, hiburan grup
+• Mengembangkan pemikiran logis dan keterampilan akting — game logika, teka-teki logika, game akting, game peran
+
+🌟 PEMBARUAN DAN PERBAIKAN:
+Kami terus bekerja untuk meningkatkan game dan menambahkan pemain sepak bola baru. Semua pembaruan konten diunduh secara otomatis!
+
+📱 PERSYARATAN:
+• Berfungsi di semua perangkat Android dan iOS modern
+• Tidak memerlukan koneksi internet untuk bermain (kecuali untuk mengunduh pembaruan konten)
+• Dukungan untuk 27 bahasa
+
+Bergabunglah dengan ribuan pemain yang telah menemukan dunia spionase sepak bola yang menarik! Unduh sekarang dan bersenang-senang dengan teman! Mainkan game mata-mata terbaik tentang sepak bola, game detektif untuk grup, game logika tebak siapa. Ini adalah game pesta gratis, game teman dan game keluarga. ⚽🎮
+
+===============================================================================
+日本語 (ja)
+[Используется для: Google Play - Япония]
+===============================================================================
+
+--- 短い説明 (80文字まで) ---
+フットボールスパイパーティーゲーム！スパイは誰？⚽
+
+--- 完全な説明 ---
+🎮 フットボールスパイ — 友達のためのエキサイティングなパーティーゲーム！
+
+緊張、疑惑、探偵作業に満ちた各ラウンドのフットボール陰謀の世界に飛び込みましょう。パーティー、家族の集まり、友好的な出会いのための完璧なゲームを発見してください！これはグループ向けの最高のスパイゲーム、フットボールに関する探偵ゲーム、論理ゲーム誰がスパイか推測、パーティーゲーム、友達ゲームです。
+
+🎯 遊び方：
+複数のプレイヤーがゲームに参加します。そのうちの1人が秘密の言葉（フットボール選手またはコーチの名前）を知らないスパイの役割を受け取ります。他のプレイヤーはこの言葉を知っており、質問をして互いに議論することでスパイを見つけなければなりません。スパイは、自分を明かさずに秘密の言葉を推測しようとします。
+
+⚽ 機能：
+• さまざまなリーグの400人以上の有名なフットボール選手
+• 世界のフットボールの20人以上のトップコーチ
+• 23言語のサポート
+• プレイ用の独自のカスタムセットを作成
+• ベースセットを編集 — 任意のプレイヤーを追加または削除
+• 柔軟なゲーム設定：プレイヤー数、スパイ数、ラウンド時間
+• 時間を追跡する便利なタイマー
+• 美しく直感的なインターフェース
+
+🎨 ゲームセットアップ：
+• プレイヤー数を選択（3人以上）
+• スパイ数を設定
+• ラウンド時間を設定するか、時間制限なしでプレイ
+• セットを選択：プレイヤー、コーチ、または両方
+• ユニークなゲームのための独自のカスタムセットを作成
+
+🎭 ゲームメカニクス：
+各ラウンドの開始時に、各プレイヤーは画面にフットボール選手またはコーチの名前が書かれたカードを見ます。すべてのプレイヤーが同じ名前を見ます...スパイを除いて！スパイは名前の代わりに「スパイ」という言葉を見ます。
+
+今、議論が始まります。プレイヤーは秘密の言葉について互いに質問し、誰がスパイかを理解しようとします。スパイは、答えを注意深く聞き、自分を明かさずに秘密の言葉を推測しようとしなければなりません。
+
+時間が経過した後、または一般的な議論の後、プレイヤーはスパイだと思う人に投票します。スパイが言葉を推測したか、気づかれなかった場合 — スパイが勝ちます！スパイが暴露された場合、通常のプレイヤーが勝ちます。
+
+🏆 に最適：
+• パーティーと友好的な集まり — パーティーゲーム、友達とのパーティー、パーティーエンターテインメント
+• 家族のゲームナイト — 家族ゲーム、家族向けゲーム、子供とのゲーム
+• あらゆる会社を活気づける — グループゲーム、グループ向けゲーム、グループエンターテインメント
+• 論理的思考と演技スキルの開発 — 論理ゲーム、論理パズル、演技ゲーム、ロールプレイングゲーム
+
+🌟 アップデートと改善：
+私たちは常にゲームを改善し、新しいフットボール選手を追加する作業を行っています。すべてのコンテンツアップデートは自動的にダウンロードされます！
+
+📱 要件：
+• すべての最新のAndroidおよびiOSデバイスで動作
+• プレイにインターネット接続は不要（コンテンツアップデートのダウンロードを除く）
+• 23言語のサポート
+
+すでにエキサイティングなフットボールスパイの世界を発見した何千人ものプレイヤーに参加してください！今すぐダウンロードして、友達と素晴らしい時間を過ごしましょう！フットボールに関する最高のスパイゲーム、グループ向け探偵ゲーム、論理ゲーム誰がスパイか推測をプレイ。これは無料のパーティーゲーム、友達ゲーム、家族ゲームです。⚽🎮
+
+===============================================================================
+KISWAHILI (sw)
+[Используется для: Google Play - Кения, Танзания, Уганда и др. восточноафриканские страны]
+===============================================================================
+
+--- MAELEZO MUFUPI (hadi herufi 80) ---
+Mchezo wa sherehe Msusi wa Soka! Kisia nani ni mpelelezi! ⚽
+
+--- MAELEZO KAMILI ---
+🎮 MSUSI WA SOKA — Mchezo wa Sherehe wa Kuvutia kwa Marafiki!
+
+Zama ulimwenguni wa vitimbi vya soka ambapo kila raundi imejaa mvutano, tuhuma, na kazi ya upelelezi. Gundua mchezo kamili kwa sherehe, mikusanyiko ya familia, na mikutano ya kirafiki! Hii ni mchezo bora wa upelelezi kwa vikundi, mchezo wa upelelezi kuhusu soka, mchezo wa mantiki kisia nani ni mpelelezi, mchezo wa sherehe na mchezo wa marafiki.
+
+🎯 JINSI YA KUCHEZA:
+Wachezaji kadhaa hushiriki katika mchezo. Mmoja wao hupata jukumu la mpelelezi ambaye hajui neno la siri (jina la mchezaji wa soka au kocha). Wachezaji wengine wanajua neno hili na lazima wampelelezi kwa kuuliza maswali na kujadiliana. Mpelelezi, kwa upande wake, anajaribu kukisia neno la siri bila kujifunua.
+
+⚽ VIPENGELE:
+• Zaidi ya wachezaji 400 maarufu wa soka kutoka ligi mbalimbali — mchezo na wachezaji wa soka, jaribio la soka, mchezo wa soka
+• Zaidi ya makocha 20 bora wa soka duniani — mchezo na makocha, makocha wa soka
+• Msaada wa lugha 23
+• Unda seti zako maalum za kucheza — seti za kawaida, ubinafsishaji wa mchezo
+• Hariri seti za msingi — ongeza au ondoa wachezaji wowote
+• Mipangilio ya mchezo inayoweza kubadilika: idadi ya wachezaji, wapelelezi, na muda wa raundi — mipangilio ya mchezo, sheria zinazoweza kubadilika
+• Timer rahisi ya kufuatilia muda — timer ya mchezo, udhibiti wa muda
+• Kiolesura cha kuvutia na cha kueleweka — muundo wa kisasa, kiolesura cha kirafiki kwa watumiaji
+
+🎨 USANIDI WA MCHEZO:
+• Chagua idadi ya wachezaji (3 au zaidi)
+• Weka idadi ya wapelelezi
+• Weka muda wa raundi au cheza bila kikomo cha muda
+• Chagua seti: wachezaji, makocha, au zote mbili
+• Unda seti yako maalum ya mchezo wa kipekee
+
+🎭 MEKANIKA YA MCHEZO:
+Mwanzoni mwa kila raundi, kila mchezaji anaona kadi kwenye skrini yake yenye jina la mchezaji wa soka au kocha. Wachezaji wote wanaona jina sawa... isipokuwa mpelelezi! Mpelelezi anaona neno "MPELELEZI" badala ya jina.
+
+Sasa majadiliano yanaanza. Wachezaji wanaulizana maswali kuhusu neno la siri, wakijaribu kujua ni nani miongoni mwao ni mpelelezi. Mpelelezi, kwa upande wake, lazima asikilize majibu kwa makini na ajjaribu kukisia neno la siri bila kujifunua.
+
+Baada ya muda kuisha au baada ya majadiliano ya jumla, wachezaji wanapiga kura kwa anayefikiriwa kuwa mpelelezi. Ikiwa mpelelezi amekisia neno au amebaki bila kugunduliwa — anashinda! Ikiwa mpelelezi amefichuliwa, wachezaji wa kawaida wanashinda.
+
+🏆 BORA KWA:
+• Sherehe na mikusanyiko ya kirafiki — mchezo wa sherehe, sherehe na marafiki, burudani ya sherehe
+• Usiku wa michezo ya familia — mchezo wa familia, mchezo kwa familia, mchezo na watoto
+• Kuamsha kampuni yoyote — mchezo wa kikundi, mchezo kwa kikundi, burudani ya kikundi
+• Kukuza mawazo ya mantiki na ujuzi wa uigizaji — mchezo wa mantiki, fumbo la mantiki, mchezo wa uigizaji, mchezo wa jukumu
+
+🌟 SASAISHO NA UBOBADILISHO:
+Tunafanya kazi kila wakati kuboresha mchezo na kuongeza wachezaji wapya wa soka. Sasaisho zote za maudhui zinapakuliwa kiotomatiki!
+
+📱 MAHITAJI:
+• Inafanya kazi kwenye vifaa vyote vya kisasa vya Android na iOS
+• Hauna hitaji la muunganisho wa intaneti kucheza (isipokuwa kupakua sasaisho za maudhui)
+• Msaada wa lugha 23
+
+Jiunge na maelfu ya wachezaji ambao tayari wamegundua ulimwengu wa kuvutia wa upelelezi wa soka! Pakua sasa na ufurahie wakati mzuri na marafiki! Cheza mchezo bora wa upelelezi kuhusu soka, mchezo wa upelelezi kwa vikundi, mchezo wa mantiki kisia nani. Hii ni mchezo wa bure wa sherehe, mchezo wa marafiki na mchezo wa familia. ⚽🎮
+
+===============================================================================
+한국어 (ko)
+[Используется для: Google Play - Южная Корея, Северная Корея]
+===============================================================================
+
+--- 짧은 설명 (최대 80자) ---
+축구 스파이 파티 게임! 스파이가 누구인지 맞춰보세요! ⚽
+
+--- 전체 설명 ---
+🎮 축구 스파이 — 친구들을 위한 흥미진진한 파티 게임!
+
+매 라운드가 긴장, 의심, 추리 작업으로 가득한 축구 음모의 세계로 뛰어드세요. 파티, 가족 모임, 친선 만남을 위한 완벽한 게임을 발견하세요! 이것은 그룹을 위한 최고의 스파이 게임, 축구에 관한 추리 게임, 논리 게임 누가 스파이인지 맞추기, 파티 게임 및 친구 게임입니다.
+
+🎯 게임 방법:
+여러 명의 플레이어가 게임에 참여합니다. 그 중 한 명은 비밀 단어(축구 선수 또는 코치의 이름)를 모르는 스파이 역할을 받습니다. 다른 플레이어들은 이 단어를 알고 있으며 질문을 하고 서로 토론하여 스파이를 찾아야 합니다. 스파이는 자신을 드러내지 않고 비밀 단어를 추측하려고 합니다.
+
+⚽ 특징:
+• 다양한 리그의 유명한 축구 선수 400명 이상 — 축구 선수와 게임, 축구 퀴즈, 축구 게임
+• 세계 축구의 최고 코치 20명 이상 — 코치와 게임, 축구 코치
+• 27개 언어 지원
+• 플레이를 위한 자신만의 맞춤 세트 만들기 — 맞춤 세트, 게임 개인화
+• 기본 세트 편집 — 선수 추가 또는 제거
+• 유연한 게임 설정: 플레이어 수, 스파이 수, 라운드 시간 — 게임 설정, 유연한 규칙
+• 시간 추적을 위한 편리한 타이머 — 게임 타이머, 시간 제어
+• 아름답고 직관적인 인터페이스 — 현대적 디자인, 사용자 친화적 인터페이스
+
+🎨 게임 설정:
+• 플레이어 수 선택 (3명 이상)
+• 스파이 수 설정
+• 라운드 시간 설정 또는 시간 제한 없이 플레이
+• 세트 선택: 선수, 코치 또는 둘 다
+• 고유한 게임을 위한 자신만의 맞춤 세트 만들기
+
+🎭 게임 메커니즘:
+각 라운드가 시작될 때, 각 플레이어는 화면에 축구 선수 또는 코치의 이름이 적힌 카드를 봅니다. 모든 플레이어가 같은 이름을 봅니다... 스파이를 제외하고! 스파이는 이름 대신 "스파이"라는 단어를 봅니다.
+
+이제 토론이 시작됩니다. 플레이어들은 비밀 단어에 대해 서로 질문하며 그들 중 누가 스파이인지 알아내려고 합니다. 스파이는 답변을 주의 깊게 듣고 자신을 드러내지 않고 비밀 단어를 추측하려고 해야 합니다.
+
+시간이 지나거나 일반 토론 후, 플레이어들은 스파이라고 생각하는 사람에게 투표합니다. 스파이가 단어를 맞추거나 눈에 띄지 않았다면 — 스파이가 승리합니다! 스파이가 밝혀졌다면 일반 플레이어들이 승리합니다.
+
+🏆 완벽한 대상:
+• 파티와 친선 모임 — 파티 게임, 친구들과 파티, 파티 엔터테인먼트
+• 가족 게임 밤 — 가족 게임, 가족을 위한 게임, 아이들과 게임
+• 어떤 모임도 활기차게 만들기 — 그룹 게임, 그룹을 위한 게임, 그룹 엔터테인먼트
+• 논리적 사고와 연기 기술 개발 — 논리 게임, 논리 퍼즐, 연기 게임, 역할 놀이 게임
+
+🌟 업데이트 및 개선:
+우리는 지속적으로 게임을 개선하고 새로운 축구 선수를 추가하는 작업을 하고 있습니다. 모든 콘텐츠 업데이트는 자동으로 다운로드됩니다!
+
+📱 요구사항:
+• 모든 최신 Android 및 iOS 기기에서 작동
+• 플레이에 인터넷 연결 불필요 (콘텐츠 업데이트 다운로드 제외)
+• 27개 언어 지원
+
+이미 흥미진진한 축구 스파이의 세계를 발견한 수천 명의 플레이어에 합류하세요! 지금 다운로드하고 친구들과 즐거운 시간을 보내세요! 축구에 관한 최고의 스파이 게임, 그룹을 위한 추리 게임, 논리 게임 누가 스파이인지 맞추기를 플레이하세요. 이것은 무료 파티 게임, 친구 게임 및 가족 게임입니다. ⚽🎮
+
+===============================================================================
+ҚАЗАҚША (kk)
+[Используется для: Google Play - Казахстан]
+===============================================================================
+
+--- ҚЫСҚА СИПАТТАМА (80 таңбаға дейін) ---
+Футбол шпионы кеш ойыны! Шпион кім екенін тап! ⚽
+
+--- ТОЛЫҚ СИПАТТАМА ---
+🎮 ФУТБОЛ ШПИОНЫ — Достар үшін қызықты кеш ойыны!
+
+Әр раунд кернеу, күмән және детективтік жұмыспен толы футбол интригаларының әлеміне еніңіз. Кештер, отбасылық жиналыстар және достармен кездесулер үшін мінсіз ойынды ашыңыз! Бұл топтар үшін ең жақсы шпион ойыны, футбол туралы детективтік ойын, логикалық ойын кім шпион екенін тап, кеш ойыны және достар ойыны.
+
+🎯 ҚАЛАЙ ОЙНАУ:
+Ойынға бірнеше ойыншы қатысады. Олардың бірі құпия сөзді (футболшы немесе жаттықтырушы атын) білмейтін шпион рөлін алады. Басқа ойыншылар бұл сөзді біледі және сұрақтар қойып, бір-бірімен талқылау арқылы шпионды табуы керек. Шпион өзін ашпай, құпия сөзді тауып көріп жатады.
+
+⚽ ЕРЕКШЕЛІКТЕР:
+• Әртүрлі лигалардан 400-ден астам танымал футболшылар — футболшылармен ойын, футбол викторинасы, футбол ойыны
+• Әлемдік футболдың 20-ден астам топ жаттықтырушылары — жаттықтырушылармен ойын, футбол жаттықтырушылары
+• 27 тілді қолдау
+• Ойнау үшін өз теңшеу жинақтарыңызды жасау — теңшеу жинақтар, ойынды жекешелендіру
+• Негізгі жинақтарды өңдеу — кез келген ойыншыны қосу немесе алып тастау
+• Икемді ойын параметрлері: ойыншылар саны, шпиондар және раунд уақыты — ойын параметрлері, икемді ережелер
+• Уақытты бақылау үшін ыңғайлы таймер — ойын таймері, уақытты басқару
+• Әдемі және интуитивті интерфейс — заманауи дизайн, пайдаланушыға ыңғайлы интерфейс
+
+🎨 ОЙЫН ПАРАМЕТРЛЕРІ:
+• Ойыншылар санын таңдаңыз (3 немесе одан көп)
+• Шпиондар санын орнатыңыз
+• Раунд уақытын орнатыңыз немесе уақыт шектеусіз ойнаңыз
+• Жинақты таңдаңыз: ойыншылар, жаттықтырушылар немесе екеуі де
+• Бірегей ойын үшін өз теңшеу жинағыңызды жасаңыз
+
+🎭 ОЙЫН МЕХАНИКАСЫ:
+Әр раунд басталғанда әр ойыншы экранында футболшы немесе жаттықтырушы аты бар картаны көреді. Барлық ойыншылар бірдей атын көреді... шпионнан басқа! Шпион атының орнына "ШПИОН" сөзін көреді.
+
+Енді талқылау басталады. Ойыншылар құпия сөз туралы бір-біріне сұрақтар қойып, олардың арасында кім шпион екенін анықтауға тырысады. Шпион өз кезегінде жауаптарды мұқият тыңдап, өзін ашпай құпия сөзді тауып көріп жатуы керек.
+
+Уақыт аяқталғаннан кейін немесе жалпы талқылаудан кейін ойыншылар шпион деп санаған адамға дауыс береді. Егер шпион сөзді тауып алса немесе байқалмаса — ол жеңеді! Егер шпион ашылса, кәдімгі ойыншылар жеңеді.
+
+🏆 МІНСІЗ:
+• Кештер және достармен кездесулер — кеш ойыны, достармен кеш, кеш көңіл көтеру
+• Отбасылық ойын кештері — отбасылық ойын, отбасы үшін ойын, балалармен ойын
+• Кез келген топты жандандыру — топтық ойын, топ үшін ойын, топтық көңіл көтеру
+• Логикалық ойлау және актерлік дағдыларды дамыту — логикалық ойын, логикалық басқатырғыш, актерлік ойын, рөлдік ойын
+
+🌟 ЖАҢАРТУЛАР ЖӘНЕ ЖАҚСАРТУЛАР:
+Біз үнемі ойынды жақсартып, жаңа футболшыларды қосып жатырмыз. Барлық мазмұн жаңартулары автоматты түрде жүктеледі!
+
+📱 ТАЛАПТАР:
+• Барлық заманауи Android және iOS құрылғыларында жұмыс істейді
+• Ойнау үшін интернет қосылымы қажет емес (мазмұн жаңартуларын жүктеуден басқа)
+• 27 тілді қолдау
+
+Футбол шпионажының қызықты әлемін ашқан мыңдаған ойыншыларға қосылыңыз! Дәл қазір жүктеп алыңыз және достарыңызбен керемет уақыт өткізіңіз! Футбол туралы ең жақсы шпион ойынын, топтар үшін детективтік ойынды, логикалық ойын кім шпион екенін тап ойнаңыз. Бұл тегін кеш ойыны, достар ойыны және отбасылық ойын. ⚽🎮
+
+===============================================================================
+ՀԱՅԵՐԵՆ (hy)
+[Используется для: Google Play - Армения]
+===============================================================================
+
+--- ԿՐՏԱԿ ՆԿԱՐԱԳՐՈՒԹՅՈՒՆ (մինչև 80 նիշ) ---
+Ֆուտբոլային լրտեսի խնջույքի խաղ: Գուշակիր, թե ով է լրտեսը: ⚽
+
+--- ԱՄԲՈՂՋ ՆԿԱՐԱԳՐՈՒԹՅՈՒՆ ---
+🎮 ՖՈՒՏԲՈԼԱՅԻՆ ԼՐՏԵՍ — Ընկերների համար հուզիչ խնջույքի խաղ:
+
+Մուտք գործեք ֆուտբոլային դավադրությունների աշխարհ, որտեղ յուրաքանչյուր ռաունդ լի է լարվածությամբ, կասկածանքով և դետեկտիվ աշխատանքով: Բացահայտեք կատարյալ խաղը խնջույքների, ընտանեկան հավաքույթների և բարեկամական հանդիպումների համար: Սա խմբերի համար լավագույն լրտեսական խաղն է, ֆուտբոլի մասին դետեկտիվ խաղ, տրամաբանական խաղ գուշակիր ով է լրտեսը, խնջույքի խաղ և ընկերների խաղ:
+
+🎯 ԻՆՉՊԵՍ ԽԱՂԱԼ:
+Մի քանի խաղացողներ մասնակցում են խաղին: Նրանցից մեկը ստանում է լրտեսի դեր, ով չգիտի գաղտնի բառը (ֆուտբոլիստի կամ մարզիչի անուն): Մյուս խաղացողները գիտեն այս բառը և պետք է գտնեն լրտեսին՝ հարցեր տալով և միմյանց հետ քննարկելով: Լրտեսն իր հերթին փորձում է գուշակել գաղտնի բառը՝ առանց իրեն բացահայտելու:
+
+⚽ ՀԱՏԿԱՆԻՇՆԵՐ:
+• Տարբեր լիգաներից 400-ից ավելի հայտնի ֆուտբոլիստներ — ֆուտբոլիստների հետ խաղ, ֆուտբոլային վիկտորինա, ֆուտբոլային խաղ
+• Աշխարհի ֆուտբոլի 20-ից ավելի լավագույն մարզիչներ — մարզիչների հետ խաղ, ֆուտբոլային մարզիչներ
+• 27 լեզուների աջակցություն
+• Ստեղծեք ձեր սեփական հատուկ հավաքածուները խաղալու համար — հատուկ հավաքածուներ, խաղի անհատականացում
+• Խմբագրեք հիմնական հավաքածուները — ավելացրեք կամ հեռացրեք ցանկացած խաղացող
+• Ճկուն խաղի կարգավորումներ: խաղացողների քանակ, լրտեսներ և ռաունդի ժամանակ — խաղի կարգավորումներ, ճկուն կանոններ
+• Հարմար ժամանակաչափ ժամանակը հետևելու համար — խաղի ժամանակաչափ, ժամանակի վերահսկում
+• Գեղեցիկ և ինտուիտիվ ինտերֆեյս — ժամանակակից դիզայն, օգտագործողի համար հարմար ինտերֆեյս
+
+🎨 ԽԱՂԻ ԿԱՐԳԱՎՈՐՈՒՄ:
+• Ընտրեք խաղացողների քանակը (3 կամ ավելի)
+• Սահմանեք լրտեսների քանակը
+• Սահմանեք ռաունդի ժամանակը կամ խաղացեք առանց ժամանակի սահմանափակման
+• Ընտրեք հավաքածու: խաղացողներ, մարզիչներ կամ երկուսն էլ
+• Ստեղծեք ձեր սեփական հատուկ հավաքածուն եզակի խաղի համար
+
+🎭 ԽԱՂԻ ՄԵԽԱՆԻԿԱ:
+Յուրաքանչյուր ռաունդի սկզբում յուրաքանչյուր խաղացող իր էկրանին տեսնում է ֆուտբոլիստի կամ մարզիչի անունով քարտ: Բոլոր խաղացողները տեսնում են նույն անունը... բացառությամբ լրտեսի: Լրտեսը անվան փոխարեն տեսնում է «ԼՐՏԵՍ» բառը:
+
+Այժմ քննարկումը սկսվում է: Խաղացողները միմյանց հարցեր են տալիս գաղտնի բառի մասին՝ փորձելով պարզել, թե նրանցից ով է լրտեսը: Լրտեսն իր հերթին պետք է ուշադիր լսի պատասխանները և փորձի գուշակել գաղտնի բառը՝ առանց իրեն բացահայտելու:
+
+Ժամանակի ավարտից կամ ընդհանուր քննարկումից հետո խաղացողները քվեարկում են նրան, ում համարում են լրտես: Եթե լրտեսը գուշակել է բառը կամ մնացել է աննկատ — նա հաղթում է: Եթե լրտեսը բացահայտվել է, սովորական խաղացողները հաղթում են:
+
+🏆 ԿԱՏԱՐԵԼԻ Է:
+• Խնջույքներ և բարեկամական հավաքույթներ — խնջույքի խաղ, ընկերների հետ խնջույք, խնջույքի ժամանց
+• Ընտանեկան խաղային երեկոներ — ընտանեկան խաղ, ընտանիքի համար խաղ, երեխաների հետ խաղ
+• Ցանկացած ընկերություն կենդանացնել — խմբային խաղ, խմբի համար խաղ, խմբային ժամանց
+• Տրամաբանական մտածողության և դերասանական հմտությունների զարգացում — տրամաբանական խաղ, տրամաբանական գլուխկոտրուկ, դերասանական խաղ, դեր խաղալու խաղ
+
+🌟 ԹԱՐՄԱՏՎՈՒՄՆԵՐ ԵՎ ԲԱՐԵԼԱՑՈՒՄՆԵՐ:
+Մենք անընդհատ աշխատում ենք խաղը բարելավելու և նոր ֆուտբոլիստներ ավելացնելու վրա: Բոլոր բովանդակության թարմացումները ավտոմատ կերպով ներբեռնվում են:
+
+📱 ՊԱՀԱՆՋՆԵՐ:
+• Աշխատում է բոլոր ժամանակակից Android և iOS սարքերում
+• Խաղալու համար ինտերնետային կապ չի պահանջվում (բովանդակության թարմացումները ներբեռնելուց բացի)
+• 27 լեզուների աջակցություն
+
+Միացեք հազարավոր խաղացողներին, ովքեր արդեն բացահայտել են ֆուտբոլային լրտեսության հուզիչ աշխարհը: Ներբեռնեք հիմա և հիանալի ժամանակ անցկացրեք ընկերների հետ: Խաղացեք ֆուտբոլի մասին լավագույն լրտեսական խաղը, խմբերի համար դետեկտիվ խաղը, տրամաբանական խաղը գուշակիր ով: Սա անվճար խնջույքի խաղ է, ընկերների խաղ և ընտանեկան խաղ: ⚽🎮
+
+===============================================================================
+КЫРГЫЗ ТИЛИ (ky)
+[Используется для: Google Play - Кыргызстан]
+===============================================================================
+
+--- КЫСКАЧА СЫПАТТАМА (80 символго чейин) ---
+Футбол шпиону партия оюну! Шпион ким экенин тап! ⚽
+
+--- ТОЛУК СЫПАТТАМА ---
+🎮 ФУТБОЛ ШПИОНУ — Достор үчүн кызыктуу партия оюну!
+
+Ар бир раунд тартиш, күмөн жана детективдик иш менен толгон футбол интригаларынын дүйнөсүнө батыңыз. Партиялар, үй-бүлөлүк жыйындар жана достук жолугушуулар үчүн кемчиликсиз оюнду табыңыз! Бул топтор үчүн эң мыкты шпион оюну, футбол жөнүндө детективдик оюн, логикалык оюн шпион ким экенин тап, партия оюну жана достор оюну.
+
+🎯 КАНТИП ОЙНОО:
+Оюнга бир нече оюнчу катышат. Алардын бири жашырылган сөздү (футболчунун же тренердин атын) билбеген шпиондун ролун алат. Башка оюнчулар бул сөздү билишет жана суроолор берип жана бири-бири менен талкуулашып шпионду табышы керек. Шпион өз кезегинде өзүн ачып бербей жашырылган сөздү тапкыла келсе.
+
+⚽ ӨЗГӨЧӨЛҮКТӨР:
+• Ар кандай лигалардан 400дөн ашык белгилүү футболчулар — футболчулар менен оюн, футбол викторинасы, футбол оюну
+• Дүйнөлүк футболдун 20дөн ашык топ-тренерлери — тренерлер менен оюн, футбол тренерлери
+• 27 тилди колдоо
+• Ойноо үчүн өз кастомдук топторуңузду түзүңүз — кастомдук топтор, оюнду жекечелөө
+• Негизги топторду түзөтүү — каалаган оюнчуну кошуңуз же алып салыңыз
+• Ийкемдүү оюн жөндөөлөрү: оюнчулардын саны, шпиондор жана раунд убактысы — оюн жөндөөлөрү, ийкемдүү эрежелер
+• Убакытты көзөмөлдөө үчүн ыңгайлуу таймер — оюн таймери, убакытты башкаруу
+• Сулуу жана интуитивдүү интерфейс — заманбап дизайн, колдонуучуга ыңгайлуу интерфейс
+
+🎨 ОЮН ЖӨНДӨӨЛӨРҮ:
+• Оюнчулардын санын тандаңыз (3 же андан көп)
+• Шпиондордун санын белгилеңиз
+• Раунд убактысын белгилеңиз же убакыт чектөөсүз ойноңуз
+• Топту тандаңыз: оюнчулар, тренерлер же экөө тең
+• Өзгөчө оюн үчүн өз кастомдук топтуңузду түзүңүз
+
+🎭 ОЮН МЕХАНИКАСЫ:
+Ар бир раунддун башында ар бир оюнчу экранында футболчунун же тренердин аты менен картаны көрөт. Бардык оюнчулар бир эле атын көрүшөт... шпионду башка! Шпион атынын ордуна "ШПИОН" деген сөздү көрөт.
+
+Азыр талкуу башталат. Оюнчулар жашырылган сөз жөнүндө бири-бирине суроолор беришет, алардын арасынан ким шпион экенин билүүгө аракет кылышат. Шпион өз кезегинде жоопторду кылдаттык менен угуп, өзүн ачып бербей жашырылган сөздү тапкыла келсе.
+
+Убакыт бүткөндөн же жалпы талкуудан кийин оюнчулар кимди шпион деп эсептешсе, ошого добуш беришет. Эгер шпион сөздү тапса же көзгө көрүнбөй калса — ал жеңет! Эгер шпион ачылса, кадимки оюнчулар жеңет.
+
+🏆 ҮЧҮН КЕМЧИЛИКСИЗ:
+• Партиялар жана достук жыйындар — партия оюну, достор менен партия, партия көңүл ачуу
+• Үй-бүлөлүк оюн кечтери — үй-бүлөлүк оюн, үй-бүлө үчүн оюн, балдар менен оюн
+• Ар кандай компанияны жандандыруу — топтук оюн, топ үчүн оюн, топтук көңүл ачуу
+• Логикалык ой жүгүртүү жана актердук көндүмдөрдү өнүктүрүү — логикалык оюн, логикалык баш катырма, актердук оюн, ролдук оюн
+
+🌟 ЖАҢЫЛАНУУЛАР ЖАНА ЖАКШЫРУУЛАР:
+Биз тынымсыз оюнду жакшыртуу жана жаңы футболчуларды кошуу үчүн иштеп жатабыз. Бардык мазмун жаңылоолору автоматтык түрдө жүктөлөт!
+
+📱 ТАЛАПТАР:
+• Бардык заманбап Android жана iOS түзүлүштөрдө иштейт
+• Ойноо үчүн интернет байланышы талап кылынбайт (мазмун жаңылоолорун жүктөөдөн башка)
+• 27 тилди колдоо
+
+Футбол шпионажынын кызыктуу дүйнөсүн ачкан миңдеген оюнчуларга кошулуңуз! Азыр жүктөп алыңыз жана досторуңуз менен керемет убакыт өткөрүңүз! Футбол жөнүндө эң мыкты шпион оюнун, топтор үчүн детективдик оюнду, логикалык оюн шпион ким экенин тап ойноңуз. Бул акысыз партия оюну, достор оюну жана үй-бүлөлүк оюн. ⚽🎮
+
+===============================================================================
+ITALIANO (it)
+[Используется для: Google Play - Италия, Швейцария (итальянская часть)]
+===============================================================================
+
+--- DESCRIZIONE BREVE (fino a 80 caratteri) ---
+Gioco di festa Spia del Calcio! Indovina chi è la spia! ⚽
+
+--- DESCRIZIONE COMPLETA ---
+🎮 SPIA DEL CALCIO — Gioco di festa emozionante per gli amici!
+
+Immergiti nel mondo dell'intrigo calcistico dove ogni round è pieno di tensione, sospetto e lavoro investigativo. Scopri il gioco perfetto per feste, riunioni di famiglia e incontri amichevoli! Questo è il miglior gioco di spia per gruppi, gioco investigativo sul calcio, gioco di logica indovina chi è la spia, gioco di festa e gioco per amici.
+
+🎯 COME GIOCARE:
+Diversi giocatori partecipano al gioco. Uno di loro riceve il ruolo di spia che non conosce la parola segreta (nome di un calciatore o allenatore). Gli altri giocatori conoscono questa parola e devono trovare la spia facendo domande e discutendo tra loro. La spia, a sua volta, cerca di indovinare la parola segreta senza rivelarsi.
+
+⚽ CARATTERISTICHE:
+• Oltre 400 calciatori famosi di diverse leghe — gioco con calciatori, quiz calcio, gioco di calcio
+• Oltre 20 migliori allenatori del calcio mondiale — gioco con allenatori, allenatori di calcio
+• Supporto per 27 lingue
+• Crea i tuoi set personalizzati per giocare — set personalizzati, personalizzazione del gioco
+• Modifica i set base — aggiungi o rimuovi qualsiasi giocatore
+• Impostazioni di gioco flessibili: numero di giocatori, spie e tempo del round — impostazioni di gioco, regole flessibili
+• Timer conveniente per tracciare il tempo — timer del gioco, controllo del tempo
+• Interfaccia bella e intuitiva — design moderno, interfaccia user-friendly
+
+🎨 CONFIGURAZIONE DEL GIOCO:
+• Scegli il numero di giocatori (3 o più)
+• Imposta il numero di spie
+• Imposta il tempo del round o gioca senza limiti di tempo
+• Scegli un set: giocatori, allenatori o entrambi
+• Crea il tuo set personalizzato per un gioco unico
+
+🎭 MECCANICA DEL GIOCO:
+All'inizio di ogni round, ogni giocatore vede una carta sul suo schermo con il nome di un calciatore o allenatore. Tutti i giocatori vedono lo stesso nome... tranne la spia! La spia vede la parola "SPIA" invece del nome.
+
+Ora inizia la discussione. I giocatori si fanno domande sulla parola segreta, cercando di capire chi tra loro è la spia. La spia, a sua volta, deve ascoltare attentamente le risposte e cercare di indovinare la parola segreta senza rivelarsi.
+
+Dopo che il tempo è scaduto o dopo una discussione generale, i giocatori votano per chi pensano sia la spia. Se la spia ha indovinato la parola o è rimasta inosservata — vince! Se la spia è stata esposta, i giocatori regolari vincono.
+
+🏆 PERFETTO PER:
+• Feste e riunioni amichevoli — gioco di festa, festa con amici, intrattenimento di festa
+• Serate di giochi in famiglia — gioco familiare, gioco per famiglia, gioco con bambini
+• Animare qualsiasi compagnia — gioco di gruppo, gioco per gruppo, intrattenimento di gruppo
+• Sviluppare il pensiero logico e le abilità di recitazione — gioco di logica, puzzle logico, gioco di recitazione, gioco di ruolo
+
+🌟 AGGIORNAMENTI E MIGLIORAMENTI:
+Lavoriamo costantemente per migliorare il gioco e aggiungere nuovi calciatori. Tutti gli aggiornamenti dei contenuti vengono scaricati automaticamente!
+
+📱 REQUISITI:
+• Funziona su tutti i dispositivi Android e iOS moderni
+• Non richiede connessione Internet per giocare (eccetto per scaricare aggiornamenti dei contenuti)
+• Supporto per 27 lingue
+
+Unisciti a migliaia di giocatori che hanno già scoperto il mondo emozionante dello spionaggio calcistico! Scarica ora e divertiti con gli amici! Gioca al miglior gioco di spia sul calcio, gioco investigativo per gruppi, gioco di logica indovina chi. Questo è un gioco di festa gratuito, gioco per amici e gioco familiare. ⚽🎮
+
+===============================================================================
+TÜRKÇE (tr)
+[Используется для: Google Play - Турция, Кипр]
+===============================================================================
+
+--- KISA AÇIKLAMA (80 karaktere kadar) ---
+Futbol Casusu parti oyunu! Casusun kim olduğunu tahmin et! ⚽
+
+--- TAM AÇIKLAMA ---
+🎮 FUTBOL CASUSU — Arkadaşlar için heyecan verici parti oyunu!
+
+Her raundun gerilim, şüphe ve dedektiflik çalışmasıyla dolu olduğu futbol entrikalarının dünyasına dalın. Partiler, aile toplantıları ve dostane buluşmalar için mükemmel oyunu keşfedin! Bu, gruplar için en iyi casus oyunu, futbol hakkında dedektif oyunu, mantık oyunu kimin casus olduğunu tahmin et, parti oyunu ve arkadaş oyunu.
+
+🎯 NASIL OYNANIR:
+Oyuna birkaç oyuncu katılır. Bunlardan biri gizli kelimeyi (bir futbolcunun veya antrenörün adı) bilmeyen bir casus rolü alır. Diğer oyuncular bu kelimeyi bilir ve sorular sorarak ve birbirleriyle tartışarak casusu bulmalıdır. Casus ise kendini açığa çıkarmadan gizli kelimeyi tahmin etmeye çalışır.
+
+⚽ ÖZELLİKLER:
+• Farklı liglerden 400'den fazla ünlü futbolcu — futbolcularla oyun, futbol bilgi yarışması, futbol oyunu
+• Dünya futbolunun 20'den fazla en iyi antrenörü — antrenörlerle oyun, futbol antrenörleri
+• 27 dil desteği
+• Oynamak için kendi özel setlerinizi oluşturun — özel setler, oyun kişiselleştirme
+• Temel setleri düzenleyin — herhangi bir oyuncuyu ekleyin veya kaldırın
+• Esnek oyun ayarları: oyuncu sayısı, casuslar ve raunt süresi — oyun ayarları, esnek kurallar
+• Zamanı takip etmek için kullanışlı zamanlayıcı — oyun zamanlayıcısı, zaman kontrolü
+• Güzel ve sezgisel arayüz — modern tasarım, kullanıcı dostu arayüz
+
+🎨 OYUN KURULUMU:
+• Oyuncu sayısını seçin (3 veya daha fazla)
+• Casus sayısını ayarlayın
+• Raunt süresini ayarlayın veya zaman sınırı olmadan oynayın
+• Bir set seçin: oyuncular, antrenörler veya her ikisi
+• Benzersiz bir oyun için kendi özel setinizi oluşturun
+
+🎭 OYUN MEKANİĞİ:
+Her rauntun başında, her oyuncu ekranında bir futbolcu veya antrenörün adıyla bir kart görür. Tüm oyuncular aynı adı görür... casus hariç! Casus ad yerine "CASUS" kelimesini görür.
+
+Şimdi tartışma başlar. Oyuncular gizli kelime hakkında birbirlerine sorular sorar, aralarından hangisinin casus olduğunu anlamaya çalışır. Casus ise cevapları dikkatle dinlemeli ve kendini açığa çıkarmadan gizli kelimeyi tahmin etmeye çalışmalıdır.
+
+Süre dolduktan veya genel bir tartışmadan sonra, oyuncular casus olduğunu düşündükleri kişi için oy verir. Casus kelimeyi tahmin ettiyse veya fark edilmediyse — kazanır! Casus açığa çıktıysa, normal oyuncular kazanır.
+
+🏆 İÇİN MÜKEMMEL:
+• Partiler ve dostane toplantılar — parti oyunu, arkadaşlarla parti, parti eğlencesi
+• Aile oyun geceleri — aile oyunu, aile için oyun, çocuklarla oyun
+• Herhangi bir şirketi canlandırmak — grup oyunu, grup için oyun, grup eğlencesi
+• Mantıksal düşünme ve oyunculuk becerilerini geliştirmek — mantık oyunu, mantık bulmaca, oyunculuk oyunu, rol yapma oyunu
+
+🌟 GÜNCELLEMELER VE İYİLEŞTİRMELER:
+Oyunu sürekli iyileştirmek ve yeni futbolcular eklemek için çalışıyoruz. Tüm içerik güncellemeleri otomatik olarak indirilir!
+
+📱 GEREKSİNİMLER:
+• Tüm modern Android ve iOS cihazlarda çalışır
+• Oynamak için internet bağlantısı gerekmez (içerik güncellemelerini indirmek hariç)
+• 27 dil desteği
+
+Futbol casusluğunun heyecan verici dünyasını keşfeden binlerce oyuncuya katılın! Şimdi indirin ve arkadaşlarınızla harika zaman geçirin! Futbol hakkında en iyi casus oyunu, gruplar için dedektif oyunu, mantık oyunu kimin casus olduğunu tahmin et oynayın. Bu ücretsiz bir parti oyunu, arkadaş oyunu ve aile oyunu. ⚽🎮
+
+===============================================================================
+TIẾNG VIỆT (vi)
+[Используется для: Google Play - Вьетнам]
+===============================================================================
+
+--- MÔ TẢ NGẮN (tối đa 80 ký tự) ---
+Trò chơi tiệc Điệp Viên Bóng Đá! Đoán ai là điệp viên! ⚽
+
+--- MÔ TẢ ĐẦY ĐỦ ---
+🎮 ĐIỆP VIÊN BÓNG ĐÁ — Trò chơi tiệc thú vị cho bạn bè!
+
+Đắm chìm trong thế giới âm mưu bóng đá nơi mỗi vòng đầy căng thẳng, nghi ngờ và công việc điều tra. Khám phá trò chơi hoàn hảo cho các bữa tiệc, tụ họp gia đình và các cuộc gặp gỡ thân thiện! Đây là trò chơi gián điệp tốt nhất cho nhóm, trò chơi thám tử về bóng đá, trò chơi logic đoán ai là gián điệp, trò chơi tiệc và trò chơi bạn bè.
+
+🎯 CÁCH CHƠI:
+Nhiều người chơi tham gia trò chơi. Một trong số họ nhận vai điệp viên không biết từ bí mật (tên của một cầu thủ bóng đá hoặc huấn luyện viên). Những người chơi khác biết từ này và phải tìm ra điệp viên bằng cách đặt câu hỏi và thảo luận với nhau. Điệp viên, đến lượt mình, cố gắng đoán từ bí mật mà không tiết lộ bản thân.
+
+⚽ TÍNH NĂNG:
+• Hơn 400 cầu thủ bóng đá nổi tiếng từ các giải đấu khác nhau — trò chơi với cầu thủ bóng đá, câu đố bóng đá, trò chơi bóng đá
+• Hơn 20 huấn luyện viên hàng đầu của bóng đá thế giới — trò chơi với huấn luyện viên, huấn luyện viên bóng đá
+• Hỗ trợ 27 ngôn ngữ
+• Tạo bộ tùy chỉnh của riêng bạn để chơi — bộ tùy chỉnh, cá nhân hóa trò chơi
+• Chỉnh sửa bộ cơ bản — thêm hoặc xóa bất kỳ người chơi nào
+• Cài đặt trò chơi linh hoạt: số lượng người chơi, điệp viên và thời gian vòng — cài đặt trò chơi, quy tắc linh hoạt
+• Bộ hẹn giờ tiện lợi để theo dõi thời gian — bộ hẹn giờ trò chơi, kiểm soát thời gian
+• Giao diện đẹp và trực quan — thiết kế hiện đại, giao diện thân thiện với người dùng
+
+🎨 THIẾT LẬP TRÒ CHƠI:
+• Chọn số lượng người chơi (3 người trở lên)
+• Đặt số lượng điệp viên
+• Đặt thời gian vòng hoặc chơi không giới hạn thời gian
+• Chọn một bộ: người chơi, huấn luyện viên hoặc cả hai
+• Tạo bộ tùy chỉnh của riêng bạn cho một trò chơi độc đáo
+
+🎭 CƠ CHẾ TRÒ CHƠI:
+Ở đầu mỗi vòng, mỗi người chơi thấy một thẻ trên màn hình của họ với tên của một cầu thủ bóng đá hoặc huấn luyện viên. Tất cả người chơi thấy cùng một tên... ngoại trừ điệp viên! Điệp viên thấy từ "ĐIỆP VIÊN" thay vì tên.
+
+Bây giờ cuộc thảo luận bắt đầu. Người chơi đặt câu hỏi cho nhau về từ bí mật, cố gắng tìm ra ai trong số họ là điệp viên. Điệp viên, đến lượt mình, phải lắng nghe cẩn thận các câu trả lời và cố gắng đoán từ bí mật trong khi không tiết lộ bản thân.
+
+Sau khi hết thời gian hoặc sau cuộc thảo luận chung, người chơi bỏ phiếu cho người mà họ nghĩ là điệp viên. Nếu điệp viên đoán đúng từ hoặc không bị phát hiện — họ thắng! Nếu điệp viên bị lộ, người chơi thông thường thắng.
+
+🏆 HOÀN HẢO CHO:
+• Các bữa tiệc và tụ họp thân thiện — trò chơi tiệc, tiệc với bạn bè, giải trí tiệc
+• Đêm chơi game gia đình — trò chơi gia đình, trò chơi cho gia đình, trò chơi với trẻ em
+• Làm sống động bất kỳ công ty nào — trò chơi nhóm, trò chơi cho nhóm, giải trí nhóm
+• Phát triển tư duy logic và kỹ năng diễn xuất — trò chơi logic, câu đố logic, trò chơi diễn xuất, trò chơi nhập vai
+
+🌟 CẬP NHẬT VÀ CẢI TIẾN:
+Chúng tôi liên tục làm việc để cải thiện trò chơi và thêm các cầu thủ bóng đá mới. Tất cả cập nhật nội dung được tải xuống tự động!
+
+📱 YÊU CẦU:
+• Hoạt động trên tất cả các thiết bị Android và iOS hiện đại
+• Không cần kết nối internet để chơi (trừ khi tải xuống cập nhật nội dung)
+• Hỗ trợ 27 ngôn ngữ
+
+Tham gia cùng hàng nghìn người chơi đã khám phá thế giới điệp viên bóng đá thú vị! Tải xuống ngay và có khoảng thời gian tuyệt vời với bạn bè! Chơi trò chơi gián điệp tốt nhất về bóng đá, trò chơi thám tử cho nhóm, trò chơi logic đoán ai. Đây là trò chơi tiệc miễn phí, trò chơi bạn bè và trò chơi gia đình. ⚽🎮
+
+===============================================================================
+NEDERLANDS (nl)
+[Используется для: Google Play - Нидерланды, Бельгия (фламандская часть)]
+===============================================================================
+
+--- KORTE BESCHRIJVING (tot 80 tekens) ---
+Voetbal Spion feestspel! Raad wie de spion is! ⚽
+
+--- VOLLEDIGE BESCHRIJVING ---
+🎮 VOETBAL SPION — Spannend feestspel voor vrienden!
+
+Duik in de wereld van voetbalintriges waar elke ronde vol spanning, verdenking en detectivewerk zit. Ontdek het perfecte spel voor feesten, familiebijeenkomsten en vriendelijke ontmoetingen! Dit is het beste spionagespel voor groepen, detectivespel over voetbal, logisch spel raad wie de spion is, feestspel en vriendenspel.
+
+🎯 HOE TE SPELEN:
+Meerdere spelers nemen deel aan het spel. Een van hen krijgt de rol van spion die het geheime woord (naam van een voetballer of trainer) niet kent. De andere spelers kennen dit woord en moeten de spion vinden door vragen te stellen en met elkaar te discussiëren. De spion probeert op zijn beurt het geheime woord te raden zonder zichzelf te verraden.
+
+⚽ FUNCTIES:
+• Meer dan 400 beroemde voetballers uit verschillende competities — spel met voetballers, voetbalquiz, voetbalspel
+• Meer dan 20 top-trainers van het wereldvoetbal — spel met trainers, voetbaltrainers
+• Ondersteuning voor 27 talen
+• Maak uw eigen aangepaste sets om te spelen — aangepaste sets, spelpersonalisatie
+• Bewerk basissets — voeg spelers toe of verwijder ze
+• Flexibele spelsinstellingen: aantal spelers, spionnen en rondetijd — spelsinstellingen, flexibele regels
+• Handige timer om de tijd bij te houden — speltimer, tijdcontrole
+• Mooie en intuïtieve interface — modern design, gebruiksvriendelijke interface
+
+🎨 SPELCONFIGURATIE:
+• Kies het aantal spelers (3 of meer)
+• Stel het aantal spionnen in
+• Stel de rondetijd in of speel zonder tijdslimiet
+• Kies een set: spelers, trainers of beide
+• Maak uw eigen aangepaste set voor een uniek spel
+
+🎭 SPELMECHANIEK:
+Aan het begin van elke ronde ziet elke speler een kaart op zijn scherm met de naam van een voetballer of trainer. Alle spelers zien dezelfde naam... behalve de spion! De spion ziet het woord "SPION" in plaats van de naam.
+
+Nu begint de discussie. Spelers stellen elkaar vragen over het geheime woord en proberen erachter te komen wie onder hen de spion is. De spion moet op zijn beurt de antwoorden aandachtig beluisteren en proberen het geheime woord te raden zonder zichzelf te verraden.
+
+Na verloop van tijd of na een algemene discussie stemmen de spelers op wie zij denken dat de spion is. Als de spion het woord heeft geraden of onopgemerkt is gebleven — wint hij! Als de spion is ontmaskerd, winnen de gewone spelers.
+
+🏆 PERFECT VOOR:
+• Feesten en vriendelijke bijeenkomsten — feestspel, feest met vrienden, feestentertainment
+• Familiegamesavonden — familiegame, spel voor familie, spel met kinderen
+• Elke groep opvrolijken — groepsgame, spel voor groep, groepsentertainment
+• Logisch denken en acteervaardigheden ontwikkelen — logisch spel, logische puzzel, acteer spel, rollenspel
+
+🌟 UPDATES EN VERBETERINGEN:
+We werken voortdurend aan het verbeteren van het spel en het toevoegen van nieuwe voetballers. Alle contentupdates worden automatisch gedownload!
+
+📱 VEREISTEN:
+• Werkt op alle moderne Android- en iOS-apparaten
+• Geen internetverbinding vereist om te spelen (behalve voor het downloaden van contentupdates)
+• Ondersteuning voor 27 talen
+
+Sluit je aan bij duizenden spelers die de spannende wereld van voetbalspionage al hebben ontdekt! Download nu en heb een geweldige tijd met vrienden! Speel het beste spionagespel over voetbal, detectivespel voor groepen, logisch spel raad wie. Dit is een gratis feestspel, vriendenspel en familiegame. ⚽🎮
+
+===============================================================================
+POLSKI (pl)
+[Используется для: Google Play - Польша]
+===============================================================================
+
+--- KRÓTKI OPIS (do 80 znaków) ---
+Gra imprezowa Szpieg Piłki Nożnej! Zgadnij, kto jest szpiegiem! ⚽
+
+--- PEŁNY OPIS ---
+🎮 SZPIEG PIŁKI NOŻNEJ — Ekscytująca gra imprezowa dla przyjaciół!
+
+Zanurz się w świecie intryg piłkarskich, gdzie każda runda jest pełna napięcia, podejrzeń i pracy detektywistycznej. Odkryj idealną grę na imprezy, spotkania rodzinne i przyjacielskie spotkania! To najlepsza gra szpiegowska dla grup, gra detektywistyczna o piłce nożnej, gra logiczna zgadnij kto jest szpiegiem, gra imprezowa i gra dla przyjaciół.
+
+🎯 JAK GRAĆ:
+W grze uczestniczy kilku graczy. Jeden z nich otrzymuje rolę szpiega, który nie zna tajnego słowa (imię piłkarza lub trenera). Pozostali gracze znają to słowo i muszą znaleźć szpiega, zadając pytania i dyskutując ze sobą. Szpieg z kolei próbuje odgadnąć tajne słowo, nie zdradzając się.
+
+⚽ FUNKCJE:
+• Ponad 400 sławnych piłkarzy z różnych lig — gra z piłkarzami, quiz piłkarski, gra piłkarska
+• Ponad 20 najlepszych trenerów światowej piłki nożnej — gra z trenerami, trenerzy piłkarscy
+• Obsługa 27 języków
+• Twórz własne niestandardowe zestawy do gry — zestawy niestandardowe, personalizacja gry
+• Edytuj zestawy bazowe — dodawaj lub usuwaj dowolnych graczy
+• Elastyczne ustawienia gry: liczba graczy, szpiegów i czas rundy — ustawienia gry, elastyczne zasady
+• Wygodny timer do śledzenia czasu — timer gry, kontrola czasu
+• Piękny i intuicyjny interfejs — nowoczesny design, przyjazny interfejs
+
+🎨 KONFIGURACJA GRY:
+• Wybierz liczbę graczy (3 lub więcej)
+• Ustaw liczbę szpiegów
+• Ustaw czas rundy lub graj bez limitu czasu
+• Wybierz zestaw: gracze, trenerzy lub oba
+• Utwórz własny niestandardowy zestaw do unikalnej gry
+
+🎭 MECHANIKA GRY:
+Na początku każdej rundy każdy gracz widzi kartę na swoim ekranie z imieniem piłkarza lub trenera. Wszyscy gracze widzą to samo imię... oprócz szpiega! Szpieg widzi słowo "SZPIEG" zamiast imienia.
+
+Teraz zaczyna się dyskusja. Gracze zadają sobie pytania o tajne słowo, próbując dowiedzieć się, kto spośród nich jest szpiegiem. Szpieg z kolei musi uważnie słuchać odpowiedzi i próbować odgadnąć tajne słowo, nie zdradzając się.
+
+Po upływie czasu lub po ogólnej dyskusji gracze głosują na osobę, którą uważają za szpiega. Jeśli szpieg odgadł słowo lub pozostał niezauważony — wygrywa! Jeśli szpieg został zdemaskowany, zwykli gracze wygrywają.
+
+🏆 IDEALNE DLA:
+• Imprez i przyjacielskich spotkań — gra imprezowa, impreza z przyjaciółmi, rozrywka imprezowa
+• Rodzinnych wieczorów gier — gra rodzinna, gra dla rodziny, gra z dziećmi
+• Ożywienia każdej towarzystwa — gra grupowa, gra dla grupy, rozrywka grupowa
+• Rozwijania logicznego myślenia i umiejętności aktorskich — gra logiczna, łamigłówka logiczna, gra aktorska, gra fabularna
+
+🌟 AKTUALIZACJE I ULEPSZENIA:
+Ciągle pracujemy nad ulepszaniem gry i dodawaniem nowych piłkarzy. Wszystkie aktualizacje treści są pobierane automatycznie!
+
+📱 WYMAGANIA:
+• Działa na wszystkich nowoczesnych urządzeniach Android i iOS
+• Nie wymaga połączenia z internetem do gry (oprócz pobierania aktualizacji treści)
+• Obsługa 27 języków
+
+Dołącz do tysięcy graczy, którzy już odkryli ekscytujący świat piłkarskiego szpiegostwa! Pobierz teraz i świetnie się baw z przyjaciółmi! Zagraj w najlepszą grę szpiegowską o piłce nożnej, grę detektywistyczną dla grup, grę logiczną zgadnij kto. To darmowa gra imprezowa, gra dla przyjaciół i gra rodzinna. ⚽🎮
+
+===============================================================================
+УКРАЇНСЬКА МОВА (uk)
+[Используется для: Google Play - Украина]
+===============================================================================
+
+--- КОРОТКИЙ ОПИС (до 80 символів) ---
+Футбольна гра «Шпигун» для компанії. Відгадай, хто шпигун!
+
+--- ПОВНИЙ ОПИС ---
+🎮 ФУТБОЛЬНИЙ ШПИГУН — Захоплююча партійна гра для компанії!
+
+Зануртеся в атмосферу футбольного закулісся, де кожен раунд — це напруження, підозри та детективна робота. Відкрийте для себе ідеальну гру для вечірок, сімейних посиденьок і дружніх зустрічей! Це найкраща гра шпигун для груп, детективна гра про футбол, логічна гра відгадай хто шпигун, партійна гра і гра для друзів.
+
+🎯 ЯК ГРАТИ:
+У грі беруть участь кілька гравців. Один з них отримує роль шпигуна, який не знає секретного слова (імені футболіста або тренера). Інші гравці знають це слово і повинні обчислити шпигуна, ставлячи питання та обговорюючи один одного. Шпигун, у свою чергу, намагається відгадати секретне слово, не видавши себе.
+
+⚽ ОСОБЛИВОСТІ:
+• Понад 400 відомих футболістів з різних ліг — гра з футболістами, футбольна вікторина, гра про футбол
+• Понад 20 топ-тренерів світового футболу — гра з тренерами, футбольні тренери
+• Підтримка 27 мов
+• Можливість створювати свої набори для гри — кастомні набори, персоналізація гри
+• Редагування базових наборів — додайте або видаліть будь-яких гравців
+• Гнучкі налаштування гри: кількість гравців, шпигунів і час раунду — налаштування гри, гнучкі правила
+• Зручний таймер для відстеження часу — таймер для гри, контроль часу
+• Красивий та інтуїтивний інтерфейс — сучасний дизайн, зручний інтерфейс
+
+🎨 НАЛАШТУВАННЯ ГРИ:
+• Виберіть кількість гравців (від 3 і більше)
+• Налаштуйте кількість шпигунів
+• Встановіть час раунду або грайте без обмежень
+• Виберіть набір: гравці, тренери або обидва варіанти
+• Створіть свій власний набір для унікальної гри
+
+🎭 МЕХАНІКА ГРИ:
+На початку кожного раунду кожен гравець бачить на своєму екрані картку з ім'ям футболіста або тренера. Всі гравці бачать одне й те саме ім'я... крім шпигуна! Шпигун бачить слово "ШПИГУН" замість імені.
+
+Тепер починається обговорення. Гравці ставлять один одному питання про секретне слово, намагаючись зрозуміти, хто з них шпигун. Шпигун, у свою чергу, повинен уважно слухати відповіді та намагатися відгадати секретне слово, при цьому не видавши себе.
+
+Після закінчення часу або після загального обговорення гравці голосують за того, кого вважають шпигуном. Якщо шпигун відгадав слово або залишився непоміченим — він перемагає! Якщо шпигуна викрили, перемагають звичайні гравці.
+
+🏆 ІДЕАЛЬНО ДЛЯ:
+• Вечірок і дружніх зустрічей — гра для вечірки, вечірка з друзями, гра на вечірку
+• Сімейних ігрових вечорів — сімейна гра, гра для сім'ї, гра з дітьми
+• Оживлення будь-якої компанії — гра для компанії, гра в компанії, розвага для компанії
+• Розвитку логічного мислення та акторських навичок — логічна гра, гра на логіку, акторська гра, гра на акторство
+
+🌟 ОНОВЛЕННЯ ТА ПОКРАЩЕННЯ:
+Ми постійно працюємо над покращенням гри та додаємо нових футболістів. Усі оновлення контенту завантажуються автоматично!
+
+📱 ВИМОГИ:
+• Працює на всіх сучасних Android та iOS пристроях
+• Не вимагає підключення до інтернету для гри (крім завантаження оновлень контенту)
+• Підтримка 27 мов
+
+Приєднуйтеся до тисяч гравців, які вже відкрили для себе захоплюючий світ футбольного шпигунства! Завантажуйте прямо зараз і весело проведіть час з друзями! Грайте в найкращу гру шпигун про футбол, детективну гру для компанії, логічну гру відгадай хто. Це безкоштовна гра для вечірок, гра для друзів і гра для сім'ї. ⚽🎮
+
+===============================================================================
+ไทย (th)
+[Используется для: Google Play - Таиланд]
+===============================================================================
+
+--- คำอธิบายสั้น (ไม่เกิน 80 ตัวอักษร) ---
+เกมปาร์ตี้สายลับฟุตบอล! ทายว่าใครเป็นสายลับ! ⚽
+
+--- คำอธิบายเต็ม ---
+🎮 สายลับฟุตบอล — เกมปาร์ตี้ที่น่าตื่นเต้นสำหรับเพื่อน!
+
+ดำดิ่งสู่โลกของแผนการฟุตบอลที่ทุกรอบเต็มไปด้วยความตึงเครียด ความสงสัย และงานสืบสวน ค้นพบเกมที่สมบูรณ์แบบสำหรับปาร์ตี้ การรวมตัวของครอบครัว และการพบปะที่เป็นมิตร! นี่คือเกมสายลับที่ดีที่สุดสำหรับกลุ่ม เกมนักสืบเกี่ยวกับฟุตบอล เกมตรรกะทายว่าใครเป็นสายลับ เกมปาร์ตี้และเกมเพื่อน
+
+🎯 วิธีเล่น:
+ผู้เล่นหลายคนเข้าร่วมเกม หนึ่งในนั้นได้รับบทบาทสายลับที่ไม่รู้คำลับ (ชื่อนักฟุตบอลหรือโค้ช) ผู้เล่นคนอื่นรู้คำนี้และต้องหาสายลับโดยการถามคำถามและอภิปรายกัน สายลับในทางกลับกันพยายามเดาคำลับโดยไม่เปิดเผยตัวเอง
+
+⚽ คุณสมบัติ:
+• นักฟุตบอลชื่อดังกว่า 400 คนจากลีกต่างๆ — เกมกับนักฟุตบอล แบบทดสอบฟุตบอล เกมฟุตบอล
+• โค้ชระดับโลกกว่า 20 คน — เกมกับโค้ช โค้ชฟุตบอล
+• รองรับ 27 ภาษา
+• สร้างชุดที่กำหนดเองของคุณเพื่อเล่น — ชุดที่กำหนดเอง การปรับแต่งเกม
+• แก้ไขชุดพื้นฐาน — เพิ่มหรือลบผู้เล่นใดๆ
+• การตั้งค่าเกมที่ยืดหยุ่น: จำนวนผู้เล่น สายลับ และเวลารอบ — การตั้งค่าเกม กฎที่ยืดหยุ่น
+• ตัวจับเวลาที่สะดวกสำหรับติดตามเวลา — ตัวจับเวลาเกม การควบคุมเวลา
+• อินเทอร์เฟซที่สวยงามและใช้งานง่าย — การออกแบบที่ทันสมัย อินเทอร์เฟซที่เป็นมิตรกับผู้ใช้
+
+🎨 การตั้งค่าเกม:
+• เลือกจำนวนผู้เล่น (3 คนขึ้นไป)
+• ตั้งจำนวนสายลับ
+• ตั้งเวลารอบหรือเล่นโดยไม่มีขีดจำกัดเวลา
+• เลือกชุด: ผู้เล่น โค้ช หรือทั้งสองอย่าง
+• สร้างชุดที่กำหนดเองของคุณสำหรับเกมที่ไม่เหมือนใคร
+
+🎭 กลไกเกม:
+เมื่อเริ่มต้นแต่ละรอบ ผู้เล่นแต่ละคนจะเห็นการ์ดบนหน้าจอพร้อมชื่อนักฟุตบอลหรือโค้ช ผู้เล่นทุกคนเห็นชื่อเดียวกัน... ยกเว้นสายลับ! สายลับเห็นคำว่า "สายลับ" แทนชื่อ
+
+ตอนนี้การอภิปรายเริ่มขึ้น ผู้เล่นถามคำถามกันเกี่ยวกับคำลับ พยายามหาว่าใครในพวกเขาเป็นสายลับ สายลับในทางกลับกันต้องฟังคำตอบอย่างระมัดระวังและพยายามเดาคำลับโดยไม่เปิดเผยตัวเอง
+
+หลังจากหมดเวลาหรือหลังการอภิปรายทั่วไป ผู้เล่นจะลงคะแนนให้คนที่คิดว่าเป็นสายลับ หากสายลับเดาคำได้หรือไม่ถูกสังเกตเห็น — พวกเขาชนะ! หากสายลับถูกเปิดเผย ผู้เล่นปกติจะชนะ
+
+🏆 เหมาะสำหรับ:
+• ปาร์ตี้และการรวมตัวที่เป็นมิตร — เกมปาร์ตี้ ปาร์ตี้กับเพื่อน ความบันเทิงปาร์ตี้
+• คืนเกมครอบครัว — เกมครอบครัว เกมสำหรับครอบครัว เกมกับเด็ก
+• ทำให้บริษัทใดๆ มีชีวิตชีวา — เกมกลุ่ม เกมสำหรับกลุ่ม ความบันเทิงกลุ่ม
+• พัฒนาการคิดเชิงตรรกะและทักษะการแสดง — เกมตรรกะ ปริศนาตรรกะ เกมการแสดง เกมบทบาท
+
+🌟 อัปเดตและการปรับปรุง:
+เราทำงานอย่างต่อเนื่องเพื่อปรับปรุงเกมและเพิ่มนักฟุตบอลใหม่ การอัปเดตเนื้อหาทั้งหมดจะดาวน์โหลดโดยอัตโนมัติ!
+
+📱 ความต้องการ:
+• ทำงานบนอุปกรณ์ Android และ iOS สมัยใหม่ทั้งหมด
+• ไม่ต้องใช้การเชื่อมต่ออินเทอร์เน็ตเพื่อเล่น (ยกเว้นการดาวน์โหลดการอัปเดตเนื้อหา)
+• รองรับ 27 ภาษา
+
+เข้าร่วมกับผู้เล่นหลายพันคนที่ได้ค้นพบโลกที่น่าตื่นเต้นของการสอดแนมฟุตบอลแล้ว! ดาวน์โหลดตอนนี้และสนุกกับเพื่อน! เล่นเกมสายลับที่ดีที่สุดเกี่ยวกับฟุตบอล เกมนักสืบสำหรับกลุ่ม เกมตรรกะทายว่าใคร นี่คือเกมปาร์ตี้ฟรี เกมเพื่อนและเกมครอบครัว ⚽🎮
+
+===============================================================================
+КОНЕЦ ФАЙЛА
+===============================================================================
+
+[ПРИМЕЧАНИЯ]
+- Все описания переведены на соответствующие языки
+- Эмодзи используются для улучшения визуального восприятия
+- Структура всех описаний одинаковая для удобства навигации
+- При копировании убедитесь, что не пропустили эмодзи и форматирование
+- Для App Store может потребоваться дополнительная адаптация текста под их требования
+
+[СПИСОК ВСЕХ ЯЗЫКОВ В ФАЙЛЕ]
+1. Русский (ru)
+2. English (en)
+3. Белорусская мова (be)
+4. Français (fr)
+5. Deutsch (de)
+6. 中文 (简体) (zh)
+7. Español (es)
+8. Português (pt)
+9. हिंदी (hi)
+10. العربية (ar)
+11. Azərbaycan dili (az)
+12. বাংলা (bn)
+13. اردو (ur)
+14. Bahasa Indonesia (id)
+15. 日本語 (ja)
+16. Kiswahili (sw)
+17. 한국어 (ko)
+18. Қазақша (kk)
+19. Հայերեն (hy)
+20. Кыргыз тили (ky)
+21. Italiano (it)
+22. Türkçe (tr)
+23. Tiếng Việt (vi)
+24. Nederlands (nl)
+25. Polski (pl)
+26. Українська мова (uk)
+27. ไทย (th)
+
+===============================================================================
