@@ -2,9 +2,9 @@ import { AppText } from '@/components';
 import { FONT_SIZES } from '@/constants';
 import {
   BUILTIN_SET_ID_TO_ITEM_TYPE,
-  CurriculumItemType,
-  getLocalizedName,
-} from '@/utils/localization';
+  isBuiltinSetTypeId,
+} from '@/constants/builtinCurriculum';
+import { CurriculumItemType, getLocalizedName } from '@/utils/localization';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, View } from 'react-native';
@@ -18,8 +18,9 @@ type CharacterCardProps = {
 export const CharacterCard = ({ character, setType }: CharacterCardProps) => {
   const { t } = useTranslation();
   const theme = useTheme();
-  const itemType: CurriculumItemType | undefined =
-    BUILTIN_SET_ID_TO_ITEM_TYPE[setType];
+  const itemType: CurriculumItemType | undefined = isBuiltinSetTypeId(setType)
+    ? BUILTIN_SET_ID_TO_ITEM_TYPE[setType]
+    : undefined;
 
   return (
     <Card style={styles.locationCard}>
@@ -44,7 +45,7 @@ export const CharacterCard = ({ character, setType }: CharacterCardProps) => {
                 marginTop: 4,
               }}
             >
-              {t('labels.character')}
+              {t('results.character')}
             </AppText>
           </View>
         </View>

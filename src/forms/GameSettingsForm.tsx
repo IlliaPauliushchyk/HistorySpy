@@ -4,16 +4,20 @@ import {
   PlayersSpiesPicker,
   TimePicker,
 } from '@/components';
+import { BuiltinGradeSection } from '@/forms/components/BuiltinGradeSection';
 import { BuiltinSetGroupAccordion } from '@/forms/components/BuiltinSetGroupAccordion';
+import {
+  BUILTIN_SET_ICON_MAP,
+  BUILTIN_SET_TYPE_IDS,
+  BUILTIN_SUBJECT_GROUPS,
+  BuiltinGroupId,
+  BuiltinSetTypeId,
+} from '@/constants/builtinCurriculum';
+import { logSetInfoViewed, logSetSelected } from '@/utils/analytics';
 import { FormikHelpers, useFormik } from 'formik';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import {
-  Animated,
-  StyleSheet,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import { Animated, StyleSheet, TouchableOpacity, View } from 'react-native';
 import {
   Button,
   Card,
@@ -23,7 +27,6 @@ import {
   useTheme,
 } from 'react-native-paper';
 import * as Yup from 'yup';
-import { logSetInfoViewed, logSetSelected } from '@/utils/analytics';
 
 export type GameSettingsFormValues = {
   playersCount: number;
@@ -32,6 +35,7 @@ export type GameSettingsFormValues = {
   infiniteTime: boolean;
   setType: string;
   suggestQuestionEnabled: boolean; // кнопка «Предложить вопрос» во время игры
+  showSecretForTeacherEnabled: boolean; // режим для учителя: загадка сначала у ведущего
 };
 
 export type GameSettingsFormSubmitHandler = (
@@ -73,6 +77,7 @@ const gameSettingsValidationSchema = (t: (key: string) => string) =>
     infiniteTime: Yup.boolean().required(),
     setType: Yup.string().required(t('validation.setTypeRequired')),
     suggestQuestionEnabled: Yup.boolean().required(),
+    showSecretForTeacherEnabled: Yup.boolean().required(),
   });
 
 type Props = {
@@ -157,13 +162,6 @@ type AvailableSet = {
   isModified: boolean;
 };
 
-type BuiltinGroupId = 'worldHistory' | 'belarusHistory';
-
-type BuiltinSetGroup = {
-  id: BuiltinGroupId;
-  title: string;
-  setIds: string[];
-};
 
 const SetTypeButton = ({
   label,
@@ -234,15 +232,6 @@ const SetTypeButton = ({
   );
 };
 
-const baseSetIds = [
-  'worldHistoryDefinitions',
-  'worldHistoryNames',
-  'worldHistoryEvents',
-  'belarusHistoryDefinitions',
-  'belarusHistoryNames',
-  'belarusHistoryEvents',
-];
-
 export const GameSettingsForm = ({
   onSubmit,
   initialValues,
@@ -258,7 +247,9 @@ export const GameSettingsForm = ({
   const { t } = useTranslation();
   const theme = useTheme();
   const [activeTab, setActiveTab] = useState<'builtin' | 'custom'>(() =>
-    baseSetIds.includes(initialValues.setType) ? 'builtin' : 'custom',
+    BUILTIN_SET_TYPE_IDS.includes(initialValues.setType as BuiltinSetTypeId)
+      ? 'builtin'
+      : 'custom',
   );
   const [openBuiltinGroup, setOpenBuiltinGroup] =
     useState<BuiltinGroupId>('worldHistory');
@@ -270,27 +261,16 @@ export const GameSettingsForm = ({
     [baseSets],
   );
 
-  const builtinSetGroups = useMemo<BuiltinSetGroup[]>(
-    () => [
-      {
-        id: 'worldHistory',
-        title: t('labels.groupWorldHistory'),
-        setIds: [
-          'worldHistoryDefinitions',
-          'worldHistoryNames',
-          'worldHistoryEvents',
-        ],
-      },
-      {
-        id: 'belarusHistory',
-        title: t('labels.groupBelarusHistory'),
-        setIds: [
-          'belarusHistoryDefinitions',
-          'belarusHistoryNames',
-          'belarusHistoryEvents',
-        ],
-      },
-    ],
+  const builtinSubjectGroups = useMemo(
+    () =>
+      BUILTIN_SUBJECT_GROUPS.map(group => ({
+        ...group,
+        title: t(group.titleKey),
+        grades: group.grades.map(grade => ({
+          ...grade,
+          title: t(grade.titleKey),
+        })),
+      })),
     [t],
   );
 
@@ -373,13 +353,41 @@ export const GameSettingsForm = ({
   };
 
   const maxSpies = values.playersCount - 1;
-  const iconMap: Record<string, string> = {
-    worldHistoryDefinitions: 'book-open-variant',
-    worldHistoryNames: 'account',
-    worldHistoryEvents: 'calendar-clock',
-    belarusHistoryDefinitions: 'book-open-page-variant',
-    belarusHistoryNames: 'account-tie',
-    belarusHistoryEvents: 'flag',
+  const renderBuiltinSetButton = (setId: BuiltinSetTypeId) => {
+    const set = baseSetsById.get(setId);
+    if (!set) {
+      return null;
+    }
+    return (
+      <SetTypeButton
+        key={set.id}
+        label={`${set.name}${set.isModified ? ' *' : ''}`}
+        icon={BUILTIN_SET_ICON_MAP[setId]}
+        isSelected={values.setType === set.id}
+        onPress={() => {
+          setFieldValue('setType', set.id);
+          logSetSelected({
+            setType: set.id,
+            setName: set.name,
+            isCustom: false,
+            isModified: set.isModified,
+          });
+        }}
+        onInfoPress={
+          onInfoSetPress
+            ? () => {
+                onInfoSetPress(set.id);
+                logSetInfoViewed({
+                  setType: set.id,
+                  setName: set.name,
+                  isCustom: false,
+                });
+              }
+            : undefined
+        }
+        style={styles.setTypeButtonFull}
+      />
+    );
   };
 
   return (
@@ -503,6 +511,24 @@ export const GameSettingsForm = ({
             </Animated.View>
             <Divider style={styles.divider} />
             <View style={styles.switchRow}>
+              <View style={styles.switchLabelBlock}>
+                <AppText variant="bodyMedium">{t('labels.teacherMode')}</AppText>
+                <AppText
+                  variant="bodySmall"
+                  style={styles.switchDescription}
+                >
+                  {t('labels.teacherModeDescription')}
+                </AppText>
+              </View>
+              <Switch
+                value={values.showSecretForTeacherEnabled}
+                onValueChange={value => {
+                  setFieldValue('showSecretForTeacherEnabled', value);
+                }}
+              />
+            </View>
+            {/* <Divider style={styles.divider} />
+            <View style={styles.switchRow}>
               <AppText variant="bodyMedium">
                 {t('labels.suggestQuestion')}
               </AppText>
@@ -512,7 +538,7 @@ export const GameSettingsForm = ({
                   setFieldValue('suggestQuestionEnabled', value);
                 }}
               />
-            </View>
+            </View> */}
           </Card.Content>
         </Card>
       </AnimatedCard>
@@ -559,56 +585,27 @@ export const GameSettingsForm = ({
             <View style={styles.setTypeContainer}>
               {activeTab === 'builtin' && (
                 <>
-                  {builtinSetGroups.map(group => {
-                    const groupSets = group.setIds
-                      .map(setId => baseSetsById.get(setId))
-                      .filter((set): set is AvailableSet => !!set);
-                    if (!groupSets.length) return null;
-
-                    return (
-                      <BuiltinSetGroupAccordion
-                        key={group.id}
-                        title={group.title}
-                        sets={groupSets}
-                        isOpen={openBuiltinGroup === group.id}
-                        onToggle={() => {
-                          setOpenBuiltinGroup(prev =>
-                            prev === group.id ? prev : group.id,
-                          );
-                        }}
-                        renderSetButton={set => (
-                          <SetTypeButton
-                            key={set.id}
-                            label={`${set.name}${set.isModified ? ' *' : ''}`}
-                            icon={iconMap[set.id]}
-                            isSelected={values.setType === set.id}
-                            onPress={() => {
-                              setFieldValue('setType', set.id);
-                              logSetSelected({
-                                setType: set.id,
-                                setName: set.name,
-                                isCustom: false,
-                                isModified: set.isModified,
-                              });
-                            }}
-                            onInfoPress={
-                              onInfoSetPress
-                                ? () => {
-                                    onInfoSetPress(set.id);
-                                    logSetInfoViewed({
-                                      setType: set.id,
-                                      setName: set.name,
-                                      isCustom: false,
-                                    });
-                                  }
-                                : undefined
-                            }
-                            style={styles.setTypeButtonFull}
-                          />
-                        )}
-                      />
-                    );
-                  })}
+                  {builtinSubjectGroups.map(group => (
+                    <BuiltinSetGroupAccordion
+                      key={group.id}
+                      title={group.title}
+                      sets={group.grades}
+                      isOpen={openBuiltinGroup === group.id}
+                      onToggle={() => {
+                        setOpenBuiltinGroup(prev =>
+                          prev === group.id ? prev : group.id,
+                        );
+                      }}
+                      renderSetButton={grade => (
+                        <BuiltinGradeSection
+                          key={`${group.id}-${grade.grade}`}
+                          title={grade.title}
+                          setIds={grade.setIds}
+                          renderSetButton={renderBuiltinSetButton}
+                        />
+                      )}
+                    />
+                  ))}
                 </>
               )}
               {activeTab === 'custom' && (
@@ -686,7 +683,14 @@ const styles = StyleSheet.create({
   switchRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
+    gap: 12,
+  },
+  switchLabelBlock: {
+    flex: 1,
+  },
+  switchDescription: {
+    marginTop: 4,
+    opacity: 0.7,
   },
   divider: {
     marginVertical: 12,

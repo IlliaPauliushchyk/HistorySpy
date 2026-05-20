@@ -8,19 +8,13 @@ import {
   TIMEOUTS,
   TIMER_INTERVAL,
 } from '@/constants';
+import {
+  BuiltinSetTypeId,
+  isBuiltinSetTypeId,
+} from '@/constants/builtinCurriculum';
 import { ILanguage } from '@/hooks/localization';
 import i18n from '@/localization/i18n';
 import { selectGameSettings } from '@/store/slices';
-import {
-  BUILTIN_SET_ID_TO_ITEM_TYPE,
-  getBelarusHistoryDefinitions,
-  getBelarusHistoryEvents,
-  getBelarusHistoryNames,
-  getWorldHistoryDefinitions,
-  getWorldHistoryEvents,
-  getWorldHistoryNames,
-  hasBuiltinHint,
-} from '@/utils/localization';
 import {
   logCardNext,
   logCardShown,
@@ -33,6 +27,11 @@ import {
   logTimerEdited,
   logTimerRestarted,
 } from '@/utils/analytics';
+import {
+  BUILTIN_SET_ID_TO_ITEM_TYPE,
+  getBuiltinSet,
+  hasBuiltinHint,
+} from '@/utils/localization';
 import { getSetByName, loadSetsData } from '@/utils/sets';
 import { SetsData } from '@/utils/storage';
 import { useNavigation } from '@react-navigation/native';
@@ -85,6 +84,7 @@ export const useActiveGame = () => {
   const [showEndGameChoice, setShowEndGameChoice] = useState(false);
   const [setsData, setSetsData] = useState<SetsData | null>(null);
   const [selectedPerson, setSelectedPerson] = useState<string>('');
+  const [teacherRevealDismissed, setTeacherRevealDismissed] = useState(false);
 
   const flipAnimation = useRef(new Animated.Value(0)).current;
   const cardAppearAnimation = useRef(new Animated.Value(1)).current;
@@ -116,19 +116,12 @@ export const useActiveGame = () => {
     if (!setItems || setItems.length === 0) {
       // Fallback на данные текущего языка если набор не найден
       const currentLanguage = (i18n.language || 'ru') as ILanguage;
-      const curriculumGetters: Record<
-        string,
-        (lang: ILanguage) => string[]
-      > = {
-        worldHistoryDefinitions: getWorldHistoryDefinitions,
-        worldHistoryNames: getWorldHistoryNames,
-        worldHistoryEvents: getWorldHistoryEvents,
-        belarusHistoryDefinitions: getBelarusHistoryDefinitions,
-        belarusHistoryNames: getBelarusHistoryNames,
-        belarusHistoryEvents: getBelarusHistoryEvents,
-      };
-      const getter = curriculumGetters[gameSettings.setType];
-      let availableNames: string[] = getter ? getter(currentLanguage) : [];
+      const availableNames: string[] = isBuiltinSetTypeId(gameSettings.setType)
+        ? getBuiltinSet(
+            gameSettings.setType as BuiltinSetTypeId,
+            currentLanguage,
+          )
+        : [];
       const randomIndex = Math.floor(Math.random() * availableNames.length);
       return availableNames[randomIndex] || '';
     }
@@ -164,6 +157,16 @@ export const useActiveGame = () => {
       },
     });
   }, [alert, t, navigation]);
+
+  const showTeacherReveal = Boolean(
+    gameSettings?.showSecretForTeacherEnabled &&
+      selectedPerson &&
+      !teacherRevealDismissed,
+  );
+
+  const handleTeacherRevealContinue = useCallback(() => {
+    setTeacherRevealDismissed(true);
+  }, []);
 
   // Генерируем распределение игроков и шпионов
   const initialPlayers = useMemo<Player[]>(() => {
@@ -217,7 +220,7 @@ export const useActiveGame = () => {
   // Обработчик показа карточки
   const handleShowCard = useCallback(() => {
     setCardFace('role');
-    
+
     // Логируем показ карточки
     const currentPlayer = players[currentPlayerIndex];
     if (currentPlayer) {
@@ -228,7 +231,7 @@ export const useActiveGame = () => {
         totalCards: players.length,
       });
     }
-    
+
     // На iOS используем простую анимацию появления, на Android - поворот
     if (Platform.OS === 'android') {
       Animated.timing(flipAnimation, {
@@ -256,7 +259,9 @@ export const useActiveGame = () => {
     if (!currentPlayer || currentPlayer.role === 'spy' || !gameSettings) {
       return;
     }
-    const itemType = BUILTIN_SET_ID_TO_ITEM_TYPE[gameSettings.setType];
+    const itemType = isBuiltinSetTypeId(gameSettings.setType)
+      ? BUILTIN_SET_ID_TO_ITEM_TYPE[gameSettings.setType]
+      : undefined;
     if (!itemType || !hasBuiltinHint(selectedPerson, itemType)) {
       return;
     }
@@ -350,7 +355,7 @@ export const useActiveGame = () => {
         p => p.isExiled && p.role === 'player',
       ).length;
       const cardsShown = currentPlayerIndex + 1; // +1 потому что индексация с 0
-      
+
       // Вычисляем длительность игры (примерно, так как точное время не отслеживается)
       const durationSeconds = gameSettings.infiniteTime
         ? 0
@@ -454,10 +459,10 @@ export const useActiveGame = () => {
       const randomFirstPlayer =
         Math.floor(Math.random() * gameSettings!.playersCount) + 1;
       setFirstPlayer(randomFirstPlayer);
-      
+
       // Логируем объявление первого игрока
       logFirstPlayerAnnounced(randomFirstPlayer);
-      
+
       setShowBlackScreen(true);
 
       // Запускаем анимацию появления объявления
@@ -818,7 +823,7 @@ export const useActiveGame = () => {
           const remainingSpies = activePlayers.filter(
             p => p.role === 'spy' && p.index !== selectedPlayer?.index,
           ).length;
-          
+
           logPlayerExiled({
             playerIndex: selectedPlayer?.index || selectedPlayerIndex,
             role: selectedPlayer?.role || 'player',
@@ -955,6 +960,8 @@ export const useActiveGame = () => {
     exiledPlayers,
     showEndGameChoice,
     selectedPerson,
+    showTeacherReveal,
+    teacherRevealDismissed,
     players,
     insets,
     // Анимации
@@ -984,6 +991,7 @@ export const useActiveGame = () => {
     handleShowHint,
     handleNextCard,
     handleReselectPerson,
+    handleTeacherRevealContinue,
     handleStartGame,
     handlePause,
     handleRestart,

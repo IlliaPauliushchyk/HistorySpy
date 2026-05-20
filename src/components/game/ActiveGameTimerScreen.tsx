@@ -47,7 +47,7 @@ type ActiveGameTimerScreenProps = {
   onChoosePlayers: () => void;
   onChooseSpies: () => void;
   onCloseEndGameChoice: () => void;
-  onNewGame: () => void;
+  onNewGame?: () => void;
 };
 
 export const ActiveGameTimerScreen = ({
@@ -195,13 +195,15 @@ export const ActiveGameTimerScreen = ({
           >
             {t('buttons.endGame')}
           </AppButton>
-          <NewGameButton
-            onPress={onNewGame}
-            mode="outlined"
-            confirmBeforePress
-            style={styles.newGameButton}
-            mt={12}
-          />
+          {onNewGame && (
+            <NewGameButton
+              onPress={onNewGame}
+              mode="outlined"
+              confirmBeforePress
+              style={styles.newGameButton}
+              mt={12}
+            />
+          )}
 
           {/* Предложить вопрос — один случайный из 30 */}
           {suggestQuestionEnabled && (

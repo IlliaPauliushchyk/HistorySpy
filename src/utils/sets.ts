@@ -1,112 +1,62 @@
+import {
+  BUILTIN_SET_ID_TO_ITEM_TYPE,
+  BUILTIN_SET_TYPE_IDS,
+  BuiltinSetTypeId,
+  setIdToRemovedKey,
+} from '@/constants/builtinCurriculum';
 import { ILanguage } from '@/hooks/localization';
 import i18n from '@/localization/i18n';
 import {
-  getBelarusHistoryDefinitions,
-  getBelarusHistoryEvents,
-  getBelarusHistoryNames,
+  getBuiltinSet,
   getInitialSetsForLanguage,
   getRussianName,
-  getWorldHistoryDefinitions,
-  getWorldHistoryEvents,
-  getWorldHistoryNames,
   preloadDataFromFirestore,
 } from './localization';
-import { SetItem, SetsData, storage } from './storage';
+import {
+  createEmptySetsData,
+  getRemovedNames,
+  setRemovedNames,
+  SetItem,
+  SetsData,
+  storage,
+} from './storage';
 
 const t = (key: string) => i18n.t(key);
 
-const VALID_ITEM_TYPES: SetItem['type'][] = [
-  'worldHistoryDefinition',
-  'worldHistoryName',
-  'worldHistoryEvent',
-  'belarusHistoryDefinition',
-  'belarusHistoryName',
-  'belarusHistoryEvent',
-];
-
-function normalizeCustomSetItem(item: { name: string; type: string }): SetItem {
-  if (VALID_ITEM_TYPES.includes(item.type as SetItem['type'])) {
+function normalizeCustomSetItem(item: {
+  name: string;
+  type: string;
+}): SetItem {
+  const valid = Object.values(BUILTIN_SET_ID_TO_ITEM_TYPE);
+  if (valid.includes(item.type as SetItem['type'])) {
     return { name: item.name, type: item.type as SetItem['type'] };
   }
-  return { name: item.name, type: 'worldHistoryName' };
+  return { name: item.name, type: 'worldHistory5Name' };
 }
 
 export const getInitialSets = (): SetsData => {
   const language = (i18n.language || 'ru') as ILanguage;
-  return {
-    removedWorldHistoryDefinitionsNames: [],
-    removedWorldHistoryNamesNames: [],
-    removedWorldHistoryEventsNames: [],
-    removedBelarusHistoryDefinitionsNames: [],
-    removedBelarusHistoryNamesNames: [],
-    removedBelarusHistoryEventsNames: [],
-    customSets: [],
-    language,
-  };
+  return createEmptySetsData(language);
 };
 
 export const getActualSets = (
-  removedWorldHistoryDefinitionsNames: string[] = [],
-  removedWorldHistoryNamesNames: string[] = [],
-  removedWorldHistoryEventsNames: string[] = [],
-  removedBelarusHistoryDefinitionsNames: string[] = [],
-  removedBelarusHistoryNamesNames: string[] = [],
-  removedBelarusHistoryEventsNames: string[] = [],
-): {
-  worldHistoryDefinitions: SetItem[];
-  worldHistoryNames: SetItem[];
-  worldHistoryEvents: SetItem[];
-  belarusHistoryDefinitions: SetItem[];
-  belarusHistoryNames: SetItem[];
-  belarusHistoryEvents: SetItem[];
-} => {
+  setsData: SetsData,
+): Record<BuiltinSetTypeId, SetItem[]> => {
   const language = (i18n.language || 'ru') as ILanguage;
-  const {
-    worldHistoryDefinitions: allWDef,
-    worldHistoryNames: allWNam,
-    worldHistoryEvents: allWEv,
-    belarusHistoryDefinitions: allBDef,
-    belarusHistoryNames: allBNam,
-    belarusHistoryEvents: allBEv,
-  } = getInitialSetsForLanguage(language);
+  const all = getInitialSetsForLanguage(language);
+  const result = {} as Record<BuiltinSetTypeId, SetItem[]>;
 
-  const wDefSet = new Set(removedWorldHistoryDefinitionsNames);
-  const wNamSet = new Set(removedWorldHistoryNamesNames);
-  const wEvSet = new Set(removedWorldHistoryEventsNames);
-  const bDefSet = new Set(removedBelarusHistoryDefinitionsNames);
-  const bNamSet = new Set(removedBelarusHistoryNamesNames);
-  const bEvSet = new Set(removedBelarusHistoryEventsNames);
+  for (const setId of BUILTIN_SET_TYPE_IDS) {
+    const itemType = BUILTIN_SET_ID_TO_ITEM_TYPE[setId];
+    const removed = new Set(getRemovedNames(setsData, setId));
 
-  const filterByRemoved = (
-    items: SetItem[],
-    removed: Set<string>,
-    itemType: SetItem['type'],
-  ) =>
-    items.filter(item => {
+    result[setId] = all[setId].filter(item => {
       const ru = getRussianName(item.name, itemType);
       return !removed.has(ru);
     });
+  }
 
-  return {
-    worldHistoryDefinitions: filterByRemoved(
-      allWDef,
-      wDefSet,
-      'worldHistoryDefinition',
-    ),
-    worldHistoryNames: filterByRemoved(allWNam, wNamSet, 'worldHistoryName'),
-    worldHistoryEvents: filterByRemoved(allWEv, wEvSet, 'worldHistoryEvent'),
-    belarusHistoryDefinitions: filterByRemoved(
-      allBDef,
-      bDefSet,
-      'belarusHistoryDefinition',
-    ),
-    belarusHistoryNames: filterByRemoved(
-      allBNam,
-      bNamSet,
-      'belarusHistoryName',
-    ),
-    belarusHistoryEvents: filterByRemoved(allBEv, bEvSet, 'belarusHistoryEvent'),
-  };
+  return result;
 };
 
 export const calculateRemovedNames = (
@@ -142,15 +92,7 @@ export const loadSetsData = async (): Promise<SetsData> => {
   ]);
 
   const saved = await storage.loadSets();
-
-  const {
-    worldHistoryDefinitions: fullWDef,
-    worldHistoryNames: fullWNam,
-    worldHistoryEvents: fullWEv,
-    belarusHistoryDefinitions: fullBDef,
-    belarusHistoryNames: fullBNam,
-    belarusHistoryEvents: fullBEv,
-  } = getInitialSetsForLanguage(currentLanguage);
+  const ru = getInitialSetsForLanguage('ru');
 
   if (saved) {
     const migratedCustomSets = (saved.customSets || []).map(customSet => ({
@@ -164,42 +106,21 @@ export const loadSetsData = async (): Promise<SetsData> => {
       }),
     }));
 
-    const ru = getInitialSetsForLanguage('ru');
-    const nameSet = (items: SetItem[]) => new Set(items.map(i => i.name));
-
-    const valid = (removed: string[] | undefined, full: SetItem[]) => {
-      const allowed = nameSet(full);
-      return (removed || []).filter(n => allowed.has(n));
-    };
-
     const updatedSets: SetsData = {
-      removedWorldHistoryDefinitionsNames: valid(
-        saved.removedWorldHistoryDefinitionsNames,
-        ru.worldHistoryDefinitions,
-      ),
-      removedWorldHistoryNamesNames: valid(
-        saved.removedWorldHistoryNamesNames,
-        ru.worldHistoryNames,
-      ),
-      removedWorldHistoryEventsNames: valid(
-        saved.removedWorldHistoryEventsNames,
-        ru.worldHistoryEvents,
-      ),
-      removedBelarusHistoryDefinitionsNames: valid(
-        saved.removedBelarusHistoryDefinitionsNames,
-        ru.belarusHistoryDefinitions,
-      ),
-      removedBelarusHistoryNamesNames: valid(
-        saved.removedBelarusHistoryNamesNames,
-        ru.belarusHistoryNames,
-      ),
-      removedBelarusHistoryEventsNames: valid(
-        saved.removedBelarusHistoryEventsNames,
-        ru.belarusHistoryEvents,
-      ),
+      ...createEmptySetsData(currentLanguage),
       customSets: migratedCustomSets,
       language: currentLanguage,
     };
+
+    for (const setId of BUILTIN_SET_TYPE_IDS) {
+      const allowed = new Set(ru[setId].map(i => i.name));
+      const raw = getRemovedNames(saved, setId);
+      setRemovedNames(
+        updatedSets,
+        setId,
+        raw.filter(n => allowed.has(n)),
+      );
+    }
 
     await storage.saveSets(updatedSets);
     return updatedSets;
@@ -214,32 +135,10 @@ export const getSetByName = (
   setsData: SetsData,
   setName: string,
 ): SetItem[] | null => {
-  const actual = getActualSets(
-    setsData.removedWorldHistoryDefinitionsNames,
-    setsData.removedWorldHistoryNamesNames,
-    setsData.removedWorldHistoryEventsNames,
-    setsData.removedBelarusHistoryDefinitionsNames,
-    setsData.removedBelarusHistoryNamesNames,
-    setsData.removedBelarusHistoryEventsNames,
-  );
+  const actual = getActualSets(setsData);
 
-  if (setName === 'worldHistoryDefinitions') {
-    return actual.worldHistoryDefinitions;
-  }
-  if (setName === 'worldHistoryNames') {
-    return actual.worldHistoryNames;
-  }
-  if (setName === 'worldHistoryEvents') {
-    return actual.worldHistoryEvents;
-  }
-  if (setName === 'belarusHistoryDefinitions') {
-    return actual.belarusHistoryDefinitions;
-  }
-  if (setName === 'belarusHistoryNames') {
-    return actual.belarusHistoryNames;
-  }
-  if (setName === 'belarusHistoryEvents') {
-    return actual.belarusHistoryEvents;
+  if (BUILTIN_SET_TYPE_IDS.includes(setName as BuiltinSetTypeId)) {
+    return actual[setName as BuiltinSetTypeId];
   }
 
   const customSet = setsData.customSets.find(set => set.id === setName);
@@ -254,37 +153,20 @@ export const getAvailableSets = (
   type: 'base' | 'custom';
   isModified: boolean;
 }> => {
-  const baseIds = [
-    'worldHistoryDefinitions',
-    'worldHistoryNames',
-    'worldHistoryEvents',
-    'belarusHistoryDefinitions',
-    'belarusHistoryNames',
-    'belarusHistoryEvents',
-  ] as const;
-
   const sets: Array<{
     id: string;
     name: string;
     type: 'base' | 'custom';
     isModified: boolean;
-  }> = baseIds.map(id => ({
-    id,
-    name: t(`labels.${id}`),
-    type: 'base' as const,
-    isModified: false,
-  }));
-
-  sets[0].isModified =
-    (setsData.removedWorldHistoryDefinitionsNames?.length || 0) > 0;
-  sets[1].isModified = (setsData.removedWorldHistoryNamesNames?.length || 0) > 0;
-  sets[2].isModified = (setsData.removedWorldHistoryEventsNames?.length || 0) > 0;
-  sets[3].isModified =
-    (setsData.removedBelarusHistoryDefinitionsNames?.length || 0) > 0;
-  sets[4].isModified =
-    (setsData.removedBelarusHistoryNamesNames?.length || 0) > 0;
-  sets[5].isModified =
-    (setsData.removedBelarusHistoryEventsNames?.length || 0) > 0;
+  }> = BUILTIN_SET_TYPE_IDS.map(id => {
+    const removed = getRemovedNames(setsData, id);
+    return {
+      id,
+      name: t(`labels.${id}`),
+      type: 'base' as const,
+      isModified: (removed?.length || 0) > 0,
+    };
+  });
 
   setsData.customSets.forEach(customSet => {
     sets.push({
@@ -304,43 +186,22 @@ export const saveCustomSetToStorage = async (params: {
   selectedItemKeys: string[];
   t: (key: string) => string;
 }): Promise<{ success: boolean; error?: string; setId?: string }> => {
-  const { editingCustomSetId, customSetName, selectedItemKeys, t } = params;
+  const { editingCustomSetId, customSetName, selectedItemKeys, t: translate } =
+    params;
   const selectedSet = new Set(selectedItemKeys);
 
   if (!customSetName.trim()) {
-    return { success: false, error: t('messages.setNameRequired') };
+    return { success: false, error: translate('messages.setNameRequired') };
   }
   if (selectedSet.size < 5) {
-    return { success: false, error: t('messages.customSetMin5Error') };
+    return { success: false, error: translate('messages.customSetMin5Error') };
   }
 
   const currentLanguage = (i18n.language || 'ru') as ILanguage;
-  const allItems: { name: string; type: SetItem['type'] }[] = [
-    ...getWorldHistoryDefinitions(currentLanguage).map(name => ({
-      name,
-      type: 'worldHistoryDefinition' as const,
-    })),
-    ...getWorldHistoryNames(currentLanguage).map(name => ({
-      name,
-      type: 'worldHistoryName' as const,
-    })),
-    ...getWorldHistoryEvents(currentLanguage).map(name => ({
-      name,
-      type: 'worldHistoryEvent' as const,
-    })),
-    ...getBelarusHistoryDefinitions(currentLanguage).map(name => ({
-      name,
-      type: 'belarusHistoryDefinition' as const,
-    })),
-    ...getBelarusHistoryNames(currentLanguage).map(name => ({
-      name,
-      type: 'belarusHistoryName' as const,
-    })),
-    ...getBelarusHistoryEvents(currentLanguage).map(name => ({
-      name,
-      type: 'belarusHistoryEvent' as const,
-    })),
-  ];
+  const initial = getInitialSetsForLanguage(currentLanguage);
+  const allItems: SetItem[] = BUILTIN_SET_TYPE_IDS.flatMap(setId =>
+    initial[setId].map(item => ({ ...item })),
+  );
 
   const items: SetItem[] = allItems
     .filter(item => selectedSet.has(`${item.type}-${item.name}`))
@@ -398,13 +259,11 @@ export const validateSet = (
         error: t('validation.customSetMin5'),
       };
     }
-  } else {
-    if (items.length < 10) {
-      return {
-        valid: false,
-        error: t('validation.baseSetMin10'),
-      };
-    }
+  } else if (items.length < 10) {
+    return {
+      valid: false,
+      error: t('validation.baseSetMin10'),
+    };
   }
   return { valid: true };
 };

@@ -5,6 +5,7 @@ import {
   FirstPlayerAnnouncementScreen,
   PlayerCardsScreen,
   ScreenContainer,
+  TeacherSecretRevealScreen,
 } from '@/components';
 import { Screens } from '@/constants';
 import { useActiveGame } from '@/hooks';
@@ -40,6 +41,7 @@ export const ActiveGameScreen = () => {
     selectedPlayerIndex,
     showEndGameChoice,
     selectedPerson,
+    teacherRevealDismissed,
     cardFace,
     insets,
     exileCardScale,
@@ -72,6 +74,7 @@ export const ActiveGameScreen = () => {
     handleCloseEndGameChoice,
     handleExilePlayer,
     handleReselectPerson,
+    handleTeacherRevealContinue,
     setSelectedPlayerIndex,
     setEditTimeValue,
   } = gameLogic;
@@ -143,6 +146,8 @@ export const ActiveGameScreen = () => {
     );
   }
 
+  const isTeacherMode = Boolean(gameSettings.showSecretForTeacherEnabled);
+
   // Экран с карточкой изгнания
   if (showExileCard && exiledPlayerIndex !== null && gameSettings) {
     // Используем сохраненную роль изгнанного игрока, чтобы не зависеть от обновлений списка
@@ -164,6 +169,27 @@ export const ActiveGameScreen = () => {
         exileFrontOpacity={exileFrontOpacity}
         exileBackOpacity={exileBackOpacity}
         onContinue={handleContinueAfterExile}
+      />
+    );
+  }
+
+  const awaitingTeacherReveal =
+    Boolean(gameSettings.showSecretForTeacherEnabled) &&
+    !teacherRevealDismissed &&
+    !gameStarted &&
+    !showExileCard;
+
+  if (awaitingTeacherReveal) {
+    if (!selectedPerson) {
+      return null;
+    }
+    return (
+      <TeacherSecretRevealScreen
+        selectedPerson={selectedPerson}
+        setType={gameSettings.setType}
+        onContinue={handleTeacherRevealContinue}
+        onReselectPerson={handleReselectPerson}
+        onNewGame={handleNewGamePress}
       />
     );
   }
@@ -234,7 +260,7 @@ export const ActiveGameScreen = () => {
         onChoosePlayers={() => handleChooseWinner('players')}
         onChooseSpies={() => handleChooseWinner('spies')}
         onCloseEndGameChoice={handleCloseEndGameChoice}
-        onNewGame={handleNewGamePress}
+        onNewGame={isTeacherMode ? undefined : handleNewGamePress}
       />
     );
   }
@@ -260,8 +286,8 @@ export const ActiveGameScreen = () => {
       onShowCard={handleShowCard}
       onShowHint={handleShowHint}
       onNextCard={handleNextCard}
-      onReselectPerson={handleReselectPerson}
-      onNewGame={handleNewGamePress}
+      onReselectPerson={isTeacherMode ? undefined : handleReselectPerson}
+      onNewGame={isTeacherMode ? undefined : handleNewGamePress}
     />
   );
 };

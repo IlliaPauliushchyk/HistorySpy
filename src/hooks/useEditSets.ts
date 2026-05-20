@@ -10,7 +10,18 @@ import {
   loadSetsData,
   validateSet,
 } from '@/utils/sets';
-import { BUILTIN_SET_TYPE_IDS, SetItem, SetsData, storage } from '@/utils/storage';
+import {
+  BUILTIN_SET_TYPE_IDS,
+  BuiltinSetTypeId,
+  setIdToRemovedKey,
+} from '@/constants/builtinCurriculum';
+import {
+  createEmptySetsData,
+  setRemovedNames,
+  SetItem,
+  SetsData,
+  storage,
+} from '@/utils/storage';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Animated } from 'react-native';
@@ -22,17 +33,9 @@ export type EditingSet = {
   isCustom: boolean;
 };
 
-const REMOVED_KEYS: Record<
-  (typeof BUILTIN_SET_TYPE_IDS)[number],
-  keyof SetsData
-> = {
-  worldHistoryDefinitions: 'removedWorldHistoryDefinitionsNames',
-  worldHistoryNames: 'removedWorldHistoryNamesNames',
-  worldHistoryEvents: 'removedWorldHistoryEventsNames',
-  belarusHistoryDefinitions: 'removedBelarusHistoryDefinitionsNames',
-  belarusHistoryNames: 'removedBelarusHistoryNamesNames',
-  belarusHistoryEvents: 'removedBelarusHistoryEventsNames',
-};
+const REMOVED_KEYS = Object.fromEntries(
+  BUILTIN_SET_TYPE_IDS.map(id => [id, setIdToRemovedKey(id)]),
+) as Record<BuiltinSetTypeId, keyof SetsData>;
 
 export const useEditSets = () => {
   const { t } = useTranslation();
@@ -62,19 +65,12 @@ export const useEditSets = () => {
 
   const initializeEditingSets = useCallback(
     (data: SetsData) => {
-      const actual = getActualSets(
-        data.removedWorldHistoryDefinitionsNames,
-        data.removedWorldHistoryNamesNames,
-        data.removedWorldHistoryEventsNames,
-        data.removedBelarusHistoryDefinitionsNames,
-        data.removedBelarusHistoryNamesNames,
-        data.removedBelarusHistoryEventsNames,
-      );
+      const actual = getActualSets(data);
 
       const sets: EditingSet[] = BUILTIN_SET_TYPE_IDS.map(id => ({
         id,
         name: t(`labels.${id}`),
-        items: [...(actual as Record<string, SetItem[]>)[id]],
+        items: [...actual[id]],
         isCustom: false,
       }));
 
@@ -111,44 +107,8 @@ export const useEditSets = () => {
         const currentLanguage = (i18n.language || 'ru') as ILanguage;
         const full = getInitialSetsForLanguage(currentLanguage);
 
-        const removedWorldHistoryDefinitionsNames = calculateRemovedNames(
-          full.worldHistoryDefinitions,
-          updatedEditingSets.find(s => s.id === 'worldHistoryDefinitions')
-            ?.items || [],
-        );
-        const removedWorldHistoryNamesNames = calculateRemovedNames(
-          full.worldHistoryNames,
-          updatedEditingSets.find(s => s.id === 'worldHistoryNames')?.items ||
-            [],
-        );
-        const removedWorldHistoryEventsNames = calculateRemovedNames(
-          full.worldHistoryEvents,
-          updatedEditingSets.find(s => s.id === 'worldHistoryEvents')?.items ||
-            [],
-        );
-        const removedBelarusHistoryDefinitionsNames = calculateRemovedNames(
-          full.belarusHistoryDefinitions,
-          updatedEditingSets.find(s => s.id === 'belarusHistoryDefinitions')
-            ?.items || [],
-        );
-        const removedBelarusHistoryNamesNames = calculateRemovedNames(
-          full.belarusHistoryNames,
-          updatedEditingSets.find(s => s.id === 'belarusHistoryNames')?.items ||
-            [],
-        );
-        const removedBelarusHistoryEventsNames = calculateRemovedNames(
-          full.belarusHistoryEvents,
-          updatedEditingSets.find(s => s.id === 'belarusHistoryEvents')?.items ||
-            [],
-        );
-
         const updatedSetsData: SetsData = {
-          removedWorldHistoryDefinitionsNames,
-          removedWorldHistoryNamesNames,
-          removedWorldHistoryEventsNames,
-          removedBelarusHistoryDefinitionsNames,
-          removedBelarusHistoryNamesNames,
-          removedBelarusHistoryEventsNames,
+          ...createEmptySetsData(currentLanguage),
           customSets: updatedEditingSets
             .filter(s => s.isCustom)
             .map(s => ({
@@ -160,6 +120,17 @@ export const useEditSets = () => {
             })),
           language: currentLanguage,
         };
+
+        for (const id of BUILTIN_SET_TYPE_IDS) {
+          setRemovedNames(
+            updatedSetsData,
+            id,
+            calculateRemovedNames(
+              full[id],
+              updatedEditingSets.find(s => s.id === id)?.items || [],
+            ),
+          );
+        }
 
         await storage.saveSets(updatedSetsData);
         setSetsData(updatedSetsData);
@@ -198,9 +169,8 @@ export const useEditSets = () => {
         confirmText: t('buttons.reset'),
         onCancel: () => {},
         onConfirm: () => {
-          const empty = getActualSets([], [], [], [], [], []);
-          const resetItems =
-            (empty as Record<string, SetItem[]>)[setId] || null;
+          const empty = getActualSets(createEmptySetsData());
+          const resetItems = empty[setId as BuiltinSetTypeId] || null;
           if (!resetItems) {
             return;
           }

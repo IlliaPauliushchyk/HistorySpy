@@ -9,6 +9,9 @@ import { Player } from '@/hooks/useActiveGame';
 import { commonColors } from '@/styles/colors';
 import {
   BUILTIN_SET_ID_TO_ITEM_TYPE,
+  isBuiltinSetTypeId,
+} from '@/constants/builtinCurriculum';
+import {
   CurriculumItemType,
   getLocalizedHint,
   getLocalizedName,
@@ -26,6 +29,7 @@ import {
   View,
 } from 'react-native';
 import { useTheme } from 'react-native-paper';
+import { AdaptiveCardText } from './AdaptiveCardText';
 import { AdaptiveHintText } from './AdaptiveHintText';
 
 export type CardFace = 'front' | 'role' | 'hint';
@@ -82,9 +86,10 @@ export const PlayerCardsScreen = ({
     return Math.max(100, cardContentHeight - 88);
   }, [cardContentHeight]);
 
-  const itemType: CurriculumItemType | undefined = setType
-    ? BUILTIN_SET_ID_TO_ITEM_TYPE[setType]
-    : undefined;
+  const itemType: CurriculumItemType | undefined =
+    setType && isBuiltinSetTypeId(setType)
+      ? BUILTIN_SET_ID_TO_ITEM_TYPE[setType]
+      : undefined;
 
   const canShowHint = useMemo(
     () =>
@@ -101,6 +106,15 @@ export const PlayerCardsScreen = ({
     }
     return getLocalizedHint(selectedPerson, itemType);
   }, [cardFace, itemType, selectedPerson]);
+
+  const characterTextMaxHeight = useMemo(() => {
+    if (cardContentHeight <= 0) {
+      return undefined;
+    }
+    const reserved =
+      currentPlayer.role !== 'spy' && canShowHint ? 128 : 88;
+    return Math.max(72, cardContentHeight - reserved);
+  }, [cardContentHeight, currentPlayer.role, canShowHint]);
 
   const renderCardBack = () => (
     <View style={styles.cardBackContent} onLayout={onCardBackLayout}>
@@ -135,28 +149,33 @@ export const PlayerCardsScreen = ({
               }}
               mb={16}
             >
-              {t('labels.character')}:
+              {t('labels.character')}
             </AppText>
           )}
-          <AppText
-            textAlign="center"
-            variant="displayLarge"
-            style={[
-              styles.roleText,
-              {
-                color:
-                  currentPlayer.role === 'spy'
-                    ? commonColors.red
-                    : theme.colors.primary,
-              },
-            ]}
-          >
-            {currentPlayer.role === 'spy'
-              ? t('labels.spy')
-              : selectedPerson
-              ? getLocalizedName(selectedPerson, itemType)
-              : ''}
-          </AppText>
+          {currentPlayer.role === 'spy' ? (
+            <AppText
+              textAlign="center"
+              variant="displayLarge"
+              style={[styles.roleText, { color: commonColors.red }]}
+            >
+              {t('labels.spy')}
+            </AppText>
+          ) : (
+            <AdaptiveCardText
+              text={
+                selectedPerson
+                  ? getLocalizedName(selectedPerson, itemType)
+                  : ''
+              }
+              color={theme.colors.primary}
+              maxHeight={characterTextMaxHeight}
+              maxFontSize={56}
+              minFontSize={16}
+              maxLines={3}
+              fontWeight="bold"
+              textStyle={styles.roleTextShadow}
+            />
+          )}
           {canShowHint && (
             <AppText
               textAlign="center"
@@ -368,6 +387,11 @@ const styles = StyleSheet.create({
   roleText: {
     fontSize: 56,
     fontWeight: 'bold',
+    textShadowColor: commonColors.textShadow,
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 4,
+  },
+  roleTextShadow: {
     textShadowColor: commonColors.textShadow,
     textShadowOffset: { width: 2, height: 2 },
     textShadowRadius: 4,

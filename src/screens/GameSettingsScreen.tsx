@@ -1,4 +1,5 @@
 import { AppButton, EditSetItemsModal, ScreenContainer } from '@/components';
+import { DEFAULT_BUILTIN_SET_TYPE } from '@/constants/builtinCurriculum';
 import { Screens } from '@/constants';
 import {
   GameSettingsForm,
@@ -24,8 +25,9 @@ const initialFormValues: GameSettingsFormValues = {
   spiesCount: 1,
   roundTime: 60,
   infiniteTime: false,
-  setType: 'worldHistoryNames',
+  setType: DEFAULT_BUILTIN_SET_TYPE,
   suggestQuestionEnabled: false,
+  showSecretForTeacherEnabled: true,
 };
 
 export const GameSettingsScreen = () => {

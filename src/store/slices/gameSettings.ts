@@ -9,6 +9,7 @@ export type GameSettings = {
   infiniteTime: boolean;
   setType: string;
   suggestQuestionEnabled?: boolean;
+  showSecretForTeacherEnabled?: boolean;
 };
 
 type GameSettingsState = {

@@ -33,7 +33,7 @@
       "back": "Back",
       "language": "Language",
       "rules": "Rules",
-      "reselectPerson": "Reselect Person",
+      "reselectPerson": "Reselect",
       "suggestQuestionButton": "Suggest a question"
     },
     "labels": {
@@ -46,6 +46,8 @@
       "infiniteTime": "Infinite Time",
       "roundTimeRecommended": "Recommended: 60-120 seconds",
       "suggestQuestion": "Hint: suggest a question",
+      "teacherMode": "Teacher mode",
+      "teacherModeDescription": "The teacher sees the secret first and can reselect it or start a new game, then cards are dealt to players",
       "set": "Set",
       "setName": "Set Name",
       "setNamePlaceholder": "Enter set name",
@@ -54,7 +56,7 @@
       "players": "Players",
       "player": "Player",
       "spy": "Spy",
-      "character": "Mystery Character",
+      "character": "Guessed:",
       "hintTitle": "Explanation:",
       "elements": "items",
       "playerNumber": "Player {{number}}",
@@ -62,12 +64,20 @@
       "mySets": "My Sets",
       "groupWorldHistory": "World history",
       "groupBelarusHistory": "History of Belarus",
-      "worldHistoryDefinitions": "Terms and definitions",
-      "worldHistoryNames": "Names and figures",
-      "worldHistoryEvents": "Events and dates",
-      "belarusHistoryDefinitions": "Terms and definitions (Belarus)",
-      "belarusHistoryNames": "Names and figures (Belarus)",
-      "belarusHistoryEvents": "Events and dates (Belarus)",
+      "grade5": "Grade 5",
+      "grade9": "Grade 9",
+      "worldHistory5Definitions": "Terms and definitions",
+      "worldHistory5Names": "Names and figures",
+      "worldHistory5Events": "Events and dates",
+      "worldHistory9Definitions": "Terms and definitions",
+      "worldHistory9Names": "Names and figures",
+      "worldHistory9Events": "Events and dates",
+      "belarusHistory5Definitions": "Terms and definitions",
+      "belarusHistory5Names": "Names and figures",
+      "belarusHistory5Events": "Events and dates",
+      "belarusHistory9Definitions": "Terms and definitions",
+      "belarusHistory9Names": "Names and figures",
+      "belarusHistory9Events": "Events and dates",
       "searchPlayer": "Search..."
     },
     "game": {
@@ -83,14 +93,16 @@
       "editTime": "Edit Time",
       "timeSeconds": "Time (seconds)",
       "playerOfTotal": "Player {{current}} of {{total}}",
-      "tapForHint": "Tap the card for an explanation"
+      "tapForHint": "Tap the card for an explanation",
+      "teacherRevealTitle": "For the teacher",
+      "teacherRevealSubtitle": "Reselect the word or start a new game here. Hand the phone to players after «Next»"
     },
     "results": {
       "playersWon": "🎉 Players Won",
       "spiesWon": "🎉 Spies Won",
       "spiesLost": "Spies Lost",
       "playersLost": "Players Lost",
-      "character": "Mystery Character"
+      "character": "Guessed"
     },
     "sets": {
       "modifiedSets": "Modified Sets:",
@@ -134,7 +146,7 @@
       "rtlRestartMessage": "To apply text direction changes, the app will restart. This will take a few seconds.",
       "rtlRestartConfirm": "Restart",
       "rtlRestartCancel": "Cancel",
-      "reselectPersonTitle": "Reselect Person",
+      "reselectPersonTitle": "Reselect",
       "reselectPersonMessage": "Roles will be reshuffled and the game will start from the beginning. Continue?",
       "newGameConfirmTitle": "Start new game?",
       "newGameConfirmMessage": "Current game will end. Are you sure you want to start a new one?"

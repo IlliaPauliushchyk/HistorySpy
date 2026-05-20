@@ -33,7 +33,7 @@
       "language": "Мова",
       "rules": "Правілы",
       "createSet": "Стварыць набор",
-      "reselectPerson": "Перавыбраць гульца",
+      "reselectPerson": "Перавыбраць",
       "suggestQuestionButton": "Прапануйце пытанне"
     },
     "labels": {
@@ -45,6 +45,8 @@
       "seconds": "сек",
       "infiniteTime": "Бясконцы час",
       "suggestQuestion": "Падказка: прапануйце пытанне",
+      "teacherMode": "Рэжым для настаўніка",
+      "teacherModeDescription": "Спачатку настаўнік бачыць загадку і можа перавыбраць слова або пачаць новую гульню, затым — раздача карт гульцам",
       "roundTimeRecommended": "Рэкамендуецца: 60-120 секунд",
       "set": "Набор",
       "setName": "Назва набору",
@@ -54,7 +56,7 @@
       "players": "Гульцы",
       "player": "Гулец",
       "spy": "Шпіён",
-      "character": "Загаданы персанаж",
+      "character": "Загадана:",
       "hintTitle": "Тлумачэнне:",
       "elements": "элементаў",
       "playerNumber": "Гулец {{number}}",
@@ -62,12 +64,20 @@
       "mySets": "Мае наборы",
       "groupWorldHistory": "Сусветная гісторыя",
       "groupBelarusHistory": "Гісторыя Беларусі",
-      "worldHistoryDefinitions": "Тэрміны і азначэнні",
-      "worldHistoryNames": "Імёны і асобы",
-      "worldHistoryEvents": "Падзеі і даты",
-      "belarusHistoryDefinitions": "Тэрміны і азначэнні (Беларусь)",
-      "belarusHistoryNames": "Імёны і асобы (Беларусь)",
-      "belarusHistoryEvents": "Падзеі і даты (Беларусь)",
+      "grade5": "5 клас",
+      "grade9": "9 клас",
+      "worldHistory5Definitions": "Тэрміны і азначэнні",
+      "worldHistory5Names": "Імёны і асобы",
+      "worldHistory5Events": "Падзеі і даты",
+      "worldHistory9Definitions": "Тэрміны і азначэнні",
+      "worldHistory9Names": "Імёны і асобы",
+      "worldHistory9Events": "Падзеі і даты",
+      "belarusHistory5Definitions": "Тэрміны і азначэнні",
+      "belarusHistory5Names": "Імёны і асобы",
+      "belarusHistory5Events": "Падзеі і даты",
+      "belarusHistory9Definitions": "Тэрміны і азначэнні",
+      "belarusHistory9Names": "Імёны і асобы",
+      "belarusHistory9Events": "Падзеі і даты",
       "searchPlayer": "Пошук..."
     },
     "game": {
@@ -83,14 +93,16 @@
       "editTime": "Рэдагаваць час",
       "timeSeconds": "Час (секунды)",
       "playerOfTotal": "Гулец {{current}} з {{total}}",
-      "tapForHint": "Націсніце на картку для тлумачэння"
+      "tapForHint": "Націсніце на картку для тлумачэння",
+      "teacherRevealTitle": "Для настаўніка",
+      "teacherRevealSubtitle": "Тут даступны перавыбар слова і новая гульня. Перадайце тэлефон гульцам пасля «Далей»"
     },
     "results": {
       "playersWon": "🎉 Гульцы перамаглі",
       "spiesWon": "🎉 Шпіёны перамаглі",
       "spiesLost": "Шпіёны прайгралі",
       "playersLost": "Гульцы прайгралі",
-      "character": "Загаданы персанаж"
+      "character": "Загадана"
     },
     "sets": {
       "modifiedSets": "Змененыя наборы:",
@@ -134,7 +146,7 @@
       "rtlRestartMessage": "Для прымянення змяненняў напрамку тэксту прыкладанне будзе перазапушчана. Гэта зойме некалькі секунд.",
       "rtlRestartConfirm": "Перазапусціць",
       "rtlRestartCancel": "Адмена",
-      "reselectPersonTitle": "Перавыбраць гульца",
+      "reselectPersonTitle": "Перавыбраць",
       "reselectPersonMessage": "Ролі будуць перамешаны нанова і гульня пачнецца з пачатку. Працягнуць?",
       "newGameConfirmTitle": "Пачаць новую гульню?",
       "newGameConfirmMessage": "Бягучая гульня скончыцца. Вы ўпэўненыя, што хочаце пачаць новую?"

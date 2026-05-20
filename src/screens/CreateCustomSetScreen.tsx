@@ -6,20 +6,22 @@ import {
   useAlert,
 } from '@/components';
 import { ScreenContainer } from '@/components/common/ScreenContainer';
+import {
+  BUILTIN_SET_ID_TO_ITEM_TYPE,
+  CUSTOM_SET_GRADE_FILTER_OPTIONS,
+  CurriculumItemType,
+  CustomSetGradeFilter,
+  customSetFilterToParamValue,
+  parseCustomSetGradeFilter,
+} from '@/constants/builtinCurriculum';
 import { ILanguage } from '@/hooks/localization';
 import i18n from '@/localization/i18n';
 import {
-  getBelarusHistoryDefinitions,
-  getBelarusHistoryEvents,
-  getBelarusHistoryNames,
   getLocalizedName,
   getRussianName,
-  getWorldHistoryDefinitions,
-  getWorldHistoryEvents,
-  getWorldHistoryNames,
 } from '@/utils/localization';
+import { collectBuiltinItemsForCustomSetFilter } from '@/utils/customSetGradeFilter';
 import { SetItem } from '@/utils/storage';
-// Аналитика для кастомных наборов отключена - импорт удален
 import { saveCustomSetToStorage } from '@/utils/sets';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import React, { useCallback, useMemo, useState } from 'react';
@@ -27,56 +29,16 @@ import { useTranslation } from 'react-i18next';
 import { FlatList, Keyboard, Pressable, StyleSheet, View } from 'react-native';
 import { Checkbox, Searchbar, useTheme } from 'react-native-paper';
 
-const FILTER_OPTIONS = [
-  { value: 'all', labelKey: 'labels.all', icon: 'format-list-bulleted' },
-  {
-    value: 'worldHistoryDefinition',
-    labelKey: 'labels.worldHistoryDefinitions',
-    icon: 'book-open-variant',
-  },
-  {
-    value: 'worldHistoryName',
-    labelKey: 'labels.worldHistoryNames',
-    icon: 'account',
-  },
-  {
-    value: 'worldHistoryEvent',
-    labelKey: 'labels.worldHistoryEvents',
-    icon: 'calendar-clock',
-  },
-  {
-    value: 'belarusHistoryDefinition',
-    labelKey: 'labels.belarusHistoryDefinitions',
-    icon: 'book-open-page-variant',
-  },
-  {
-    value: 'belarusHistoryName',
-    labelKey: 'labels.belarusHistoryNames',
-    icon: 'account-tie',
-  },
-  {
-    value: 'belarusHistoryEvent',
-    labelKey: 'labels.belarusHistoryEvents',
-    icon: 'flag',
-  },
-] as const;
-
-const ITEM_TYPES: SetItem['type'][] = [
-  'worldHistoryDefinition',
-  'worldHistoryName',
-  'worldHistoryEvent',
-  'belarusHistoryDefinition',
-  'belarusHistoryName',
-  'belarusHistoryEvent',
-];
-
-type FilterType = (typeof FILTER_OPTIONS)[number]['value'];
+const ITEM_TYPES: CurriculumItemType[] = Object.values(
+  BUILTIN_SET_ID_TO_ITEM_TYPE,
+);
 
 export type CreateCustomSetRouteParams = {
   editingCustomSetId?: string | null;
   customSetName?: string;
   selectedItems?: string[];
-  filterType?: FilterType;
+  /** `all`, `5`, `9` или устаревший itemType */
+  filterType?: string;
 };
 
 const parseKeyToRussianName = (key: string): string | null => {
@@ -114,8 +76,8 @@ export const CreateCustomSetScreen = () => {
   const [selectedItemsForCustomSet, setSelectedItemsForCustomSet] = useState<
     Set<string>
   >(new Set(params.selectedItems ?? []));
-  const [filterType, setFilterType] = useState<FilterType>(
-    params.filterType ?? 'all',
+  const [filterType, setFilterType] = useState<CustomSetGradeFilter>(() =>
+    parseCustomSetGradeFilter(params.filterType),
   );
   const [searchQuery, setSearchQuery] = useState('');
   const [saving, setSaving] = useState(false);
@@ -133,7 +95,7 @@ export const CreateCustomSetScreen = () => {
 
   const filterOptions = useMemo(
     () =>
-      FILTER_OPTIONS.map(opt => ({
+      CUSTOM_SET_GRADE_FILTER_OPTIONS.map(opt => ({
         value: opt.value,
         label: t(opt.labelKey),
         icon: opt.icon,
@@ -141,55 +103,17 @@ export const CreateCustomSetScreen = () => {
     [t],
   );
 
+  const filterDropdownValue = customSetFilterToParamValue(filterType);
+
   const allItems = useMemo(() => {
     const lang = (i18n.language || 'ru') as ILanguage;
-    const items: SetItem[] = [
-      ...getWorldHistoryDefinitions(lang).map(name => ({
-        name,
-        type: 'worldHistoryDefinition' as const,
-      })),
-      ...getWorldHistoryNames(lang).map(name => ({
-        name,
-        type: 'worldHistoryName' as const,
-      })),
-      ...getWorldHistoryEvents(lang).map(name => ({
-        name,
-        type: 'worldHistoryEvent' as const,
-      })),
-      ...getBelarusHistoryDefinitions(lang).map(name => ({
-        name,
-        type: 'belarusHistoryDefinition' as const,
-      })),
-      ...getBelarusHistoryNames(lang).map(name => ({
-        name,
-        type: 'belarusHistoryName' as const,
-      })),
-      ...getBelarusHistoryEvents(lang).map(name => ({
-        name,
-        type: 'belarusHistoryEvent' as const,
-      })),
-    ];
-    let filteredByType =
-      filterType === 'all'
-        ? items
-        : items.filter(item => item.type === filterType);
-
-    // При "Все" убираем дубли — один человек в нескольких категориях показываем один раз
-    if (filterType === 'all') {
-      const seen = new Set<string>();
-      filteredByType = filteredByType.filter(item => {
-        const rn = getRussianName(item.name, item.type);
-        if (seen.has(rn)) return false;
-        seen.add(rn);
-        return true;
-      });
-    }
+    let filteredByType = collectBuiltinItemsForCustomSetFilter(
+      lang,
+      filterType,
+    );
 
     if (!searchQuery.trim()) return filteredByType;
     const query = searchQuery.trim().toLowerCase();
-
-    // Аналитика для кастомных наборов отключена - не логируем использование поиска
-    // при создании/редактировании кастомных наборов
 
     return filteredByType.filter(item => {
       const localized = getLocalizedName(item.name, item.type).toLowerCase();
@@ -226,7 +150,6 @@ export const CreateCustomSetScreen = () => {
     });
     setSaving(false);
     if (result.success) {
-      // Аналитика для кастомных наборов отключена для защиты конфиденциальности
       navigation.goBack();
     } else if (result.error) {
       alert({ title: t('messages.error'), message: result.error });
@@ -263,10 +186,10 @@ export const CreateCustomSetScreen = () => {
             <View style={styles.filterDropdownWrap}>
               <FilterDropdown
                 options={filterOptions}
-                value={filterType}
+                value={filterDropdownValue}
                 onSelect={(v, index) => {
                   index !== 0 && Keyboard.dismiss();
-                  setFilterType(v as FilterType);
+                  setFilterType(parseCustomSetGradeFilter(v));
                 }}
                 alignRight
               />

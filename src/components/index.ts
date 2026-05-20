@@ -10,6 +10,7 @@ export * from './common/Input';
 export * from './common/Logo';
 export * from './common/MenuRadioItem';
 export * from './common/NewGameButton';
+export * from './common/NumberedStep';
 export * from './common/PlayersSpiesPicker';
 export * from './common/ScreenContainer';
 export * from './common/Spinner';

@@ -33,7 +33,7 @@
       "back": "Назад",
       "language": "Язык",
       "rules": "Правила",
-      "reselectPerson": "Перевыбрать игрока",
+      "reselectPerson": "Перевыбрать",
       "suggestQuestionButton": "Предложить вопрос"
     },
     "labels": {
@@ -46,6 +46,8 @@
       "infiniteTime": "Бесконечное время",
       "roundTimeRecommended": "Рекомендуется: 60-120 секунд",
       "suggestQuestion": "Подсказка: предложить вопрос",
+      "teacherMode": "Режим для учителя",
+      "teacherModeDescription": "Сначала учитель видит загадку и может перевыбрать слово или начать новую игру, затем — раздача карт игрокам",
       "set": "Набор",
       "setName": "Название набора",
       "setNamePlaceholder": "Введите название набора",
@@ -54,7 +56,7 @@
       "players": "Игроки",
       "player": "Игрок",
       "spy": "Шпион",
-      "character": "Загаданный персонаж",
+      "character": "Загадано:",
       "hintTitle": "Пояснение:",
       "elements": "элементов",
       "playerNumber": "Игрок {{number}}",
@@ -62,12 +64,20 @@
       "mySets": "Свои наборы",
       "groupWorldHistory": "Всемирная история",
       "groupBelarusHistory": "История Беларуси",
-      "worldHistoryDefinitions": "Термины и определения",
-      "worldHistoryNames": "Имена и личности",
-      "worldHistoryEvents": "События и даты",
-      "belarusHistoryDefinitions": "Термины и определения (Беларусь)",
-      "belarusHistoryNames": "Имена и личности (Беларусь)",
-      "belarusHistoryEvents": "События и даты (Беларусь)",
+      "grade5": "5 класс",
+      "grade9": "9 класс",
+      "worldHistory5Definitions": "Термины и определения",
+      "worldHistory5Names": "Имена и личности",
+      "worldHistory5Events": "События и даты",
+      "worldHistory9Definitions": "Термины и определения",
+      "worldHistory9Names": "Имена и личности",
+      "worldHistory9Events": "События и даты",
+      "belarusHistory5Definitions": "Термины и определения",
+      "belarusHistory5Names": "Имена и личности",
+      "belarusHistory5Events": "События и даты",
+      "belarusHistory9Definitions": "Термины и определения",
+      "belarusHistory9Names": "Имена и личности",
+      "belarusHistory9Events": "События и даты",
       "searchPlayer": "Поиск..."
     },
     "game": {
@@ -83,14 +93,16 @@
       "editTime": "Редактировать время",
       "timeSeconds": "Время (секунды)",
       "playerOfTotal": "Игрок {{current}} из {{total}}",
-      "tapForHint": "Нажмите на карточку для пояснения"
+      "tapForHint": "Нажмите на карточку для пояснения",
+      "teacherRevealTitle": "Для учителя",
+      "teacherRevealSubtitle": "Здесь доступны перевыбор слова и новая игра. Передайте телефон игрокам после «Дальше»"
     },
     "results": {
       "playersWon": "🎉 Игроки победили",
       "spiesWon": "🎉 Шпионы победили",
       "spiesLost": "Шпионы проиграли",
       "playersLost": "Игроки проиграли",
-      "character": "Загаданный персонаж"
+      "character": "Загадано"
     },
     "sets": {
       "modifiedSets": "Измененные наборы:",
@@ -134,7 +146,7 @@
       "rtlRestartMessage": "Для применения изменений направления текста приложение будет перезапущено. Это займет несколько секунд.",
       "rtlRestartConfirm": "Перезапустить",
       "rtlRestartCancel": "Отмена",
-      "reselectPersonTitle": "Перевыбрать игрока",
+      "reselectPersonTitle": "Перевыбрать",
       "reselectPersonMessage": "Роли будут перемешаны заново и игра начнется с начала. Продолжить?",
       "newGameConfirmTitle": "Начать новую игру?",
       "newGameConfirmMessage": "Текущая игра завершится. Вы уверены, что хотите начать новую?"

@@ -1,17 +1,17 @@
-import { AppText, ScreenContainer } from '@/components';
+import { AppText, NumberedStep, ScreenContainer } from '@/components';
 import {
   ANIMATION_DELAY,
   ANIMATION_DURATION,
   ANIMATION_VALUES,
-  STEP_NUMBER_SIZE,
 } from '@/constants';
-import { commonColors } from '@/styles/colors';
 import { logRulesViewed } from '@/utils/analytics';
 import { useNavigation } from '@react-navigation/native';
 import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Animated, StyleSheet, View } from 'react-native';
 import { Card, Divider, useTheme } from 'react-native-paper';
+
+const HOW_TO_PLAY_STEPS = [1, 2, 3, 4] as const;
 
 type AnimatedCardProps = {
   children: React.ReactNode;
@@ -121,85 +121,13 @@ export const RulesScreen = () => {
                 {t('rules.howToPlay')}
               </AppText>
 
-              <View style={styles.stepSection}>
-                <View
-                  style={[
-                    styles.stepNumber,
-                    { backgroundColor: theme.colors.primary },
-                  ]}
-                >
-                  <AppText
-                    variant="titleMedium"
-                    fontWeight="bold"
-                    color={theme.colors.onPrimary}
-                  >
-                    1
+              {HOW_TO_PLAY_STEPS.map(step => (
+                <NumberedStep key={step} number={step}>
+                  <AppText variant="bodyMedium">
+                    {t(`rules.step${step}`)}
                   </AppText>
-                </View>
-                <View style={styles.stepContent}>
-                  <AppText variant="bodyMedium">{t('rules.step1')}</AppText>
-                </View>
-              </View>
-
-              <View style={styles.stepSection}>
-                <View
-                  style={[
-                    styles.stepNumber,
-                    { backgroundColor: theme.colors.primary },
-                  ]}
-                >
-                  <AppText
-                    variant="titleMedium"
-                    fontWeight="bold"
-                    color={commonColors.white}
-                  >
-                    2
-                  </AppText>
-                </View>
-                <View style={styles.stepContent}>
-                  <AppText variant="bodyMedium">{t('rules.step2')}</AppText>
-                </View>
-              </View>
-
-              <View style={styles.stepSection}>
-                <View
-                  style={[
-                    styles.stepNumber,
-                    { backgroundColor: theme.colors.primary },
-                  ]}
-                >
-                  <AppText
-                    variant="titleMedium"
-                    fontWeight="bold"
-                    color={commonColors.white}
-                  >
-                    3
-                  </AppText>
-                </View>
-                <View style={styles.stepContent}>
-                  <AppText variant="bodyMedium">{t('rules.step3')}</AppText>
-                </View>
-              </View>
-
-              <View style={styles.stepSection}>
-                <View
-                  style={[
-                    styles.stepNumber,
-                    { backgroundColor: theme.colors.primary },
-                  ]}
-                >
-                  <AppText
-                    variant="titleMedium"
-                    fontWeight="bold"
-                    color={commonColors.white}
-                  >
-                    4
-                  </AppText>
-                </View>
-                <View style={styles.stepContent}>
-                  <AppText variant="bodyMedium">{t('rules.step4')}</AppText>
-                </View>
-              </View>
+                </NumberedStep>
+              ))}
             </Card.Content>
           </Card>
         </AnimatedCard>
@@ -257,7 +185,7 @@ export const RulesScreen = () => {
         </AnimatedCard>
 
         {/* Примеры тем для вопросов */}
-        <AnimatedCard index={5}>
+        {/* <AnimatedCard index={5}>
           <Card style={styles.card}>
             <Card.Content>
               <AppText variant="titleMedium" mb={8} fontWeight="bold">
@@ -280,7 +208,7 @@ export const RulesScreen = () => {
               </View>
             </Card.Content>
           </Card>
-        </AnimatedCard>
+        </AnimatedCard> */}
       </View>
     </ScreenContainer>
   );
@@ -299,23 +227,6 @@ const styles = StyleSheet.create({
   },
   divider: {
     marginVertical: 16,
-  },
-  stepSection: {
-    flexDirection: 'row',
-    marginBottom: 16,
-    alignItems: 'flex-start',
-  },
-  stepNumber: {
-    width: STEP_NUMBER_SIZE.WIDTH,
-    height: STEP_NUMBER_SIZE.HEIGHT,
-    borderRadius: STEP_NUMBER_SIZE.RADIUS,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginRight: 12,
-    marginTop: 2,
-  },
-  stepContent: {
-    flex: 1,
   },
   victorySection: {
     marginBottom: 8,

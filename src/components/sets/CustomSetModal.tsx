@@ -1,18 +1,16 @@
 import { AppButton, AppText, Input } from '@/components';
 import { PADDING } from '@/constants';
+import {
+  CUSTOM_SET_GRADE_FILTER_OPTIONS,
+  CustomSetGradeFilter,
+  customSetFilterToParamValue,
+  parseCustomSetGradeFilter,
+} from '@/constants/builtinCurriculum';
 import { ILanguage } from '@/hooks/localization';
 import i18n from '@/localization/i18n';
 import { commonColors } from '@/styles/colors';
-import {
-  getBelarusHistoryDefinitions,
-  getBelarusHistoryEvents,
-  getBelarusHistoryNames,
-  getLocalizedName,
-  getWorldHistoryDefinitions,
-  getWorldHistoryEvents,
-  getWorldHistoryNames,
-} from '@/utils/localization';
-import { SetItem } from '@/utils/storage';
+import { collectBuiltinItemsForCustomSetFilter } from '@/utils/customSetGradeFilter';
+import { getLocalizedName, getRussianName } from '@/utils/localization';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
@@ -35,9 +33,7 @@ import {
   useTheme,
 } from 'react-native-paper';
 
-export type CustomSetModalFilterType =
-  | 'all'
-  | SetItem['type'];
+export type CustomSetModalFilterType = CustomSetGradeFilter | string;
 
 type CustomSetModalProps = {
   visible: boolean;
@@ -47,55 +43,17 @@ type CustomSetModalProps = {
   filterType: CustomSetModalFilterType;
   onClose: () => void;
   onNameChange: (text: string) => void;
-  onFilterChange: (filter: CustomSetModalFilterType) => void;
+  onFilterChange: (filter: CustomSetGradeFilter) => void;
   onItemToggle: (key: string) => void;
   onSave: () => void;
 };
-
-const FILTER_OPTIONS: Array<{
-  value: CustomSetModalFilterType;
-  labelKey: string;
-  icon: string;
-}> = [
-  { value: 'all', labelKey: 'labels.all', icon: 'format-list-bulleted' },
-  {
-    value: 'worldHistoryDefinition',
-    labelKey: 'labels.worldHistoryDefinitions',
-    icon: 'book-open-variant',
-  },
-  {
-    value: 'worldHistoryName',
-    labelKey: 'labels.worldHistoryNames',
-    icon: 'account',
-  },
-  {
-    value: 'worldHistoryEvent',
-    labelKey: 'labels.worldHistoryEvents',
-    icon: 'calendar-clock',
-  },
-  {
-    value: 'belarusHistoryDefinition',
-    labelKey: 'labels.belarusHistoryDefinitions',
-    icon: 'book-open-page-variant',
-  },
-  {
-    value: 'belarusHistoryName',
-    labelKey: 'labels.belarusHistoryNames',
-    icon: 'account-tie',
-  },
-  {
-    value: 'belarusHistoryEvent',
-    labelKey: 'labels.belarusHistoryEvents',
-    icon: 'flag',
-  },
-];
 
 export const CustomSetModal = ({
   visible,
   editingCustomSetId,
   customSetName,
   selectedItemsForCustomSet,
-  filterType,
+  filterType: filterTypeProp,
   onClose,
   onNameChange,
   onFilterChange,
@@ -106,6 +64,12 @@ export const CustomSetModal = ({
   const theme = useTheme();
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownHeight = useRef(new Animated.Value(0)).current;
+
+  const filterType = parseCustomSetGradeFilter(
+    typeof filterTypeProp === 'string'
+      ? filterTypeProp
+      : customSetFilterToParamValue(filterTypeProp),
+  );
 
   const toggleDropdown = useCallback(() => {
     const toValue = dropdownOpen ? 0 : 1;
@@ -118,8 +82,8 @@ export const CustomSetModal = ({
   }, [dropdownOpen, dropdownHeight]);
 
   const handleFilterSelect = useCallback(
-    (value: CustomSetModalFilterType) => {
-      onFilterChange(value);
+    (value: string) => {
+      onFilterChange(parseCustomSetGradeFilter(value));
       Animated.timing(dropdownHeight, {
         toValue: 0,
         duration: 200,
@@ -130,7 +94,6 @@ export const CustomSetModal = ({
     [onFilterChange, dropdownHeight],
   );
 
-  // Закрываем dropdown при закрытии модалки
   useEffect(() => {
     if (!visible) {
       setDropdownOpen(false);
@@ -138,44 +101,36 @@ export const CustomSetModal = ({
     }
   }, [visible, dropdownHeight]);
 
-  const currentFilter = FILTER_OPTIONS.find(o => o.value === filterType);
+  const filterOptions = CUSTOM_SET_GRADE_FILTER_OPTIONS.map(opt => ({
+    ...opt,
+    label: t(opt.labelKey),
+  }));
+
+  const currentFilter = filterOptions.find(
+    o => o.value === customSetFilterToParamValue(filterType),
+  );
   const currentFilterLabel = currentFilter
-    ? t(currentFilter.labelKey)
+    ? currentFilter.label
     : t('labels.all');
 
   const allItems = React.useMemo(() => {
     const currentLanguage = (i18n.language || 'ru') as ILanguage;
-    const items: SetItem[] = [
-      ...getWorldHistoryDefinitions(currentLanguage).map(name => ({
-        name,
-        type: 'worldHistoryDefinition' as const,
-      })),
-      ...getWorldHistoryNames(currentLanguage).map(name => ({
-        name,
-        type: 'worldHistoryName' as const,
-      })),
-      ...getWorldHistoryEvents(currentLanguage).map(name => ({
-        name,
-        type: 'worldHistoryEvent' as const,
-      })),
-      ...getBelarusHistoryDefinitions(currentLanguage).map(name => ({
-        name,
-        type: 'belarusHistoryDefinition' as const,
-      })),
-      ...getBelarusHistoryNames(currentLanguage).map(name => ({
-        name,
-        type: 'belarusHistoryName' as const,
-      })),
-      ...getBelarusHistoryEvents(currentLanguage).map(name => ({
-        name,
-        type: 'belarusHistoryEvent' as const,
-      })),
-    ];
-    if (filterType === 'all') return items;
-    return items.filter(item => item.type === filterType);
+    return collectBuiltinItemsForCustomSetFilter(currentLanguage, filterType);
   }, [filterType]);
 
-  const dropdownMaxHeight = FILTER_OPTIONS.length * 48;
+  const selectedRussianNames = React.useMemo(() => {
+    const names = new Set<string>();
+    selectedItemsForCustomSet.forEach(key => {
+      const dash = key.indexOf('-');
+      if (dash === -1) return;
+      const type = key.slice(0, dash);
+      const name = key.slice(dash + 1);
+      names.add(getRussianName(name, type as never));
+    });
+    return names;
+  }, [selectedItemsForCustomSet]);
+
+  const dropdownMaxHeight = filterOptions.length * 48;
 
   return (
     <Modal
@@ -209,7 +164,6 @@ export const CustomSetModal = ({
               {t('labels.selectMinimum5')}
             </AppText>
 
-            {/* Dropdown */}
             <View style={styles.dropdownContainer}>
               <Button
                 mode="outlined"
@@ -242,13 +196,13 @@ export const CustomSetModal = ({
                   },
                 ]}
               >
-                {FILTER_OPTIONS.map(opt => (
+                {filterOptions.map(opt => (
                   <TouchableRipple
                     key={opt.value}
                     onPress={() => handleFilterSelect(opt.value)}
                     style={[
                       styles.dropdownItem,
-                      filterType === opt.value && {
+                      customSetFilterToParamValue(filterType) === opt.value && {
                         backgroundColor: theme.colors.primaryContainer,
                       },
                     ]}
@@ -262,13 +216,14 @@ export const CustomSetModal = ({
                       <Text
                         style={[
                           styles.dropdownItemText,
-                          filterType === opt.value && {
+                          customSetFilterToParamValue(filterType) ===
+                            opt.value && {
                             color: theme.colors.primary,
                             fontWeight: 'bold',
                           },
                         ]}
                       >
-                        {t(opt.labelKey)}
+                        {opt.label}
                       </Text>
                     </View>
                   </TouchableRipple>
@@ -284,7 +239,9 @@ export const CustomSetModal = ({
                 }
                 renderItem={({ item }) => {
                   const key = `${item.type}-${item.name}`;
-                  const isSelected = selectedItemsForCustomSet.has(key);
+                  const russianName = getRussianName(item.name, item.type);
+                  const isSelected = selectedRussianNames.has(russianName);
+
                   return (
                     <Pressable
                       onPress={() => onItemToggle(key)}

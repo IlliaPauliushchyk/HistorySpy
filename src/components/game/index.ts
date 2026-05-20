@@ -5,4 +5,5 @@ export * from './ExileCardScreen';
 export * from './FirstPlayerAnnouncementScreen';
 export * from './PlayerCardsScreen';
 export * from './QuestionTopicsModal';
+export * from './TeacherSecretRevealScreen';
 
